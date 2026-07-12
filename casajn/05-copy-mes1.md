@@ -7,6 +7,8 @@
 
 **Reglas duras de tono aplicadas (recordatorio, ver brief):** cero superlativos/urgencia artificial/descuento-gancho en Segmentos 3 y 4; tono TikTok (humor, coloquial, energía) permitido en Segmento 1 pero adaptado a carrusel; ninguna pieza promete entrega inmediata o rápida; no se nombra proveedor mayorista; español de México natural, sin frases genéricas de agencia ni anglicismos forzados.
 
+**Revisión de producto (Decorador de Interiores, 12-jul-2026):** tras la verificación de catálogo real en `08-seleccion-producto-mes1.md`, se reescribió el titular/caption/desglose de la Pieza 2 (nueva cifra real $8,995 MXN, 3 categorías en vez de 4) y se retiraron las menciones a "Colchón Comfort Tech" en las Piezas 4 y 6 (no verificado como producto real). Detalle completo en `09-validacion-decorador-mes1.md`.
+
 ---
 
 ## Semana 1 · Pieza 1 — "25 años vistiendo hogares mexicanos" (Segmento 3 — Renovación con Criterio)
@@ -34,39 +36,38 @@ Si estás en el momento de renovar algo en tu casa —no de empezar de cero, sin
 
 ---
 
-## Semana 1 · Pieza 2 — "Amuebla tu depa con menos de $12,000 MXN" (Segmento 1 — Primer Espacio Propio)
+## Semana 1 · Pieza 2 — "Amuebla lo esencial de tu depa por menos de $9,000 MXN" (Segmento 1 — Primer Espacio Propio)
 
-*(Título corregido en QA de marca, ver `06-qa-marca-mes1.md`: el titular original decía "$15,000 MXN" pero el desglose de la slide 7 suma $11,745 MXN — se ajustó el titular a la cifra real en vez de alterar el desglose, que corresponde exactamente al SKU pedido por el storyboard.)*
+*(Título y copy reescritos por el Decorador de Interiores, ver `09-validacion-decorador-mes1.md`. La corrección previa de QA de marca —`06-qa-marca-mes1.md`— había ajustado la cifra a "$12,000 MXN" bajo el supuesto de 4 categorías, incluyendo una sala/sofá-cama. La verificación de catálogo real (`08-seleccion-producto-mes1.md`) encontró que el sofá-cama real más barato del sitio oficial —Sofá Cama Sleepy, $8,580–$9,800 MXN— cuesta 3 a 3.7 veces más que "Sala Fantasy" (SKU de Mercado Libre que sostenía la cifra original, y que no existe en interimobel.mx). Se aplica la Opción A: se retira la sala del combo. El desglose queda en 3 elementos 100% reales y verificados — Silla Oslo Vento $590 + Mesa Comedor Erza $1,750 + Armario Lima $6,655.56 = **$8,995 MXN** — y el titular se ajusta a esa cifra real.)*
 
-**Plataforma:** Instagram (carrusel) / TikTok (formato carrusel de fotos) — tono TikTok adaptado a slides. **Formato:** carrusel de 8 slides.
+**Plataforma:** Instagram (carrusel) / TikTok (formato carrusel de fotos) — tono TikTok adaptado a slides. **Formato:** carrusel de **7 slides** (antes 8 — ver justificación en `04-storyboard-mes1.md`: al pasar de 4 a 3 categorías, un slide dedicado al sofá-cama dejó de tener producto real que mostrar).
 
 ### Texto en pantalla
 
 - **Slide 1 (cover, [ZONA DE TEXTO: cifra grande]):**
 
-> Menos de $12,000 MXN
-> para amueblar tu primer depa, completo
+> Menos de $9,000 MXN
+> para amueblar lo esencial de tu depa
 
-- **Slides 2–6:** sin texto — visuales (sin marca de zona).
-- **Slide 7 ([ZONA DE TEXTO: desglose de precio]):**
+- **Slides 2–5:** sin texto — visuales (sin marca de zona).
+- **Slide 6 ([ZONA DE TEXTO: desglose de precio]):**
 
 > Silla — $590
 > Mesa — $1,750
-> Sala cama — $2,750
 > Armario — $6,655
-> Total aprox. — $11,745 MXN
+> Total — $8,995 MXN
 
-*(Nota de producción, no es texto de publicación: precios tomados de SKU indexados en `01-investigacion-mercado-interimobel.md` — el propio storyboard señala que son ilustrativos; el equipo comercial debe confirmar SKU y precios vigentes antes de publicar.)*
+*(Nota de producción, no es texto de publicación: los 3 precios están confirmados reales y vigentes al 12-jul-2026 en `interimobel.mx` — ver `08-seleccion-producto-mes1.md`. El equipo comercial debe reconfirmar vigencia inmediatamente antes de publicar, ya que los precios de e-commerce de mueblería cambian con frecuencia — pero ya no hay ambigüedad de qué SKU se muestra ni riesgo de que la suma no cuadre con el titular.)*
 
-- **Slide 8 (cierre):** sin texto — el Director no marcó esta slide con zona de texto.
+- **Slide 7 (cierre):** sin texto — el Director no marcó esta slide con zona de texto.
 
 ### Caption (Instagram/TikTok)
 
-¿Te vas a independizar y tu presupuesto para amueblar el depa es de $12,000 pesos o menos? Se puede, y no es magia, es orden 👇
+¿Te vas a independizar y tu presupuesto para amueblar el depa es de $9,000 pesos o menos? Se puede, y no es magia, es orden 👇
 
-Empieza por lo que sí vas a usar todos los días (una silla, una mesa, algo para sentarte a ver la tele) y deja lo demás para después. No necesitas comprar la casa completa en un solo fin de semana.
+Empieza por lo que sí vas a usar todos los días (una silla, una mesa, un lugar donde guardar tu ropa) y deja lo demás para después. No necesitas comprar la casa completa en un solo fin de semana.
 
-Desliza y arma tu depa pieza por pieza. ¿Qué es lo primero que comprarías tú — silla, mesa o sala? Cuéntanos en comentarios 👀
+Desliza y arma tu depa pieza por pieza. ¿Qué es lo primero que comprarías tú — silla, mesa o armario? Cuéntanos en comentarios 👀
 
 ### Hashtags
 
@@ -98,7 +99,9 @@ Desliza para ver la misma casa, antes y después.
 
 ---
 
-## Semana 2 · Pieza 4 — El cuarto que cambia de uso: reclinables + Comfort Tech (Segmento 4 — Cuando el Cuarto Cambia de Dueño)
+## Semana 2 · Pieza 4 — El cuarto que cambia de uso: Sillón Reclinable Milan + Colchón Freedom - América (Segmento 4 — Cuando el Cuarto Cambia de Dueño)
+
+*(Título y caption actualizados por el Decorador de Interiores: "Comfort Tech" no se pudo verificar como producto/línea real de interimobel.mx —ver `08-seleccion-producto-mes1.md`— y "Sillón Individual Shell" no confirmaba mecanismo reclinable en el nombre. Se reemplazan por los productos reales confirmados: Sillón Reclinable Milan y Colchón Freedom - América, ver `04-storyboard-mes1.md`.)*
 
 **Plataforma:** Facebook (canal primario del segmento). **Formato:** carrusel de 7 slides.
 
@@ -115,13 +118,13 @@ El cuarto se quedó como estaba durante un tiempo. Ni vacío del todo, ni realme
 
 Un sillón reclinable junto a la ventana. Un colchón listo para cuando llegue quien se quede a dormir. La misma habitación, ahora con un motivo distinto para entrar a ella.
 
-Si tienes un espacio así en casa, en Interimobel encuentras reclinables y colchones Comfort Tech pensados para ese tipo de cambio — el que no se apura, pero que sí se disfruta cuando por fin sucede.
+Si tienes un espacio así en casa, en Interimobel encuentras el Sillón Reclinable Milan y el Colchón Freedom - América, pensados para ese tipo de cambio — el que no se apura, pero que sí se disfruta cuando por fin sucede.
 
 Conócelos en interimobel.mx o platícanos por WhatsApp qué habitación estás por cambiarle el uso.
 
 ### Hashtags
 
-#Interimobel #Reclinables #ComfortTech #Hogar #Mexico
+#Interimobel #Reclinables #Colchones #Hogar #Mexico
 
 ---
 
@@ -153,6 +156,8 @@ Quisimos abrirte la puerta a ese proceso: la madera antes de convertirse en estr
 
 ## Semana 3 · Pieza 6 — Testimonio: renovar con criterio (Segmento 3 — Renovación con Criterio)
 
+*(Caption actualizado por el Decorador de Interiores: se retira "colchones Comfort Tech" —no verificado como producto real, ver `08-seleccion-producto-mes1.md`— y se generaliza a "colchones", ya que el nombre de marca específico usado en el storyboard de esta pieza, Colchón Kivu - Sealy, no se muestra en pantalla ni se cita por nombre en el copy.)*
+
 **Plataforma:** Facebook (canal primario del segmento). **Formato:** carrusel de 6 slides.
 
 ### Texto en pantalla
@@ -168,7 +173,7 @@ Llevaba tiempo pensándolo antes de decidirse: no necesitaba una casa nueva, nec
 
 Así se ve renovar con criterio: no todo a la vez, no por moda, sino por lo que la casa realmente necesita en esta etapa.
 
-Si hay una pieza en tu casa que ya cumplió su ciclo, conoce nuestra línea de salas modulares y colchones Comfort Tech en interimobel.mx.
+Si hay una pieza en tu casa que ya cumplió su ciclo, conoce nuestra línea de salas modulares y colchones en interimobel.mx.
 
 ### Hashtags
 
