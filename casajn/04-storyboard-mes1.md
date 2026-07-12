@@ -1,0 +1,201 @@
+# Storyboard y Concepto Visual — Mes 1 "La Casa se Acomoda"
+## Interimobel — 7 carruseles + 1 video ancla (agosto 2026)
+
+**Rol de este documento:** dirección creativa y storyboard visual únicamente. No contiene copy final ni captions — cada slide/toma incluye una descripción de "de qué habla visualmente" para que el Copywriter tenga un brief concreto sobre qué escribir. Los textos en pantalla se marcan como **[ZONA DE TEXTO]** (espacio reservado, sin redactar).
+**Fuente de las 8 piezas:** `03-mes1-ia-driven-notion.md` (tema/segmento/semana ya aprobados — este documento los desarrolla, no inventa piezas nuevas).
+**Fecha:** 12 de julio de 2026.
+
+---
+
+## 0. Notas técnicas transversales (leer antes de producir)
+
+- **Formato:** 4:5 (1080×1350 px) para todos los carruseles de feed. El cover puede duplicarse en 1:1 (1080×1080) solo si se reutiliza como thumbnail de Reels/perfil — se indica por pieza cuando aplica.
+- **Texto dentro de la imagen generada por IA:** los modelos actuales (Higgsfield, Freepik/Magnific) no renderizan texto largo legible de forma confiable. Regla de producción: **el prompt de IA nunca pide tipografía**; cada slide que necesita texto deja una **zona de negativo/espacio limpio** (indicada como **[ZONA DE TEXTO]**) donde el equipo de diseño sobrepone la tipografía en post (Canva/Figma) — no se genera con el modelo.
+- **Continuidad facial de personajes:** cuando una misma persona aparece en más de un slide o toma (testimonios, video ancla), no asumir que el modelo mantendrá el rostro idéntico entre generaciones independientes. Mitigación: (a) usar la función de referencia de personaje/imagen semilla del mismo modelo para todas las variantes de esa persona, o (b) preferir encuadres que evitan el problema — manos, espalda, silueta a contraluz, three-quarter con rostro parcialmente fuera de cuadro — en vez de primeros planos frontales repetidos de la misma persona.
+- **Multitudes:** ningún slide requiere más de 2 personas en cuadro simultáneamente — grupos numerosos con continuidad de rasgos son un caso conocido de falla en generación actual.
+- **No se nombra a Mundo In** en ningún elemento (regla dura transversal del encargo, aunque no aplica de forma directa a este cliente).
+- **Ninguna pieza insinúa entrega inmediata/express.** Ningún prompt incluye mensajería de reparto urgente, contador regresivo, ni "hoy mismo" — riesgo operativo documentado (quejas reales de logística en `01-investigacion-mercado-interimobel.md`, sección 1.4).
+
+### Hilo de continuidad visual del mes (para que las 8 piezas se lean como una sola campaña)
+
+1. **Paleta madre común:** base neutra cálida (blanco roto, beige arena, madera clara/media) que cada segmento inflexiona con un acento propio (tabla abajo) — nunca paletas que compitan entre sí.
+2. **Motivo recurrente "umbral":** al menos un slide o toma por pieza compone la imagen usando un marco arquitectónico real de la casa — puerta, ventana, pasillo — como metáfora de "la casa se acomoda" (se atraviesa un umbral hacia la nueva etapa). Es el hilo conductor de todo el mes y el puente directo hacia el video ancla.
+3. **Luz natural siempre**, nunca luz de estudio artificial ni flash — coherente con el tono "fotografía de contexto real" ya validado en `02-campana-segmento4-cuarto-que-cambia-de-dueno.md`.
+4. **Logo/wordmark** en la misma posición (esquina inferior derecha, discreto) en el último slide de cada carrusel y en el cierre del video.
+5. **Acento cromático por segmento** (para que el ojo entrenado del feed distinga el "capítulo" sin romper la familia visual):
+
+| Segmento | Acento cromático | Temperatura de luz | Energía visual |
+|---|---|---|---|
+| 1 — Primer Espacio Propio | Ocre/mostaza vibrante | Mediodía, alto contraste | Alta, dinámica, encuadres inclinados permitidos |
+| 2 — Casa Nueva/Familia Joven | Terracota cálido | Media tarde, dorada | Media, estable, encuadres rectos |
+| 3 — Renovación con Criterio | Verde salvia / madera nogal | Atardecer suave | Baja, serena, encuadres simétricos |
+| 4 — Cuando el Cuarto Cambia de Dueño | Arena/beige profundo | Tarde tenue, cálida | Muy baja, quieta, sin movimiento aparente |
+| Todos (fábrica / video ancla) | Madera natural + blanco roto (neutro que integra los 4 acentos) | Variable según segmento representado | Varía por toma |
+
+---
+
+## Semana 1 · Pieza 1 — "25 años vistiendo hogares mexicanos" (Segmento 3 — Renovación con Criterio)
+
+**Formato:** Carrusel IA, 7 slides, 4:5.
+**Tono:** sereno, de confianza, sin nostalgia forzada. No se generan "fotos de archivo" que aparenten ser documentación histórica genuina de la marca — se evocan eras de decoración mexicana de forma estilizada, sin falsificar historia real.
+
+| # | Descripción visual | Encuadre / luz / paleta | Personas / props (catálogo real) | Prompt técnico IA |
+|---|---|---|---|---|
+| 1 (cover) | Sala mexicana contemporánea de tonos cálidos, ventana grande con luz de atardecer entrando en diagonal, silla vacía en primer plano con textura de madera visible. Zona superior limpia. | Plano medio, lente 35mm, luz dorada de atardecer, paleta verde salvia + nogal. | Sin personas. Sala modular (línea Elite/Premium) y mesa de centro. | "Interior de sala mexicana contemporánea, luz cálida de atardecer entrando por ventana grande, silla individual de madera nogal en primer plano, paleta verde salvia y beige, fotografía editorial de interiores, lente 35mm, profundidad de campo media, sin personas, --ar 4:5" |
+| 2 | Detalle de manos (persona ~50-55 años) tocando la tela de un sillón reclinable, gesto de apreciar la textura, sin mostrar rostro. | Primer plano macro, luz lateral suave. | Manos de adulto de mediana edad; sillón reclinable. | "Close-up macro de manos de una persona adulta (50s) tocando la tela texturizada de un sillón reclinable, luz lateral suave, tonos cálidos neutros, sin rostro visible, fotografía de producto lifestyle, --ar 4:5" |
+| 3 | Recámara completa con armario, cómoda y base de cama a juego, luz de mañana entrando por cortina semi-translúcida. | Plano general, cámara a altura de cintura, ligera angulación. | Sin personas. Armario + cómoda + base de cama. | "Recámara mexicana de clase media, armario de madera clara, cómoda a juego, base de cama tapizada, luz de mañana filtrada por cortina translúcida, paleta cálida neutra, fotografía arquitectónica, --ar 4:5" |
+| 4 | Persona (55-60 años, de espaldas o three-quarter, rostro parcialmente fuera de cuadro) sentada al borde de una cama probando un colchón Comfort Tech, gesto tranquilo. | Plano medio, luz de ventana lateral, cámara a nivel de los ojos del sujeto. | Persona adulta mayor; colchón Comfort Tech. | "Persona adulta (mediana edad avanzada) sentada al borde de la cama probando un colchón, encuadre de espaldas/three-quarter sin rostro frontal, luz natural de ventana lateral, ambiente sereno, fotografía documental de interiores, --ar 4:5" |
+| 5 | Umbral de puerta (motivo recurrente del mes): vista desde un pasillo hacia una sala iluminada, sensación de "entrar a un espacio que ya conoces". | Plano general, simetría central, luz cálida al fondo. | Sin personas. | "Vista simétrica a través de un umbral de puerta hacia una sala iluminada con luz cálida de atardecer, pasillo en sombra suave en primer plano, composición central, fotografía arquitectónica serena, --ar 4:5" |
+| 6 | Comedor con mesa y sillas de la línea real (estilo Malta/Amelia), mantel puesto de forma sencilla, sin comensales — evoca continuidad familiar sin mostrar personas específicas. | Plano medio-alto, luz cenital suave. | Sin personas. Mesa comedor + sillas. | "Comedor mexicano de clase media con mesa de madera oscura y sillas tapizadas, mantel de lino simple, luz cenital suave de tarde, ambiente cálido sin comensales, fotografía editorial, --ar 4:5" |
+| 7 (cierre) | Plano amplio de sala completa al atardecer con luces cálidas encendidas, zona inferior-derecha limpia para logo. **[ZONA DE TEXTO]** en tercio superior. | Plano general, luz dorada de "hora mágica". | Sin personas. | "Sala completa de casa mexicana al atardecer, luces cálidas interiores encendidas, hora dorada, composición amplia con espacio negativo superior para texto, --ar 4:5" |
+
+**Continuidad con el mes:** abre el mes con el acento verde salvia/nogal del Segmento 3 y establece el motivo "umbral" (slide 5), que reaparece en la Pieza 2 y en el video ancla. Es la pieza más "quieta" del mes — contraste deliberado con la energía de la Pieza 2, publicada la misma semana.
+
+---
+
+## Semana 1 · Pieza 2 — "Amuebla tu depa con $15,000 MXN" (Segmento 1 — Primer Espacio Propio)
+
+**Formato:** Carrusel IA, 8 slides, 4:5 (cover duplicable en 1:1 para Reels/perfil).
+**Tono:** dinámico, tipo TikTok ya validado por la marca — sí puede tener energía, color saturado, encuadres inclinados y ritmo rápido de slide a slide (se ejecuta en carrusel, no en video, por regla del proyecto).
+
+**Nota de mezcla de producto (ilustrativa, a validar por el equipo comercial):** con base en precios indexados reales del documento 01 (Silla Oslo Vento $590, Mesa Comedor Erza $1,750, Sala Fantasy ~$2,750, Armario Lima ~$6,655), una combinación ilustrativa de depa de entrada ronda los $13,500–$15,000 MXN. El copywriter y el equipo de producto deben confirmar SKU y precios vigentes antes de publicar — esta cifra es un marco visual, no un precio a publicar sin validar.
+
+| # | Descripción visual | Encuadre / luz / paleta | Personas / props | Prompt técnico IA |
+|---|---|---|---|---|
+| 1 (cover) | Flat-lay dinámico de un depa pequeño visto en diagonal (planta arquitectónica estilizada), con bloques de color ocre/mostaza delimitando zonas (sala, comedor, recámara). Zona central limpia. **[ZONA DE TEXTO: cifra grande]** | Plano cenital (top-down), luz dura de mediodía, alto contraste. | Sin personas. Siluetas de sala, mesa y cama en miniatura. | "Fotografía cenital estilizada de un departamento pequeño con zonas delimitadas por bloques de color mostaza y blanco, luz dura de mediodía, alto contraste, composición gráfica tipo infografía editorial, --ar 1:1" |
+| 2 | Persona joven (~24 años) entrando a un depa vacío por primera vez, maleta en mano, luz de mediodía entrando por ventana sin cortinas. | Plano medio, cámara con ligera inclinación (dutch angle), luz dura. | Persona joven (perfil o cuerpo completo). Espacio vacío. | "Persona joven de unos 24 años entrando a un departamento vacío con una maleta, luz dura de mediodía por ventana sin cortinas, encuadre con ligera inclinación dutch angle, paleta ocre y blanco, estética editorial urbana, --ar 4:5" |
+| 3 | Silla suelta de entrada (tipo Oslo Vento) sobre piso vacío, foto de producto con actitud, sombra dura marcada. | Plano bajo (cámara a nivel del piso), luz dura lateral. | Sin personas. Silla individual. | "Fotografía de producto de una silla individual de comedor moderna sobre piso de departamento vacío, cámara a nivel del piso, sombra dura lateral marcada, paleta ocre y blanco, estilo editorial de producto, --ar 4:5" |
+| 4 | Mesa de comedor pequeña con 2 sillas ya integradas al espacio, aún sin decoración adicional — sensación de "primer mueble instalado". | Plano medio-alto, luz dura de tarde. | Sin personas. Mesa comedor + 2 sillas. | "Mesa de comedor pequeña con dos sillas en un departamento recién amueblado, luz dura de tarde entrando por ventana, ambiente minimalista de primer espacio propio, paleta ocre-blanco, --ar 4:5" |
+| 5 | Sala compacta tipo sofá-cama (Sala Fantasy o equivalente) ya colocada, con una persona joven sentada casualmente revisando su teléfono. | Plano medio, cámara a la altura del sofá, luz natural de tarde. | Persona joven (de perfil o espalda). Sala compacta/sofá-cama. | "Persona joven sentada casualmente en un sofá-cama compacto en un departamento pequeño, revisando su teléfono, luz natural de tarde, encuadre de perfil, paleta ocre y blanco, estética lifestyle urbana, --ar 4:5" |
+| 6 | Recámara mínima con cama y armario compacto (tipo Lima), luz de ventana con sombra de persiana proyectada en la pared. | Plano medio, luz lateral con patrón de sombra. | Sin personas. Cama + armario compacto. | "Recámara pequeña con cama simple y armario compacto de madera clara, sombra de persiana proyectada en la pared por luz de tarde, paleta ocre-blanco, fotografía editorial minimalista, --ar 4:5" |
+| 7 | Composición cenital tipo "desglose" con objetos reales (silla, mesa, armario en miniatura o maqueta) ordenados en fondo plano, zona lateral limpia. **[ZONA DE TEXTO: desglose de precio]** | Plano cenital, luz dura, alto contraste. | Sin personas. | "Composición cenital de objetos de mobiliario en miniatura (silla, mesa, armario) ordenados como desglose visual, luz dura simulando luz natural intensa, fondo blanco, espacio negativo lateral para texto, --ar 4:5" |
+| 8 (cierre) | Plano amplio del depa ya amueblado con las piezas mostradas; persona joven de espaldas admirando el resultado desde el umbral de la puerta (conecta con el motivo "umbral" del mes). | Plano general, luz dorada de tarde. | Persona joven de espaldas. Depa completo. | "Departamento pequeño completamente amueblado visto desde el umbral de la puerta, persona joven de espaldas admirando el espacio, luz dorada de tarde, paleta ocre y blanco, composición con motivo de umbral, --ar 4:5" |
+
+**Continuidad con el mes:** usa el acento ocre/mostaza del Segmento 1 y cierra (slide 8) con el mismo motivo de "umbral" que abrió la Pieza 1 — mismo concepto arquitectónico, energía opuesta. El feed muestra dos maneras de cruzar el mismo umbral según la etapa de vida.
+
+---
+
+## Semana 2 · Pieza 3 — Antes/después: casa completa amueblada (Segmento 2 — Casa Nueva/Familia Joven)
+
+**Formato:** Carrusel IA, 8 slides, 4:5. Estructura de 3 pares antes/después + cover + cierre.
+
+| # | Descripción visual | Encuadre / luz / paleta | Personas / props | Prompt técnico IA |
+|---|---|---|---|---|
+| 1 (cover) | Puerta principal entreabierta con luz cálida saliendo del interior, sugiriendo "una casa nueva por descubrir". Zona superior limpia. | Plano medio, luz de media tarde. | Sin personas. | "Puerta principal de una casa entreabierta con luz cálida saliendo del interior al atardecer, exterior en penumbra suave, paleta terracota, fotografía editorial de arquitectura residencial, --ar 4:5" |
+| 2 | ANTES — sala vacía, paredes blancas, luz dura de mediodía sin cortinas, eco de espacio sin usar. | Plano general, simetría central, luz dura neutra. | Sin personas. | "Sala completamente vacía de una casa nueva, paredes blancas, piso sin alfombra, luz dura de mediodía entrando sin cortinas, sensación de espacio en blanco, fotografía arquitectónica, --ar 4:5" |
+| 3 | DESPUÉS — la misma sala (misma composición de cámara que el slide 2, para que el "antes/después" se lea como continuidad, no como dos fotos sueltas) con sala 3-2 y centro de TV instalados, cojines, tapete, luz de media tarde cálida. | Mismo encuadre que slide 2, luz ahora dorada. | Sin personas. Sala 3-2 + centro de TV + mesa de centro. | "La misma sala vacía ahora completamente amueblada con sala 3-2, centro de TV y mesa de centro, tapete y cojines, luz cálida de media tarde, mismo ángulo de cámara que la versión vacía, paleta terracota, --ar 4:5" |
+| 4 | ANTES — comedor vacío, piso desnudo, ventana sin cortina, luz plana. | Plano general, misma lógica de encuadre fijo. | Sin personas. | "Comedor completamente vacío de una casa nueva, piso desnudo, ventana sin cortinas, luz plana de mediodía, fotografía arquitectónica neutra, --ar 4:5" |
+| 5 | DESPUÉS — mismo comedor con mesa y sillas de la línea real (ej. Kiara/Amelia) puestas, mantel simple, luz cálida de tarde. | Mismo encuadre que slide 4, luz dorada. | Sin personas. Mesa comedor + sillas. | "El mismo comedor vacío ahora amueblado con mesa de comedor de madera y sillas tapizadas, mantel de lino, luz cálida de tarde, mismo ángulo de cámara que la versión vacía, paleta terracota, --ar 4:5" |
+| 6 | ANTES — recámara principal vacía, caja de mudanza cerrada en una esquina (única señal de "recién llegados", sin desorden excesivo), luz de mañana. | Plano general, encuadre fijo. | Sin personas. Una caja de mudanza cerrada. | "Recámara vacía de una casa nueva con una sola caja de mudanza cerrada en una esquina, luz de mañana entrando por ventana, ambiente de mudanza reciente, fotografía arquitectónica, --ar 4:5" |
+| 7 | DESPUÉS — misma recámara con cama, cabecero, cómoda y burós de la línea real, luz cálida de tarde, caja ya no está. | Mismo encuadre que slide 6, luz dorada. | Sin personas. Cama + cabecero + cómoda + burós. | "La misma recámara ahora amueblada con cama, cabecero, cómoda y burós de madera clara, luz cálida de tarde, mismo ángulo de cámara que la versión vacía, sin cajas, paleta terracota, --ar 4:5" |
+| 8 (cierre) | Plano amplio de la casa completa (sala + comedor visibles desde un mismo punto, típico de plantas abiertas) al atardecer, con una pareja joven (mostrada de espaldas o a media distancia, sin rostro frontal cercano) caminando hacia el fondo del espacio ya amueblado — motivo "umbral" desde el interior hacia el resto de la casa. | Plano general profundo, luz dorada. | Pareja joven de espaldas/media distancia. Sala + comedor amueblados. | "Casa de planta abierta con sala y comedor ya amueblados, pareja joven caminando de espaldas hacia el fondo del espacio al atardecer, luz dorada, composición profunda con motivo de umbral interior, paleta terracota, --ar 4:5" |
+
+**Continuidad con el mes:** introduce el acento terracota del Segmento 2 y usa un recurso propio (par antes/después con encuadre idéntico) que ninguna otra pieza del mes repite — mantiene la variedad de recursos narrativos sin salirse de la paleta madre. El cierre retoma el motivo "umbral" ahora visto desde adentro hacia afuera.
+
+---
+
+## Semana 2 · Pieza 4 — El cuarto que cambia de uso: reclinables + Comfort Tech (Segmento 4 — Cuando el Cuarto Cambia de Dueño)
+
+**Formato:** Carrusel IA, 7 slides, 4:5.
+**Tono:** sereno, sin urgencia artificial, sin FOMO, sin superlativos visuales (nada de destellos, confeti, contadores). Ángulo: comodidad y continuidad, no novedad ni inmediatez — regla dura heredada de `02-campana-segmento4-cuarto-que-cambia-de-dueno.md`.
+
+| # | Descripción visual | Encuadre / luz / paleta | Personas / props | Prompt técnico IA |
+|---|---|---|---|---|
+| 1 (cover) | Puerta de una habitación entreabierta, con luz cálida y tenue saliendo — se insinúa que es un cuarto que "vuelve a tener uso", sin mostrar aún qué hay dentro. Zona superior limpia. | Plano medio, luz de tarde tenue. | Sin personas. | "Puerta entreabierta de una habitación con luz cálida tenue saliendo del interior, pasillo en penumbra suave, paleta arena y beige profundo, fotografía arquitectónica serena, --ar 4:5" |
+| 2 | ANTES (implícito, sin caja ni nostalgia forzada) — habitación con restos neutros de uso anterior: un librero vacío, paredes con marcas leves de cuadros retirados, luz de tarde suave. | Plano general, luz difusa. | Sin personas. | "Habitación en transición con librero vacío y marcas leves de cuadros retirados en la pared, luz de tarde suave y difusa, ambiente sereno sin desorden, paleta arena, --ar 4:5" |
+| 3 | DESPUÉS — la misma habitación (mismo encuadre) convertida en sala de descanso con sillón reclinable, luz cálida de tarde, ambiente quieto. | Mismo encuadre que slide 2, luz más cálida. | Sin personas. Sillón reclinable. | "La misma habitación ahora con un sillón reclinable individual junto a la ventana, luz cálida de tarde, ambiente sereno de descanso, mismo ángulo de cámara que la versión en transición, paleta arena y beige, --ar 4:5" |
+| 4 | Detalle de una persona (60-65 años, de espaldas o three-quarter) sentada en el sillón reclinable con un libro cerrado sobre el regazo, mirada hacia la ventana — gesto de calma, no de "actividad" forzada. | Plano medio, luz de ventana lateral suave. | Persona adulta mayor (sin rostro frontal cercano). Sillón reclinable. | "Persona adulta mayor sentada en un sillón reclinable mirando hacia una ventana, libro cerrado sobre el regazo, luz suave de tarde, encuadre de espaldas o three-quarter sin rostro frontal, ambiente sereno, --ar 4:5" |
+| 5 | Colchón Comfort Tech en una recámara de huéspedes ya lista, ropa de cama tendida con esmero, luz de tarde entrando suavemente — comunica "listo para quien lo necesite", no urgencia. | Plano medio-alto, luz difusa cálida. | Sin personas. Colchón Comfort Tech + base de cama. | "Recámara de huéspedes con colchón tendido con ropa de cama neutra y cálida, luz suave de tarde, ambiente de cuidado y calma, sin personas, fotografía editorial de interiores, --ar 4:5" |
+| 6 | Vista a través de una ventana desde dentro de la habitación hacia el jardín o patio (motivo "umbral" adaptado a ventana en vez de puerta), luz de tarde muy suave, sin movimiento. | Plano medio, simetría, luz tenue. | Sin personas. | "Vista desde el interior de una habitación hacia un jardín a través de una ventana, luz de tarde muy suave y tenue, composición simétrica y quieta, paleta arena y beige profundo, --ar 4:5" |
+| 7 (cierre) | Plano general de la habitación completa (reclinable + detalles cálidos) al final de la tarde, zona inferior-derecha limpia para logo. **[ZONA DE TEXTO]** | Plano general, luz de tarde muy tenue. | Sin personas. | "Habitación completa convertida en espacio de descanso, sillón reclinable y detalles cálidos, luz de tarde muy tenue, composición amplia y serena, espacio negativo para texto, --ar 4:5" |
+
+**Continuidad con el mes:** usa el acento arena/beige profundo, más oscuro y quieto que cualquier otro segmento — deliberadamente la pieza de "energía visual" más baja del mes, en contraste directo con la Pieza 2 publicada la semana anterior. El motivo "umbral" se adapta aquí a una ventana en vez de una puerta, variación intencional para no volverse repetitiva.
+
+---
+
+## Semana 3 · Pieza 5 — "Así se fabrica": detrás de cámaras (Todos los segmentos)
+
+**Formato:** Carrusel IA, 7 slides, 4:5.
+**Tono:** cálido, orgulloso sin ser triunfalista, ligado a la narrativa "hecho en México" ya presente en el TikTok actual de la marca (documento 01, sección 3.3) — aquí elevada a un tratamiento visual editorial en vez de casual.
+
+| # | Descripción visual | Encuadre / luz / paleta | Personas / props | Prompt técnico IA |
+|---|---|---|---|---|
+| 1 (cover) | Rollo de tela o textura de madera en primer plano, con manos trabajando fuera de foco al fondo — abre con material, no con maquinaria. Zona superior limpia. | Primer plano con fondo desenfocado, luz industrial cálida. | Manos de trabajador desenfocadas al fondo. Materia prima (madera/tela). | "Primer plano de textura de madera natural con manos de trabajador trabajando fuera de foco al fondo, luz cálida tipo taller, profundidad de campo baja, fotografía editorial de manufactura, --ar 4:5" |
+| 2 | Persona (adulta, de perfil o manos en primer plano) lijando o ensamblando una pieza de madera de una estructura de sillón, taller con luz natural entrando por ventana alta. | Plano medio, luz lateral de taller. | Persona trabajadora (perfil/manos, sin frontal cercano). Estructura de mueble en proceso. | "Persona trabajando en un taller de manufactura de muebles, lijando una estructura de madera, luz natural entrando por ventana alta, encuadre de perfil o manos, ambiente cálido de taller, --ar 4:5" |
+| 3 | Rollos de tela tapizada apilados por color, en tonos que anticipan la paleta madre del mes (arena, terracota, verde salvia, ocre) — puente visual directo a los 4 segmentos sin mostrarlos aún. | Plano medio-alto, luz natural de bodega. | Sin personas. Rollos de tela. | "Rollos de tela para tapicería apilados por color en tonos arena, terracota, verde salvia y ocre, luz natural de bodega, composición ordenada, fotografía editorial de manufactura textil, --ar 4:5" |
+| 4 | Detalle de costura/tapizado de un sillón en proceso, manos trabajando con precisión, luz cálida. | Primer plano cerrado, luz dirigida suave. | Manos de trabajador. Tapizado en proceso. | "Close-up de manos tapizando un sillón artesanalmente, costura visible, luz cálida dirigida, fotografía de producto en proceso, alta definición de textura, --ar 4:5" |
+| 5 | Colchón Comfort Tech en línea de ensamblado, capas visibles (sin revelar tecnología patentada específica, solo la sensación de proceso cuidado), luz de nave industrial. | Plano general, luz cenital industrial cálida. | Sin personas o una persona de espaldas supervisando. Colchón en ensamblado. | "Colchón en proceso de ensamblado sobre banda de producción, capas de material visibles, luz cenital industrial cálida, ambiente ordenado y limpio, fotografía editorial de manufactura, --ar 4:5" |
+| 6 | Bodega de piezas terminadas (armarios, mesas, sillas) organizadas antes de despacho, luz cálida de tarde entrando por ventanales altos — comunica escala y cuidado, no rapidez logística. | Plano general amplio, luz dorada de nave industrial. | Sin personas. Piezas terminadas de varias categorías. | "Bodega de muebles terminados organizados en filas antes de despacho, armarios, mesas y sillas, luz dorada de tarde entrando por ventanales altos, composición amplia y ordenada, sin sensación de prisa, --ar 4:5" |
+| 7 (cierre) | Plano de una persona (de espaldas) colocando la última pieza de un mueble terminado bajo luz cálida, seguido de zona limpia para wordmark/logo. **[ZONA DE TEXTO]** | Plano medio, luz cálida final de jornada. | Persona trabajadora de espaldas. Mueble terminado. | "Persona de espaldas colocando la pieza final de un mueble terminado en un taller, luz cálida de final de jornada, composición serena con espacio negativo para texto, --ar 4:5" |
+
+**Continuidad con el mes:** es la única pieza que integra visualmente los 4 acentos cromáticos del mes en un solo carrusel (slide 3), funcionando como "bisagra" entre la primera mitad del mes (fundamento de marca, Piezas 1-4) y el cierre (Piezas 6-8). Prepara al espectador para el video ancla, que hace exactamente lo mismo pero en movimiento.
+
+---
+
+## Semana 3 · Pieza 6 — Testimonio: renovar con criterio (Segmento 3 — Renovación con Criterio)
+
+**Formato:** Carrusel IA, 6 slides, 4:5.
+**Tono:** sereno, sin urgencia, sin superlativos. Testimonio estilizado (no se declara como grabación real de cliente específico salvo que el cliente aporte uno genuino) — se construye como escena representativa, evitando cualquier cifra o cita que no haya sido verificada con un cliente real.
+
+| # | Descripción visual | Encuadre / luz / paleta | Personas / props | Prompt técnico IA |
+|---|---|---|---|---|
+| 1 (cover) | Persona (50-55 años, three-quarter o perfil) de pie junto a una sala modular Elite/Premium recién colocada, mirada hacia el mueble, no hacia cámara. Zona superior limpia. | Plano medio, luz de atardecer suave. | Persona adulta (perfil/three-quarter). Sala modular Elite/Premium. | "Persona adulta de unos 50 años de pie junto a una sala modular recién colocada en su hogar, mirada hacia el mueble sin ver a cámara, luz cálida de atardecer, encuadre de perfil, paleta verde salvia y nogal, --ar 4:5" |
+| 2 | Detalle de la persona pasando la mano sobre el respaldo del sillón, gesto de evaluar calidad/textura (evita cualquier gesto de "sorpresa" exagerada). | Primer plano medio, luz lateral suave. | Manos y torso de la persona. Sillón/sala. | "Close-up de una mano adulta pasando sobre el respaldo tapizado de un sillón, gesto de apreciar la calidad de la tela, luz lateral suave, tonos cálidos neutros, --ar 4:5" |
+| 3 | La misma sala vista en plano general dentro del espacio ya habitado (no un showroom), con objetos personales discretos alrededor (un libro, una manta doblada) que comunican "ya es parte de la casa". | Plano general, luz de tarde cálida. | Sin personas. Sala modular integrada al espacio. | "Sala modular integrada en un espacio habitado real, con un libro y una manta doblada como detalles personales discretos, luz cálida de tarde, ambiente hogareño no de showroom, --ar 4:5" |
+| 4 | Persona sentada en la sala, en reposo, mirando hacia una ventana — comunica satisfacción tranquila, no una pose de venta. | Plano medio, luz de ventana lateral. | Persona adulta (perfil). Sala modular. | "Persona adulta sentada en una sala modular mirando hacia una ventana en reposo, expresión tranquila de perfil, luz suave de tarde, ambiente sereno y auténtico, --ar 4:5" |
+| 5 | Detalle de un colchón Comfort Tech visible en otra habitación de la misma casa (a través de una puerta entreabierta — motivo "umbral"), sugiriendo que la renovación fue de más de una pieza, sin mostrarlo como "combo urgente". | Plano medio, simetría suave, luz tenue. | Sin personas. Colchón Comfort Tech visible al fondo. | "Vista a través de una puerta entreabierta hacia una recámara con un colchón visible al fondo, luz tenue de tarde, composición serena tipo umbral, sin sensación de urgencia, --ar 4:5" |
+| 6 (cierre) | Plano amplio de la sala y el comedor visibles desde un mismo ángulo, luz de atardecer, zona limpia para logo. **[ZONA DE TEXTO]** | Plano general, luz dorada suave. | Sin personas. | "Sala y comedor visibles desde un mismo ángulo amplio al atardecer, luz dorada suave, composición serena con espacio negativo para texto, paleta verde salvia y nogal, --ar 4:5" |
+
+**Continuidad con el mes:** retoma el acento verde salvia/nogal y el protagonista (persona de mediana edad avanzada) de la Pieza 1 — mismo "personaje tipo" del Segmento 3, reforzando que ambas piezas pertenecen al mismo capítulo de la narrativa, sin ser la misma persona idéntica (evita el riesgo de continuidad facial forzada entre piezas de semanas distintas).
+
+---
+
+## Semana 4 · Pieza 7 — "Antes de amueblar tu primer depa": 6 tips (Segmento 1 — Primer Espacio Propio)
+
+**Formato:** Carrusel IA, 8 slides (cover + 6 tips + cierre), 4:5 (cover duplicable en 1:1).
+**Tono:** dinámico, energía TikTok ya validada, ritmo rápido, encuadres inclinados permitidos — mismo registro visual que la Pieza 2, con variación de composición para no repetir slides.
+
+| # | Descripción visual | Encuadre / luz / paleta | Personas / props | Prompt técnico IA |
+|---|---|---|---|---|
+| 1 (cover) | Persona joven sosteniendo una lista o libreta pequeña (sin texto legible en la imagen), fondo de depa a medio amueblar, gesto de "checklist". Zona central limpia. | Plano medio, luz dura de mediodía, ligera inclinación. | Persona joven. Depa a medio amueblar. | "Persona joven sosteniendo una libreta pequeña sin texto visible, fondo de departamento a medio amueblar, luz dura de mediodía, encuadre con ligera inclinación dutch angle, paleta ocre y blanco, --ar 1:1" |
+| 2 (tip 1 — medir antes de comprar) | Persona joven usando una cinta métrica contra una pared vacía, gesto práctico y concreto. | Plano medio, luz dura lateral. | Persona joven. Cinta métrica, pared vacía. | "Persona joven midiendo una pared vacía con cinta métrica en un departamento sin amueblar, luz dura lateral de mediodía, encuadre dinámico, paleta ocre y blanco, --ar 4:5" |
+| 3 (tip 2 — priorizar piezas multiuso) | Sofá-cama (tipo Sala Fantasy) mostrado en dos posiciones sugeridas en una sola composición (plegado y extendido) mediante un collage de doble exposición sutil. | Plano medio, luz dura, composición de doble exposición. | Sin personas. Sofá-cama. | "Sofá-cama fotografiado en composición de doble exposición sutil mostrando su función plegada y extendida, luz dura de mediodía, paleta ocre y blanco, estilo editorial gráfico, --ar 4:5" |
+| 4 (tip 3 — piezas sueltas antes que sets grandes) | Silla individual y mesa pequeña en composición minimalista, espacio negativo amplio alrededor. | Plano cenital o frontal bajo, luz dura. | Sin personas. Silla + mesa pequeña. | "Silla individual y mesa pequeña en composición minimalista con amplio espacio negativo alrededor, luz dura de mediodía, paleta ocre y blanco, fotografía de producto editorial, --ar 4:5" |
+| 5 (tip 4 — aprovechar luz natural) | Ventana grande sin cortinas con silueta de mobiliario de entrada a contraluz, resaltando la luz como recurso de decoración de bajo costo. | Plano medio, contraluz marcado. | Sin personas. Silueta de silla/mesa a contraluz. | "Ventana grande sin cortinas con silueta de mobiliario de entrada a contraluz, luz dura de mediodía, alto contraste, paleta ocre y blanco, fotografía editorial minimalista, --ar 4:5" |
+| 6 (tip 5 — un color guía, no muchos) | Composición de 3-4 objetos pequeños (cojín, silla, mantel) todos en la misma gama ocre, mostrando cómo un solo acento cromático unifica un espacio económico. | Plano cenital, luz dura uniforme. | Sin personas. | "Composición cenital de objetos pequeños de decoración (cojín, tela, accesorio) todos en la misma gama de color ocre y mostaza, luz dura uniforme, fondo blanco, estilo editorial gráfico, --ar 4:5" |
+| 7 (tip 6 — dejar espacio para crecer) | Rincón vacío deliberado dentro de un depa ya amueblado, con luz entrando, comunicando "no llenar todo de inmediato". | Plano general, luz dura de tarde. | Sin personas. | "Rincón vacío deliberado dentro de un departamento ya amueblado, luz de tarde entrando por ventana, composición que sugiere espacio para crecer, paleta ocre y blanco, --ar 4:5" |
+| 8 (cierre) | Persona joven sentada en el suelo del depa ya con las piezas clave, sonriendo levemente hacia un punto fuera de cámara (no directo a cámara), zona limpia para logo. **[ZONA DE TEXTO]** | Plano medio-bajo, luz dorada de tarde. | Persona joven. Depa con piezas clave. | "Persona joven sentada en el suelo de un departamento con piezas clave de mobiliario alrededor, mirada hacia un punto fuera de cámara, luz dorada de tarde, paleta ocre y blanco, espacio negativo para texto, --ar 4:5" |
+
+**Continuidad con el mes:** cierra el arco del Segmento 1 (abierto en la Pieza 2) con el mismo acento ocre/mostaza y el mismo "personaje tipo" (persona joven, sin ser la misma persona idéntica). Es la última pieza antes del video ancla — deliberadamente la de mayor energía del mes, para contrastar con la calma del video de cierre.
+
+---
+
+## Semana 4 · Pieza 8 — Video ancla "La Casa se Acomoda" (Todos los segmentos)
+
+**Formato:** Video vertical 4:5 (o 9:16 si el placement de Reels lo requiere — confirmar con el equipo de medios antes de producción final).
+**Duración total objetivo:** 38 segundos (dentro del rango 30-45s solicitado).
+**Regla técnica dura:** cada toma tiene **un solo movimiento de cámara**. La sensación de "recorrido continuo por las 4 eras de la casa" (concepto del documento 03) se logra mediante **continuidad de dirección de movimiento y transiciones de corte coincidente (match cut)** entre tomas independientes — no mediante una sola toma técnicamente continua de 38 segundos, lo cual no es realista con las herramientas de generación de video IA actuales.
+
+### Shot list
+
+| Toma | Duración | Movimiento de cámara (único) | Qué representa | Descripción visual | Transición a la siguiente |
+|---|---|---|---|---|---|
+| 1 | 0:00–0:05 (5s) | Dolly in lento hacia la puerta principal de la casa | Establecimiento — "la casa" como constante | Fachada de una casa mexicana de clase media al atardecer, luz cálida, puerta principal cerrada al centro del encuadre | Corte coincidente: la puerta se abre justo en el corte, continuando la dirección de avance hacia adelante |
+| 2 | 0:05–0:10 (5s) | Paneo lateral lento (izquierda a derecha) | Segmento 1 — Primer Espacio Propio | Interior de un departamento pequeño recién amueblado con piezas de entrada (silla, mesa), luz de mediodía dura, acento ocre | Corte duro sincronizado al final del paneo, continuando el movimiento lateral hacia la siguiente escena |
+| 3 | 0:10–0:16 (6s) | Órbita lenta (media vuelta) alrededor de una sala+comedor completos | Segmento 2 — Casa Nueva/Familia Joven | Sala y comedor de una casa familiar, ya amueblados con sets completos, luz dorada de media tarde, acento terracota | Disolvencia cruzada (crossfade) de 0.5s hacia la siguiente toma |
+| 4 | 0:16–0:22 (6s) | Dolly in lento hacia un sillón/sala modular Elite/Premium | Segmento 3 — Renovación con Criterio | Sala modular de gama alta en una casa ya habitada, luz de atardecer suave, acento verde salvia/nogal, ambiente sereno | Corte suave (sin efecto visible) sincronizado con un gesto de "girar la mirada hacia la ventana" al final de la toma 4, que continúa como inicio de la toma 5 |
+| 5 | 0:22–0:28 (6s) | Tilt down lento (de la ventana hacia el sillón reclinable) | Segmento 4 — Cuando el Cuarto Cambia de Dueño | Habitación reconvertida en espacio de descanso, sillón reclinable, colchón Comfort Tech visible al fondo, luz de tarde tenue, acento arena/beige | Corte coincidente: continuidad del movimiento vertical hacia una toma que empieza también en tilt/ascenso |
+| 6 | 0:28–0:34 (6s) | Crane up / pull back lento desde el interior hacia el exterior de la casa | Cierre narrativo — las 4 eras conviven en una sola casa | Toma amplia de la fachada al anochecer con varias ventanas iluminadas cada una con un tono cálido ligeramente distinto (eco visual sutil de los 4 acentos, sin literalidad de "4 colores separados") | Corte a negro suave (fade) de 0.5s |
+| 7 | 0:34–0:38 (4s) | Zoom out muy sutil (o estático) sobre tarjeta de cierre | Cierre de marca | Fondo neutro cálido (blanco roto/arena) con wordmark "Interimobel" y tagline **[ZONA DE TEXTO: tagline]**, logo, sin movimiento de cámara adicional | — (fin) |
+
+**Total:** 38 segundos, 7 tomas, un movimiento por toma.
+
+### Dirección de arte
+
+- **Paleta:** progresión cálida constante (nunca se enfría la imagen) que va de luz dura de mediodía (toma 2, Segmento 1) a luz de atardecer (tomas 3-4) y luz de tarde tenue (toma 5), cerrando en anochecer cálido (toma 6) — la progresión de temperatura de luz *es* la narrativa del paso del tiempo/etapas de vida, sin necesidad de texto explicativo.
+- **Tratamiento de color por era (sutil, no separado en bloques):** cada toma lleva una micro-gradación de color hacia el acento de su segmento (ocre en toma 2, terracota en toma 3, verde salvia en toma 4, arena en toma 5) aplicada solo como temperatura/tinte general de escena, nunca como objetos literalmente coloreados o iluminación de neón — la diferenciación debe notarse en una segunda mirada, no gritar "esto es el segmento X".
+- **Tipografía en pantalla:** únicamente en la toma 7 (tarjeta de cierre), texto corto tipo wordmark/tagline — nunca texto largo o narrativo superpuesto durante las tomas 1-6 (regla técnica: la generación de video IA actual no sostiene texto legible en movimiento de forma confiable).
+- **Sonido/música (referencia para el equipo de audio, fuera del alcance de este documento):** progresión instrumental cálida sin letra, sin caída dramática de urgencia — coherente con "sin FOMO" en las tomas de Segmentos 3 y 4.
+- **Sin personas con continuidad facial forzada:** ninguna toma requiere el mismo rostro humano identificable en dos tomas distintas; donde se sugiere presencia humana (opcional en tomas 2 y 5), se resuelve con siluetas, encuadres de espaldas o ausencia total de personas — más seguro y consistente con las capacidades actuales de generación.
+
+**Continuidad con el resto del mes:** el video retoma literalmente la estructura de acentos cromáticos usada en los 7 carruseles (tabla de la sección 0) y el motivo "umbral" (toma 1, la puerta) que abrió el mes en la Pieza 1 y se repitió en las Piezas 2, 3, 4 y 6 — es la pieza que consolida visualmente que las 8 piezas fueron siempre una sola campaña.
