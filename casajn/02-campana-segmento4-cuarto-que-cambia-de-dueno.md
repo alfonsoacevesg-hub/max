@@ -1,10 +1,14 @@
-# Campaña de Redes Sociales — Segmento 4 "Nido que se Renueva"
-## Referencia de tono/branding: IKEA México y Coppel (evoluciones de marca recientes)
+# Campaña de Redes Sociales — Segmento 4 "Cuando el Cuarto Cambia de Dueño"
+## Capítulo de la idea-paraguas multigeneracional "La Casa se Acomoda" — referencia de tono/branding: IKEA México y Coppel
 
 **Cliente:** Interimobel.
-**Fecha de elaboración:** 12 de julio de 2026.
-**Segmento objetivo:** Segmento 4 de `01-investigacion-mercado-interimobel.md` — "Nido que se Renueva" (Boomer activo / pre-jubilación, ~59-70 años). Hijos que se van de casa, reduce espacio o rediseña una habitación (home office, cuarto de huéspedes, estudio). Motivado por comodidad y practicidad, no por tendencia. Canal primario: Facebook + WhatsApp Business. Categorías de catálogo que ya lo soportan: salas reclinables, colchones Comfort Tech, recámaras.
+**Fecha de elaboración:** 12 de julio de 2026 (revisado el mismo día para retirar la nomenclatura "Nido", ver nota abajo).
+**Segmento objetivo:** Segmento 4 de `01-investigacion-mercado-interimobel.md` — "Cuando el Cuarto Cambia de Dueño" (Boomer activo / pre-jubilación, ~59-70 años). Hijos que se van de casa, reduce espacio o rediseña una habitación (home office, cuarto de huéspedes, estudio). Motivado por comodidad y practicidad, no por tendencia. Canal primario: Facebook + WhatsApp Business. Categorías de catálogo que ya lo soportan: salas reclinables, colchones Comfort Tech, recámaras.
 **Alcance:** esta campaña es una extensión del plan de 90 días ya entregado — no lo reemplaza, lo profundiza específicamente para este segmento con dirección creativa inspirada en dos referencias de branding reciente que el cliente pidió replicar en tono (no en producto ni en presupuesto): IKEA y Coppel.
+
+**Nota sobre el cambio de nombre (retroalimentación directa del cliente):** la versión anterior llamaba a este segmento "Nido que se Renueva". Se retira esa nomenclatura porque (a) "nido vacío" no es una expresión de uso coloquial en México, y (b) nombrar cada segmento con una metáfora propia y aislada oscurecía que esto es **una sola campaña multigeneracional**, no cuatro campañas para cuatro públicos separados. Este documento desarrolla ahora el **tercer capítulo** de una idea-paraguas única de marca:
+
+> **"La Casa se Acomoda"** — en cada etapa de la vida, la misma casa (y la misma marca, con 25+ años de trayectoria) se ajusta a quien la habita. Los otros 3 capítulos (Primer Espacio Propio, Casa Nueva/Familia Joven, Renovación con Criterio) viven en `01-investigacion-mercado-interimobel.md`, sección 5, bajo el mismo paraguas — el big idea de este documento (sección 2) es la expresión específica de esa idea-paraguas para este segmento, no una campaña aislada.
 
 ---
 
@@ -14,7 +18,7 @@
 Campaña centrada en conexión emocional con momentos cotidianos reales de hogares mexicanos (espacios reducidos, presupuestos distintos, estilos de vida variados), con eje musical y ejecución 360° (redes, IKEA Family, email). No vende el mueble como objeto de diseño, vende el cambio de vida que produce el mueble.
 **Fuente:** [Portada — IKEA marketing México: estrategia humana](https://mercadotecnia.portada-online.com/2026/05/ikea-marketing-mexico-estrategia-hogar-real/); [Marketing Insider Review — IKEA lanza "Cambia tu hogar, cambia tus días"](https://marketinginsiderreview.com/ikea-mexico-lanza-campana-cambia-tu-hogar-cambia-tus-dias/) — consulta 12-jul-2026.
 
-**Qué se toma para Segmento 4:** la lógica de "el cambio pequeño en el espacio cambia el día a día" es exactamente el ángulo correcto para alguien que reduce o resignifica una habitación en esta etapa de vida (nido vacío) — no es una compra aspiracional, es una compra de bienestar cotidiano.
+**Qué se toma para Segmento 4:** la lógica de "el cambio pequeño en el espacio cambia el día a día" es exactamente el ángulo correcto para alguien que reduce o resignifica una habitación en esta etapa de vida (los hijos que se fueron de casa) — no es una compra aspiracional, es una compra de bienestar cotidiano.
 
 ### Coppel — evolución de identidad "Tú eres la llave" (presentada jun-2025)
 Grupo Coppel evolucionó su ícono histórico (la llave) hacia una versión modular y minimalista, adaptable a puntos de contacto físicos y digitales, desarrollada con Wolff Olins, The Juju y Brands&People, preservando los valores de confianza y cercanía construidos en décadas de operación. Despliegue en más de 500 tiendas con estrategia 360°.

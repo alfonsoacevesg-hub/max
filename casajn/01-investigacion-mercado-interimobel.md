@@ -190,7 +190,11 @@ Esta es la plataforma con **mayor volumen de contenido indexado y accesible** en
 
 Con base en la auditoría del sitio (sección 1-2) y de redes (sección 3), se proponen **4 segmentos generacionales**, diseñados para no contradecir lo ya observado (ej.: no se inventa una segmentación por edad que el catálogo actual no pueda sostener; se ancla cada segmento a categorías de producto reales del catálogo).
 
-### Segmento 1 — "Primer Nido" (Gen Z tardía / Millennial joven, ~22-30 años)
+**Nota de nomenclatura (revisión post-entrega, 12-jul-2026):** se descarta la metáfora de "nido" para nombrar segmentos (usada en una versión anterior de este documento como "Primer Nido" y "Nido que se Renueva") por retroalimentación directa del cliente: no es una expresión de uso coloquial en México y, al asignarle un nombre propio aislado a cada edad, diluye que se trata de **una sola campaña multigeneracional**, no de personas desconectadas entre sí. En su lugar, los 4 segmentos se enmarcan bajo una idea-paraguas única:
+
+> **"La Casa se Acomoda"** — en cada etapa de la vida, la misma casa (y la misma marca, con 25+ años de trayectoria) se ajusta a quien la habita. No son 4 campañas distintas para 4 públicos distintos; es una sola narrativa de marca que se expresa en un ángulo distinto según la etapa de vida del cliente — el mismo principio que Coppel usó al evolucionar su ícono de la llave sin reemplazarlo (ver `02-campana-segmento4-cuarto-que-cambia-de-dueno.md`).
+
+### Segmento 1 — "Primer Espacio Propio" (Gen Z tardía / Millennial joven, ~22-30 años)
 Independizándose o rentando su primer departamento. Presupuesto acotado, alta sensibilidad a precio, decisión de compra rápida e impulsiva vía redes.
 - **Ángulo de contenido:** piezas sueltas de entrada (sillas desde $590 MXN, mesas desde $1,750 MXN, salas de Mercado Libre ~$2,750 MXN), formato "amuebla tu depa en X presupuesto", tono TikTok ya validado por la marca (urgencia, cupones, humor).
 - **Canal primario:** TikTok e Instagram Reels.
@@ -208,7 +212,7 @@ Ya tiene casa amueblada; busca renovar piezas específicas (sala, colchón, come
 - **Canal primario:** Facebook (ya es su hábito de plataforma) + email/WhatsApp para seguimiento post-contacto.
 - **Coherencia con hallazgos:** Facebook ya tiene tono institucional; se trata de evolucionar ese tono a uno más aspiracional/de confianza sin perder el canal.
 
-### Segmento 4 — "Nido que se Renueva" (Boomer activo / pre-jubilación, ~59-70 años)
+### Segmento 4 — "Cuando el Cuarto Cambia de Dueño" (Boomer activo / pre-jubilación, ~59-70 años)
 Hijos que se van de casa, reduce espacio o rediseña una habitación para nuevo uso (home office, cuarto de huéspedes, estudio). Motivado por comodidad y practicidad más que por tendencia; alta confianza en recomendación directa y atención personalizada (sucursal física).
 - **Ángulo de contenido:** contenido híbrido online-offline ("visítanos en sucursal", ya presente en Facebook/TikTok de la marca), enfoque en piezas de comodidad (recámaras, colchones, salas reclinables — categoría ya existente en el catálogo), tono cálido y sin urgencia artificial (evitar el FOMO agresivo del contenido TikTok actual, que no resuena con este segmento).
 - **Canal primario:** Facebook + WhatsApp Business (el número de contacto 55 8106 5385 ya es canal activo confirmado en el sitio).
@@ -226,7 +230,7 @@ Objetivo: sentar la narrativa de marca renovada antes de escalar producto, aprov
 | Semana | Segmento foco | Formato | Pieza de contenido |
 |---|---|---|---|
 | 1 | Segmento 3 (Gen X) | Reel/TikTok 30-45s | Historia de marca: "25 años vistiendo hogares mexicanos" con planta/manufactura si disponible |
-| 1 | Segmento 1 (Primer Nido) | TikTok 15-20s | Reto "amuebla tu depa con $15,000 MXN" usando catálogo de entrada |
+| 1 | Segmento 1 (Primer Espacio Propio) | TikTok 15-20s | Reto "amuebla tu depa con $15,000 MXN" usando catálogo de entrada |
 | 2 | Segmento 2 (Familia joven) | Carrusel Instagram (6-8 slides) | "Antes/después" de una casa completa amueblada por Interimobel (sala+comedor+recámara) |
 | 2 | Segmento 4 (Boomer activo) | Post Facebook + foto | Presentación de línea de salas reclinables y colchones Comfort Tech, tono cálido, CTA a WhatsApp |
 | 3 | Todos | Historia Instagram/Facebook | Detrás de cámaras: "así se fabrica" (activo de manufactura nacional) |
