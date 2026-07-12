@@ -34,7 +34,9 @@ Si estás en el momento de renovar algo en tu casa —no de empezar de cero, sin
 
 ---
 
-## Semana 1 · Pieza 2 — "Amuebla tu depa con $15,000 MXN" (Segmento 1 — Primer Espacio Propio)
+## Semana 1 · Pieza 2 — "Amuebla tu depa con menos de $12,000 MXN" (Segmento 1 — Primer Espacio Propio)
+
+*(Título corregido en QA de marca, ver `06-qa-marca-mes1.md`: el titular original decía "$15,000 MXN" pero el desglose de la slide 7 suma $11,745 MXN — se ajustó el titular a la cifra real en vez de alterar el desglose, que corresponde exactamente al SKU pedido por el storyboard.)*
 
 **Plataforma:** Instagram (carrusel) / TikTok (formato carrusel de fotos) — tono TikTok adaptado a slides. **Formato:** carrusel de 8 slides.
 
@@ -42,7 +44,7 @@ Si estás en el momento de renovar algo en tu casa —no de empezar de cero, sin
 
 - **Slide 1 (cover, [ZONA DE TEXTO: cifra grande]):**
 
-> $15,000 MXN
+> Menos de $12,000 MXN
 > para amueblar tu primer depa, completo
 
 - **Slides 2–6:** sin texto — visuales (sin marca de zona).
@@ -60,7 +62,7 @@ Si estás en el momento de renovar algo en tu casa —no de empezar de cero, sin
 
 ### Caption (Instagram/TikTok)
 
-¿Te vas a independizar y tu presupuesto para amueblar el depa es de $15,000 pesos o menos? Se puede, y no es magia, es orden 👇
+¿Te vas a independizar y tu presupuesto para amueblar el depa es de $12,000 pesos o menos? Se puede, y no es magia, es orden 👇
 
 Empieza por lo que sí vas a usar todos los días (una silla, una mesa, algo para sentarte a ver la tele) y deja lo demás para después. No necesitas comprar la casa completa en un solo fin de semana.
 

@@ -53,12 +53,14 @@
 
 ---
 
-## Semana 1 · Pieza 2 — "Amuebla tu depa con $15,000 MXN" (Segmento 1 — Primer Espacio Propio)
+## Semana 1 · Pieza 2 — "Amuebla tu depa con menos de $12,000 MXN" (Segmento 1 — Primer Espacio Propio)
+
+*(Cifra corregida en QA de marca, ver `06-qa-marca-mes1.md`: la nota original decía "$13,500–$15,000 MXN", pero la suma real de los 4 SKU citados es $11,745 MXN. Se corrige aquí por consistencia con `05-copy-mes1.md`.)*
 
 **Formato:** Carrusel IA, 8 slides, 4:5 (cover duplicable en 1:1 para Reels/perfil).
 **Tono:** dinámico, tipo TikTok ya validado por la marca — sí puede tener energía, color saturado, encuadres inclinados y ritmo rápido de slide a slide (se ejecuta en carrusel, no en video, por regla del proyecto).
 
-**Nota de mezcla de producto (ilustrativa, a validar por el equipo comercial):** con base en precios indexados reales del documento 01 (Silla Oslo Vento $590, Mesa Comedor Erza $1,750, Sala Fantasy ~$2,750, Armario Lima ~$6,655), una combinación ilustrativa de depa de entrada ronda los $13,500–$15,000 MXN. El copywriter y el equipo de producto deben confirmar SKU y precios vigentes antes de publicar — esta cifra es un marco visual, no un precio a publicar sin validar.
+**Nota de mezcla de producto (ilustrativa, a validar por el equipo comercial):** con base en precios indexados reales del documento 01 (Silla Oslo Vento $590, Mesa Comedor Erza $1,750, Sala Fantasy ~$2,750, Armario Lima ~$6,655), una combinación ilustrativa de depa de entrada suma **$11,745 MXN** (menos de $12,000 MXN). El copywriter y el equipo de producto deben confirmar SKU y precios vigentes antes de publicar — esta cifra es un marco visual, no un precio a publicar sin validar.
 
 | # | Descripción visual | Encuadre / luz / paleta | Personas / props | Prompt técnico IA |
 |---|---|---|---|---|
