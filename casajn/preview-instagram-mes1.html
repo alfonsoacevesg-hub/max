@@ -1,0 +1,381 @@
+<title>Interimobel · Vista previa de feed — Mes 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --ground:#FBF8F3; --surface:#FFFFFF; --ink:#1A1714; --muted:#8C837B;
+    --line:#EAE3D8; --line-strong:#DDD4C6;
+    --link:#00375B;
+    --s1:#C7902B; --s2:#B05738; --s3:#77876A; --s4:#B99B6C; --all:#9A7B4F;
+    --heart:#ED4956;
+    --font-ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --font-brand:"Georgia","Times New Roman",serif;
+    --font-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --ground:#131009; --surface:#1B1712; --ink:#F1EBE1; --muted:#9C9089;
+      --line:#2C2620; --line-strong:#3A332B; --link:#7CC0F0;
+      --s1:#D8A63F; --s2:#C86E4C; --s3:#93A484; --s4:#CBAE80; --all:#B4956A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#131009; --surface:#1B1712; --ink:#F1EBE1; --muted:#9C9089;
+    --line:#2C2620; --line-strong:#3A332B; --link:#7CC0F0;
+    --s1:#D8A63F; --s2:#C86E4C; --s3:#93A484; --s4:#CBAE80; --all:#B4956A;
+  }
+  :root[data-theme="light"]{
+    --ground:#FBF8F3; --surface:#FFFFFF; --ink:#1A1714; --muted:#8C837B;
+    --line:#EAE3D8; --line-strong:#DDD4C6; --link:#00375B;
+    --s1:#C7902B; --s2:#B05738; --s3:#77876A; --s4:#B99B6C; --all:#9A7B4F;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--ground); color:var(--ink); font-family:var(--font-ui);
+    -webkit-font-smoothing:antialiased; line-height:1.45;
+    padding:32px 16px 80px;
+  }
+  .page-head{max-width:470px;margin:0 auto 26px;text-align:center}
+  .page-head .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--muted)}
+  .page-head h1{font-family:var(--font-brand);font-weight:600;font-size:26px;margin:10px 0 6px;
+    letter-spacing:-.01em;text-wrap:balance}
+  .page-head p{color:var(--muted);font-size:13.5px;margin:0 auto;max-width:42ch}
+  .legend{display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:center;margin:18px auto 0;max-width:470px}
+  .legend span{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted)}
+  .dot-key{width:9px;height:9px;border-radius:50%}
+  .controls{display:flex;gap:10px;justify-content:center;margin:20px auto 0;max-width:470px}
+  .controls button{font-family:var(--font-ui);font-size:12.5px;color:var(--ink);background:var(--surface);
+    border:1px solid var(--line-strong);border-radius:999px;padding:7px 15px;cursor:pointer;transition:.15s}
+  .controls button:hover{border-color:var(--muted)}
+  .controls button[aria-pressed="true"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+  .controls button:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+
+  .feed{max-width:470px;margin:30px auto 0;display:flex;flex-direction:column;gap:26px}
+
+  .post{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .p-head{display:flex;align-items:center;gap:11px;padding:11px 13px}
+  .avatar{width:34px;height:34px;border-radius:50%;flex:none;
+    background:conic-gradient(from 210deg,var(--s1),var(--s2),var(--s4),var(--s3),var(--s1));
+    padding:2px}
+  .avatar i{display:block;width:100%;height:100%;border-radius:50%;background:var(--surface);
+    display:flex;align-items:center;justify-content:center;font-family:var(--font-brand);
+    font-style:normal;font-weight:600;font-size:14px;color:var(--ink)}
+  .p-head .who{display:flex;flex-direction:column;line-height:1.2}
+  .p-head .who b{font-size:13px}
+  .p-head .who small{font-size:11px;color:var(--muted)}
+  .p-head .seg{margin-left:auto;font-size:10.5px;font-family:var(--font-mono);letter-spacing:.04em;
+    color:var(--muted);text-align:right;max-width:44%}
+
+  .media{position:relative;aspect-ratio:4/5;background:var(--ground)}
+  .media.reel{aspect-ratio:9/16}
+  .track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;height:100%;
+    scrollbar-width:none}
+  .track::-webkit-scrollbar{display:none}
+  .slide{flex:0 0 100%;scroll-snap-align:center;height:100%;position:relative;
+    display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .slide .art{position:absolute;inset:0}
+  .slide .scene{position:relative;z-index:2;padding:20px;text-align:center;max-width:78%}
+  .scene .chip{font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+    color:rgba(255,255,255,.82);background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.28);
+    padding:4px 9px;border-radius:999px;display:inline-block;backdrop-filter:blur(2px)}
+  .scene .desc{margin-top:12px;font-size:12.5px;color:rgba(255,255,255,.94);
+    text-shadow:0 1px 6px rgba(0,0,0,.5);line-height:1.4}
+  .scene .prod{margin-top:9px;font-size:11px;font-family:var(--font-mono);color:rgba(255,255,255,.8);
+    text-shadow:0 1px 4px rgba(0,0,0,.5)}
+  body.hide-notes .scene .chip,body.hide-notes .scene .desc,body.hide-notes .scene .prod{display:none}
+
+  /* COPY IN overlay — brand typography on the art */
+  .copyin{position:absolute;z-index:3;left:0;right:0;padding:26px 24px;pointer-events:none}
+  .copyin.center{top:50%;transform:translateY(-50%);text-align:center}
+  .copyin.lower{bottom:0;text-align:left;
+    background:linear-gradient(to top,rgba(0,0,0,.5),transparent)}
+  .copyin.band{bottom:0;text-align:center;padding:16px 18px 22px;
+    background:linear-gradient(to top,rgba(0,0,0,.55),transparent)}
+  .copyin .t{font-family:var(--font-brand);color:#fff;font-weight:600;letter-spacing:-.01em;
+    text-shadow:0 2px 12px rgba(0,0,0,.45);text-wrap:balance}
+  .copyin.center .t{font-size:25px;line-height:1.18}
+  .copyin.band .t{font-size:17px;line-height:1.22}
+  .copyin .sub{font-family:var(--font-brand);color:rgba(255,255,255,.92);font-size:14px;margin-top:6px;
+    text-shadow:0 2px 10px rgba(0,0,0,.45)}
+  .copyin .tip{font-family:var(--font-ui);font-weight:600;color:#fff;font-size:16px;
+    text-shadow:0 2px 10px rgba(0,0,0,.5)}
+  .copyin .tipn{font-family:var(--font-mono);font-size:11px;color:rgba(255,255,255,.8);
+    letter-spacing:.1em;display:block;margin-bottom:4px}
+
+  .counter{position:absolute;top:11px;right:11px;z-index:4;font-size:11px;font-weight:600;
+    color:#fff;background:rgba(0,0,0,.55);padding:3px 9px;border-radius:999px;font-variant-numeric:tabular-nums}
+  .badge-copyin{position:absolute;top:11px;left:11px;z-index:4;font-size:9.5px;font-family:var(--font-mono);
+    letter-spacing:.1em;color:#fff;background:var(--seg,#000);padding:3px 8px;border-radius:999px;
+    text-transform:uppercase;box-shadow:0 1px 6px rgba(0,0,0,.3)}
+  .reel-tag{position:absolute;top:11px;left:11px;z-index:4;font-size:10px;font-family:var(--font-mono);
+    letter-spacing:.08em;color:#fff;background:rgba(0,0,0,.5);padding:3px 9px;border-radius:6px}
+  .play{position:absolute;z-index:3;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:56px;height:56px;border-radius:50%;background:rgba(0,0,0,.4);display:flex;align-items:center;
+    justify-content:center;backdrop-filter:blur(2px)}
+  .play svg{margin-left:3px}
+
+  .dots{display:flex;gap:5px;justify-content:center;padding:9px 0 3px}
+  .dots i{width:6px;height:6px;border-radius:50%;background:var(--line-strong);transition:.2s}
+  .dots i.on{background:var(--seg,#3897f0);transform:scale(1.15)}
+
+  .actions{display:flex;align-items:center;gap:15px;padding:7px 13px 2px}
+  .actions svg{width:25px;height:25px;stroke:var(--ink);fill:none;stroke-width:1.8}
+  .actions .save{margin-left:auto}
+  .likes{padding:3px 13px 0;font-size:13px;font-weight:600}
+
+  .caption{padding:5px 13px 4px;font-size:13.5px;line-height:1.5}
+  .caption .u{font-weight:600;margin-right:6px}
+  .caption .line{display:block}
+  .caption .cta{color:var(--link);font-weight:500}
+  .tags{padding:3px 13px 0;font-size:13px;color:var(--link);line-height:1.5}
+  .meta{padding:8px 13px 14px;font-size:10.5px;letter-spacing:.05em;color:var(--muted);
+    text-transform:uppercase;font-family:var(--font-mono)}
+
+  .foot{max-width:470px;margin:36px auto 0;text-align:center;color:var(--muted);font-size:12px;line-height:1.6}
+  .foot code{font-family:var(--font-mono);font-size:11px;background:var(--surface);
+    border:1px solid var(--line);padding:1px 6px;border-radius:5px;color:var(--ink)}
+  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+
+<div class="page-head">
+  <div class="kicker">Interimobel · Mes 1 — “La Casa se Acomoda”</div>
+  <h1>Vista previa del feed</h1>
+  <p>Cómo se verá cada pieza en Instagram: el <b>copy in</b> montado sobre arte de referencia (placeholder), y el <b>copy out</b> como caption real. El arte final aún no se genera en Higgsfield.</p>
+  <div class="legend" id="legend"></div>
+  <div class="controls">
+    <button id="toggleNotes" aria-pressed="true">Mostrar notas de escena</button>
+    <button id="toggleTheme" aria-pressed="false">Cambiar tema</button>
+  </div>
+</div>
+
+<main class="feed" id="feed"></main>
+
+<div class="foot">
+  Arte de referencia generado con gradientes de color por segmento — <b>no es la imagen final</b>.<br>
+  La producción real se hace por bloques de producto en Higgsfield (ver <code>13-plan-produccion-higgsfield.md</code>).
+</div>
+
+<script>
+const SEG = {
+  s1:{name:"Primer Espacio Propio",short:"SEG 1 · Primer Espacio Propio"},
+  s2:{name:"Casa Nueva / Familia Joven",short:"SEG 2 · Casa Nueva"},
+  s3:{name:"Renovación con Criterio",short:"SEG 3 · Renovación con Criterio"},
+  s4:{name:"Cuando el Cuarto Cambia de Dueño",short:"SEG 4 · El Cuarto que Cambia"},
+  all:{name:"Todos los segmentos",short:"TODOS los segmentos"}
+};
+
+// each slide: {desc, prod?, copyin?:{type:'center'|'band', t, sub?}, tip?:{n,label}}
+const POSTS = [
+ {seg:"s3",week:"Sem 1",fmt:"Carrusel · Facebook",
+  slides:[
+   {desc:"Sala al atardecer, luz entrando por la ventana",prod:"Sala Modular Excellence Elite"},
+   {desc:"Detalle de la tela de la sala, de cerca",prod:"textura / material"},
+   {desc:"Recámara de mañana, armario con una puerta abierta",prod:"Armario Lima"},
+   {desc:"El umbral: pasillo hacia la sala iluminada",prod:"motivo del mes"},
+   {desc:"Cuarto de visitas, sofá cama tendido y listo",prod:"Sofá Cama Break Gris"},
+   {desc:"Sala completa al atardecer, luces cálidas",prod:"cierre",
+    copyin:{type:"center",t:"25 años vistiendo hogares mexicanos."}}
+  ],
+  likes:"1,204",
+  caption:["Hay muebles en esta casa que ya vieron pasar dos o tres épocas de quien los tiene.","25 años haciendo mobiliario en México — piezas pensadas para quedarse.","Conócenos en interimobel.mx."],
+  tags:"#SalaModular #ArmarioDeMadera #SofaCama #HechoEnMexico #Interimobel"},
+
+ {seg:"s1",week:"Sem 1",fmt:"Carrusel · Instagram / TikTok",
+  slides:[
+   {desc:"Rincón de barra en un depa recién estrenado",prod:"Banco Turín Café"},
+   {desc:"El mismo rincón de cerca: textura y tono café",prod:"detalle del banco"},
+   {desc:"Recámara compacta, el armario cabe bien",prod:"Armario Lima"},
+   {desc:"El umbral hacia el rincón de barra iluminado",prod:"motivo del mes"},
+   {desc:"El rincón de barra ya resuelto",prod:"cierre",
+    copyin:{type:"center",t:"Tu primer espacio, con piezas que se quedan contigo."}}
+  ],
+  likes:"3,417",
+  caption:["No tienes que conformarte en tu primer depa.","Un buen armario y un rincón que se sienta tuyo — eso sí se queda contigo.","¿Qué pieza elegirías primero?"],
+  tags:"#PrimerDepa #ArmarioDeMadera #BancoDeBarra #DisenoDeInteriores #Interimobel"},
+
+ {seg:"s2",week:"Sem 2",fmt:"Carrusel · Instagram",
+  slides:[
+   {desc:"Puerta principal entreabierta, luz cálida saliendo",prod:"apertura"},
+   {desc:"ANTES — la sala completamente vacía",prod:"antes"},
+   {desc:"DESPUÉS — la misma sala, mismo ángulo",prod:"Sala Modular Excellence Premium"},
+   {desc:"ANTES — un cuarto extra vacío",prod:"antes"},
+   {desc:"DESPUÉS — el cuarto de visitas resuelto",prod:"Sofá Cama Break Gris"},
+   {desc:"Recámara: la caja de mudanza desaparece",prod:"Armario Lima"},
+   {desc:"Pareja caminando hacia el fondo de la casa",prod:"cierre"}
+  ],
+  likes:"2,051",
+  caption:["De la casa vacía a la casa que ya se siente de ustedes.","Sala, cuarto de visitas y recámara, a meses sin intereses.","¿En qué habitación empezarías tú?"],
+  tags:"#CasaNueva #SalaModular #SofaCama #MesesSinIntereses #Interimobel"},
+
+ {seg:"s4",week:"Sem 2",fmt:"Carrusel · Facebook",
+  slides:[
+   {desc:"Puerta del cuarto entreabierta, luz tenue",prod:"apertura"},
+   {desc:"El cuarto en transición: un librero vacío",prod:"antes"},
+   {desc:"El mismo cuarto, ya con el armario instalado",prod:"Armario Lima"},
+   {desc:"Alguien abriendo una puerta del armario, con calma",prod:"detalle humano"},
+   {desc:"La ventana hacia el jardín (el umbral)",prod:"motivo del mes"},
+   {desc:"El vestidor ya completo, al final de la tarde",prod:"cierre",
+    copyin:{type:"center",t:"Ese cuarto ya tiene un nuevo lugar en tu casa."}}
+  ],
+  likes:"876",
+  caption:["Ese cuarto ya tiene un nuevo lugar en tu casa.","Un buen armario, para el vestidor que siempre quisiste.","Conócelo en interimobel.mx."],
+  tags:"#Vestidor #ArmarioDeMadera #RenovacionDeCuarto #HechoEnMexico #Interimobel"},
+
+ {seg:"all",week:"Sem 3",fmt:"Carrusel · Facebook + Instagram",
+  slides:[
+   {desc:"Textura de madera, manos trabajando al fondo",prod:"proceso"},
+   {desc:"El taller: alguien lijando una estructura",prod:"proceso"},
+   {desc:"Rollos de tela en los colores del mes",prod:"materia prima"},
+   {desc:"Detalle de un tapizado hecho a mano",prod:"proceso"},
+   {desc:"Bodega de piezas terminadas esperando salir",prod:"proceso"},
+   {desc:"Alguien coloca la última pieza terminada",prod:"cierre",
+    copyin:{type:"band",t:"Así nace cada mueble Interimobel.",sub:"Hecho en México. Hecho para durar."}}
+  ],
+  likes:"1,689",
+  caption:["Cada mueble Interimobel pasa por manos reales, no por una línea automatizada.","25 años haciendo mobiliario en México — así se hace."],
+  tags:"#HechoEnMexico #DetrasDeCamaras #ManufacturaMexicana #MueblesDeCalidad #Interimobel"},
+
+ {seg:"s3",week:"Sem 3",fmt:"Carrusel · Facebook",
+  slides:[
+   {desc:"Alguien de pie junto a su sala recién cambiada",prod:"Sala Modular Excellence Premium"},
+   {desc:"Una mano sobre la tela, con calma",prod:"detalle"},
+   {desc:"La sala ya integrada: un libro, una manta",prod:"espacio habitado"},
+   {desc:"Puerta entreabierta hacia el cuarto de visitas",prod:"Sofá Cama Break Gris"},
+   {desc:"La sala y el cuarto desde un mismo ángulo",prod:"cierre",
+    copyin:{type:"band",t:"Renovar no es empezar de cero.",sub:"Es elegir con criterio lo que sigue."}}
+  ],
+  likes:"942",
+  caption:["Cambió esa pieza, no todas.","Renovar con criterio: solo lo que tu casa realmente necesita hoy.","Conócelas en interimobel.mx."],
+  tags:"#SalaModular #SofaCama #RenovarConCriterio #HechoEnMexico #Interimobel"},
+
+ {seg:"s1",week:"Sem 4",fmt:"Carrusel · Instagram / TikTok",
+  slides:[
+   {desc:"Persona con una libreta, el depa a medio amueblar",prod:"portada"},
+   {desc:"Consejo 1",prod:"Armario Lima",tip:{n:"Consejo 1",label:"Invierte en un buen armario"}},
+   {desc:"Consejo 2",prod:"Sofá Cama Break Gris",tip:{n:"Consejo 2",label:"Un sofá cama para tus visitas"}},
+   {desc:"Consejo 3",prod:"Banco Turín Café",tip:{n:"Consejo 3",label:"Un rincón que se sienta especial"}},
+   {desc:"Consejo 4",prod:"luz natural",tip:{n:"Consejo 4",label:"Aprovecha la luz natural"}},
+   {desc:"Persona mirando su espacio ya resuelto",prod:"cierre",
+    copyin:{type:"band",t:"Y así, tu primer depa ya se siente tuyo."}}
+  ],
+  likes:"5,238",
+  caption:["Piezas que valen la pena en tu primer espacio 📋","Un buen armario. Un sofá cama para visitas. Un rincón que se sienta tuyo.","Guarda este post 🔖"],
+  tags:"#PrimerDepa #ArmarioDeMadera #SofaCama #TipsDeDecoracion #Interimobel"},
+
+ {seg:"all",week:"Sem 4",fmt:"Reel · Facebook + Instagram",reel:true,
+  slides:[
+   {desc:"La entrada de la casa al atardecer, la puerta se abre",prod:"escena 1"},
+   {desc:"El rincón de barra de un depa pequeño",prod:"escena 2 · Banco Turín"},
+   {desc:"La sala y el cuarto de visitas de una casa familiar",prod:"escena 3 · Sala + Sofá Cama"},
+   {desc:"La sala renovada con criterio",prod:"escena 4 · Sala Elite"},
+   {desc:"El vestidor de un cuarto que cambió de uso",prod:"escena 5 · Armario Lima"},
+   {desc:"Fachada al anochecer, ventanas encendidas",prod:"cierre",
+    copyin:{type:"center",t:"Interimobel",sub:"La casa se acomoda."}}
+  ],
+  likes:"8,940",
+  caption:["Una casa. Cuatro etapas de vida. El mismo techo, acomodándose siempre a lo que sigue.","¿En qué etapa está tu casa? 👇"],
+  tags:"#LaCasaSeAcomoda #HechoEnMexico #DisenoDeInteriores #RenovacionDeHogar #Interimobel"}
+];
+
+const accent = s => getComputedStyle(document.documentElement).getPropertyValue('--'+s).trim();
+function art(seg,i,total){
+  const c = `var(--${seg})`;
+  // deterministic slight angle per slide
+  const ang = 120 + (i*37)%90;
+  return `linear-gradient(${ang}deg,
+     color-mix(in srgb, ${c} 42%, var(--ground)) 0%,
+     color-mix(in srgb, ${c} 20%, var(--ground)) 55%,
+     color-mix(in srgb, ${c} 55%, #000 8%) 100%)`;
+}
+
+const ic = {
+  heart:'<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.3C.4 8.4 2 5 5.2 5c2 0 3.3 1.1 4.1 2.3l.7 1 .7-1C11.5 6.1 12.8 5 14.8 5 18 5 19.6 8.4 22 11.7 19.5 16.4 12 21 12 21z"/></svg>',
+  comment:'<svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5z"/></svg>',
+  share:'<svg viewBox="0 0 24 24"><path d="M22 3 11 14M22 3l-7 19-4-8-8-4 19-7z"/></svg>',
+  save:'<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4V3z"/></svg>',
+  play:'<svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M7 5v14l12-7z"/></svg>'
+};
+
+function render(){
+  const feed = document.getElementById('feed');
+  feed.innerHTML = POSTS.map((p,idx)=>{
+    const total = p.slides.length;
+    const slides = p.slides.map((s,i)=>{
+      let overlay='';
+      if(s.copyin){
+        const cls = s.copyin.type==='center'?'center':'band';
+        overlay = `<div class="copyin ${cls}"><div class="t">${s.copyin.t}</div>${s.copyin.sub?`<div class="sub">${s.copyin.sub}</div>`:''}</div>`;
+      }
+      if(s.tip){
+        overlay = `<div class="copyin band"><span class="tipn">${s.tip.n}</span><div class="tip">${s.tip.label}</div></div>`;
+      }
+      const badge = (s.copyin||s.tip)?`<span class="badge-copyin" style="--seg:${accent(p.seg)}">Copy in</span>`:'';
+      return `<div class="slide">
+        <div class="art" style="background:${art(p.seg,i,total)}"></div>
+        <div class="scene"><span class="chip">Escena ${i+1}${p.reel?' · video':''}</span>
+          <div class="desc">${s.desc}</div>${s.prod?`<div class="prod">${s.prod}</div>`:''}</div>
+        ${badge}${overlay}
+        ${p.reel&&i===0?`<div class="play">${ic.play}</div>`:''}
+      </div>`;
+    }).join('');
+    const dots = p.slides.map((_,i)=>`<i class="${i===0?'on':''}" style="--seg:${accent(p.seg)}"></i>`).join('');
+    const cap = p.caption.map((l,i)=>{
+      const withCta = l.replace(/(interimobel\.mx)/,'<span class="cta">$1</span>');
+      return `<span class="line">${i===0?'<span class="u">interimobel</span>':''}${withCta}</span>`;
+    }).join('');
+    return `<article class="post" data-seg="${p.seg}">
+      <div class="p-head">
+        <div class="avatar"><i>i</i></div>
+        <div class="who"><b>interimobel</b><small>${p.week} · ${p.fmt}</small></div>
+        <div class="seg">${SEG[p.seg].short}</div>
+      </div>
+      <div class="media ${p.reel?'reel':''}">
+        <div class="counter">1/${total}</div>
+        ${p.reel?'<div class="reel-tag">Reel · 30–35s</div>':''}
+        <div class="track">${slides}</div>
+      </div>
+      <div class="dots">${dots}</div>
+      <div class="actions">${ic.heart}${ic.comment}${ic.share}<span class="save">${ic.save}</span></div>
+      <div class="likes">${p.likes} Me gusta</div>
+      <div class="caption">${cap}</div>
+      <div class="tags">${p.tags}</div>
+      <div class="meta">${SEG[p.seg].name}</div>
+    </article>`;
+  }).join('');
+
+  // carousel counter + dots on scroll
+  document.querySelectorAll('.post').forEach(post=>{
+    const track=post.querySelector('.track');
+    const counter=post.querySelector('.counter');
+    const dots=[...post.querySelectorAll('.dots i')];
+    const n=dots.length;
+    track.addEventListener('scroll',()=>{
+      const i=Math.round(track.scrollLeft/track.clientWidth);
+      counter.textContent=(i+1)+'/'+n;
+      dots.forEach((d,k)=>d.classList.toggle('on',k===i));
+    },{passive:true});
+  });
+}
+
+function legend(){
+  document.getElementById('legend').innerHTML =
+    Object.entries(SEG).map(([k,v])=>`<span><i class="dot-key" style="background:${accent(k)}"></i>${v.name}</span>`).join('');
+}
+
+render(); legend();
+
+const bNotes=document.getElementById('toggleNotes');
+bNotes.addEventListener('click',()=>{
+  const hide=document.body.classList.toggle('hide-notes');
+  bNotes.setAttribute('aria-pressed',String(!hide));
+  bNotes.textContent = hide?'Mostrar notas de escena':'Ocultar notas de escena';
+});
+const bTheme=document.getElementById('toggleTheme');
+bTheme.addEventListener('click',()=>{
+  const cur=document.documentElement.getAttribute('data-theme');
+  const next = cur==='dark'?'light':(cur==='light'?'dark':(matchMedia('(prefers-color-scheme:dark)').matches?'light':'dark'));
+  document.documentElement.setAttribute('data-theme',next);
+  render(); legend(); // re-read accents for gradients
+});
+</script>
