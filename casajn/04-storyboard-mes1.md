@@ -16,7 +16,7 @@
 | Sala | Sala Modular Excellence Elite Especial | $27,080 MXN |
 | Sala | Sala Modular Excellence Premium Especial | $35,890 MXN |
 | Armario | Armario San Lorenzo Plus (8 puertas, espejo central) | $22,211 MXN |
-| Sofá cama | Sofá Cama Break Gris | $10,600–$10,990 MXN |
+| Sofá cama | Sofá Cama Break Gris | $10,600 MXN (confirmado por el cliente) |
 | Banco | Banco Turín Color Café | $1,790 MXN |
 
 *(Cambio del 14-jul-2026: se retiran el Comedor Yzma Merlot/Kaitlin Camel y el Banco Alto Mitlan. Se reemplazan por Sofá Cama Break Gris y Banco Turín Café — ver `14-cambio-producto-turin-break.md` para el detalle completo.)*

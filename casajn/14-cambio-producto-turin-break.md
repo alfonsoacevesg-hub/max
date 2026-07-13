@@ -7,7 +7,7 @@ El cliente pidió retirar dos productos de la paleta del mes y reemplazarlos:
 
 | Se retira | Se reemplaza por | Precio nuevo |
 |---|---|---|
-| Paquete Mesa Comedor Yzma Merlot + 6 Sillas Kaitlin Camel ($19,990 MXN) | **Sofá Cama Break Gris** | $10,600–$10,990 MXN (dos cifras encontradas, confirmar antes de publicar) |
+| Paquete Mesa Comedor Yzma Merlot + 6 Sillas Kaitlin Camel ($19,990 MXN) | **Sofá Cama Break Gris** | $10,600 MXN (confirmado por el cliente, 14-jul-2026) |
 | 2× Banco Alto Mitlan (~$6,980 MXN) | **Banco Turín Color Café** | $1,790 MXN |
 
 **URLs confirmadas por búsqueda (fetch directo sigue bloqueado por política de red de este entorno):**

@@ -11,7 +11,7 @@
 | Sala | Sala Modular Excellence Elite Especial | $27,080 MXN |
 | Sala | Sala Modular Excellence Premium Especial | $35,890 MXN |
 | Armario | Armario San Lorenzo Plus (8 puertas, espejo central) | $22,211 MXN |
-| Sofá cama | Sofá Cama Break Gris | $10,600–$10,990 MXN |
+| Sofá cama | Sofá Cama Break Gris | $10,600 MXN (confirmado por el cliente) |
 | Banco | Banco Turín Color Café | $1,790 MXN |
 
 **Dirección fotográfica:** estética Pinterest, cálida y curada pero habitada de verdad; iluminación profesional pareja tipo catálogo IKEA; cero apariencia de render — grano, sombras naturales, texturas reales, pequeñas imperfecciones de un espacio habitado.
@@ -166,6 +166,6 @@
 
 ## Acciones pendientes antes de publicar
 
-1. Confirmar URL exacta de producto del Banco Turín Color Café (solo se confirmó la categoría `interimobel.mx/collections/bancos`) y del Armario San Lorenzo Plus.
-2. Confirmar precio final del Sofá Cama Break Gris (se encontraron dos cifras: $10,600 y $10,990 MXN).
-3. Detalle completo del cambio de producto: `14-cambio-producto-turin-break.md`. Plan de producción por bloques: `13-plan-produccion-higgsfield.md` (requiere actualizarse con los nuevos productos).
+1. ~~Confirmar precio del Sofá Cama Break Gris~~ — **Resuelto:** $10,600 MXN, confirmado por el cliente (14-jul-2026).
+2. ~~Confirmar existencia del Banco Turín Café~~ — **Resuelto:** el cliente confirmó que sí está en el sitio. Solo falta que el equipo copie la URL exacta de producto al descargar las fotos (yo solo tengo la categoría `interimobel.mx/collections/bancos`).
+3. Detalle completo del cambio de producto: `14-cambio-producto-turin-break.md`. Plan de producción por bloques: `13-plan-produccion-higgsfield.md`.

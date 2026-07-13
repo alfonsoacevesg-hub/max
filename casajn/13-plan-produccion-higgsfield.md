@@ -57,6 +57,6 @@ Música instrumental cálida, transiciones suaves, tarjeta de cierre — reutili
 
 ## Antes de cerrar el mes
 
-- Confirmar la URL exacta de producto del Banco Turín Color Café.
-- Confirmar cuál de los dos precios del Sofá Cama Break es el vigente ($10,600 o $10,990 MXN).
+- Banco Turín Café: el cliente confirmó que sí está en el sitio — al descargar las fotos, copiar también la URL exacta de producto.
+- Precio del Sofá Cama Break Gris: $10,600 MXN, confirmado por el cliente (14-jul-2026).
 - Verificar que el mismo producto se vea igual entre piezas distintas (por eso se genera por bloque, no salteado).

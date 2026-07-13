@@ -3,7 +3,7 @@
 
 **Rol de este documento:** copy final sobre el storyboard visual en `04-storyboard-mes1.md`. Captions cortos (hook + dato + CTA de 2-4 palabras).
 
-**Cambio de producto (14-jul-2026):** se retiran el Comedor Yzma Merlot/Kaitlin Camel y el Banco Alto Mitlan. Se reemplazan por **Sofá Cama Break Gris** ($10,600–$10,990 MXN) y **Banco Turín Color Café** ($1,790 MXN). Detalle: `14-cambio-producto-turin-break.md`.
+**Cambio de producto (14-jul-2026):** se retiran el Comedor Yzma Merlot/Kaitlin Camel y el Banco Alto Mitlan. Se reemplazan por **Sofá Cama Break Gris** ($10,600 MXN, confirmado por el cliente) y **Banco Turín Color Café** ($1,790 MXN). Detalle: `14-cambio-producto-turin-break.md`.
 
 **Dirección fotográfica:** estética Pinterest para Gen Z/millennial, iluminación profesional consistente tipo catálogo IKEA, cero apariencia de render — fotografía real, con textura y pequeñas imperfecciones de un espacio habitado.
 
