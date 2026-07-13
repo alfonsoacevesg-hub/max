@@ -15,7 +15,7 @@
 |---|---|---|
 | Sala | Sala Modular Excellence Elite Especial | $27,080 MXN |
 | Sala | Sala Modular Excellence Premium Especial | $35,890 MXN |
-| Armario | Armario San Lorenzo Plus (8 puertas, espejo central) | $22,211 MXN |
+| Armario | Armario Lima (3 puertas, 2 cajones) | $6,655.56 MXN |
 | Sofá cama | Sofá Cama Break Gris | $10,600 MXN (confirmado por el cliente) |
 | Banco | Banco Turín Color Café | $1,790 MXN |
 
@@ -31,7 +31,7 @@
 
 1. **Espacio:** la sala de esa casa, luz de atardecer entrando por la ventana. **Se redecora con:** la Sala Modular Excellence Elite. Zona superior libre para el cierre del mes.
 2. **Espacio:** un rincón de esa misma sala, de cerca. **Se redecora con:** el detalle de la tela de la sala — que se note que es una tela buena, no de imagen genérica.
-3. **Espacio:** una recámara con luz de mañana. **Se redecora con:** el Armario San Lorenzo Plus, puertas abiertas, el espejo reflejando la luz del cuarto.
+3. **Espacio:** una recámara con luz de mañana. **Se redecora con:** el Armario Lima, con una de sus puertas abierta mostrando el interior ordenado.
 4. **Espacio:** el pasillo hacia la sala, visto desde la puerta (el umbral del mes).
 5. **Espacio:** un cuarto de visitas de la misma casa. **Se redecora con:** el Sofá Cama Break Gris, tendido y listo — un espacio extra que esta casa de 25 años se dio el lujo de mantener.
 6. **Cierre:** la sala completa al atardecer, con las luces cálidas encendidas. Aquí va el texto de cierre.
@@ -44,7 +44,7 @@
 
 1. **Espacio:** un rincón de barra en un depa recién estrenado. **Se redecora con:** el Banco Turín Café. Zona central libre para el texto de portada.
 2. **Espacio:** ese mismo rincón, más cerca — que se note la textura y el tono café del banco.
-3. **Espacio:** una recámara compacta, luz de ventana. **Se redecora con:** el Armario San Lorenzo Plus — que se vea que cabe bien aunque el cuarto sea chico.
+3. **Espacio:** una recámara compacta, luz de ventana. **Se redecora con:** el Armario Lima — que se vea que cabe bien aunque el cuarto sea chico.
 4. **Espacio:** la puerta hacia el rincón de barra, ya iluminado (el umbral del mes).
 5. **Cierre:** el rincón de barra ya resuelto. Aquí va el texto de cierre.
 
@@ -59,7 +59,7 @@
 3. **Mismo espacio (después):** **se redecora con:** la Sala Modular Excellence Premium.
 4. **Espacio (antes):** un cuarto extra vacío, sin uso definido todavía.
 5. **Mismo espacio (después):** **se redecora con:** el Sofá Cama Break Gris — el cuarto de visitas que esta familia joven necesitaba.
-6. **Espacio (antes/después en la misma toma):** la recámara, con una sola caja de mudanza que desaparece cuando **se redecora con:** el Armario San Lorenzo Plus.
+6. **Espacio (antes/después en la misma toma):** la recámara, con una sola caja de mudanza que desaparece cuando **se redecora con:** el Armario Lima.
 7. **Cierre:** la pareja caminando hacia el fondo de la casa ya resuelta, de espaldas (el umbral, visto desde adentro).
 
 ---
@@ -70,7 +70,7 @@
 
 1. **Espacio:** la puerta de ese cuarto, entreabierta, luz cálida y tenue saliendo.
 2. **Espacio (antes):** el cuarto con un librero vacío — sin nostalgia forzada, solo en transición.
-3. **Mismo espacio (después):** **se redecora con:** el Armario San Lorenzo Plus, el espejo reflejando la luz.
+3. **Mismo espacio (después):** **se redecora con:** el Armario Lima, ya instalado y con las puertas cerradas, ordenando el cuarto.
 4. **Espacio:** de cerca, alguien abriendo una de las puertas del armario, con calma.
 5. **Espacio:** la ventana de ese cuarto hacia el jardín (el umbral, en versión ventana).
 6. **Cierre:** el vestidor ya completo, al final de la tarde. Aquí va el texto de cierre.
@@ -107,7 +107,7 @@
 **6 slides.** El espacio: el mismo depa de la Pieza 2, pero contado como consejos.
 
 1. **Espacio:** alguien con una libreta pequeña, el depa a medio amueblar de fondo.
-2. **Espacio:** el Armario San Lorenzo Plus, con el interior bien organizado.
+2. **Espacio:** el Armario Lima, con el interior bien organizado.
 3. **Espacio:** el Sofá Cama Break Gris, tendido y listo para recibir visitas.
 4. **Espacio:** el Banco Turín Café, de cerca, en su rincón de barra.
 5. **Espacio:** una ventana grande sin cortinas, con la luz entrando de lleno.

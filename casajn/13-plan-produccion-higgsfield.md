@@ -15,7 +15,7 @@
 |---|---|---|
 | **Sala Modular Excellence Elite Especial** | `interimobel.mx/products/sala-modular-excelllence-elite-especial` | Vista frontal completa · detalle de tela |
 | **Sala Modular Excellence Premium Especial** | `interimobel.mx/products/sala-modular-excellence-premium-especial` | Vista frontal completa · detalle de tela (variante distinta a la Elite) |
-| **Armario San Lorenzo Plus** | `interimobel.mx/products/armario-san-lorenzo` | Puertas cerradas · puertas abiertas con espejo · detalle de manijas |
+| **Armario Lima** | `interimobel.mx/products/armario-lima` | ✅ Ya en Drive (Armario_Lima.webp) — 3 puertas blancas, marco de madera café, sin espejo · detalle de manijas |
 | **Sofá Cama Break Gris** | `interimobel.mx/products/sofa-cama-break` | Tendido como sofá · detalle de la tela gris y el capitoné |
 | **Banco Turín Color Café** | `interimobel.mx/collections/bancos` (URL exacta de producto no confirmada — busca "Turín" ahí) | Vista frontal · detalle del color café y el material |
 
@@ -23,7 +23,7 @@
 
 ## Bloques de producción (por producto)
 
-### Bloque 1 — Armario San Lorenzo Plus (6 generaciones)
+### Bloque 1 — Armario Lima (6 generaciones)
 Pieza 1 slide 3 · Pieza 2 slide 3 · Pieza 3 slide 6 · Pieza 4 (slides 2-6, toda la pieza gira en torno a este producto) · Pieza 7 slide 2 · Video escena 5.
 
 ### Bloque 2 — Sofá Cama Break Gris (5 generaciones)

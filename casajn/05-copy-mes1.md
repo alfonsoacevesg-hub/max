@@ -17,7 +17,7 @@
 
 **Plataforma:** Facebook. **Formato:** carrusel de 6 slides.
 
-**El espacio:** una casa mexicana de 25 años, contada a través de su sala, su armario con espejo y un cuarto de visitas con sofá cama — piezas que se quedaron, no que se cambiaron cada temporada.
+**El espacio:** una casa mexicana de 25 años, contada a través de su sala, su armario de madera y un cuarto de visitas con sofá cama — piezas que se quedaron, no que se cambiaron cada temporada.
 
 ### COPY IN
 Solo slide 6:
@@ -29,7 +29,7 @@ Solo slide 6:
 > Conócenos en interimobel.mx.
 
 ### Hashtags
-#SalaModular #ArmarioConEspejo #SofaCama #HechoEnMexico #Interimobel
+#SalaModular #ArmarioDeMadera #SofaCama #HechoEnMexico #Interimobel
 
 ---
 
@@ -37,7 +37,7 @@ Solo slide 6:
 
 **Plataforma:** Instagram/TikTok. **Formato:** carrusel de 5 slides.
 
-**El espacio:** el primer depa de alguien joven, resuelto con un rincón de barra y un armario de línea superior — la prueba de que no hay que conformarse desde el primer espacio propio.
+**El espacio:** el primer depa de alguien joven, resuelto con un rincón de barra y un buen armario — la prueba de que no hay que conformarse desde el primer espacio propio.
 
 ### COPY IN
 Solo slide 5:
@@ -49,7 +49,7 @@ Solo slide 5:
 > ¿Qué pieza elegirías primero?
 
 ### Hashtags
-#PrimerDepa #ArmarioConEspejo #BancoDeBarra #DisenoDeInteriores #Interimobel
+#PrimerDepa #ArmarioDeMadera #BancoDeBarra #DisenoDeInteriores #Interimobel
 
 ---
 
@@ -84,11 +84,11 @@ Solo slide 6:
 
 ### COPY OUT
 > Ese cuarto ya tiene un nuevo lugar en tu casa.
-> Un armario con espejo, para el vestidor que siempre quisiste.
+> Un buen armario, para el vestidor que siempre quisiste.
 > Conócelo en interimobel.mx.
 
 ### Hashtags
-#Vestidor #ArmarioConEspejo #RenovacionDeCuarto #HechoEnMexico #Interimobel
+#Vestidor #ArmarioDeMadera #RenovacionDeCuarto #HechoEnMexico #Interimobel
 
 ---
 
@@ -149,7 +149,7 @@ Solo slide 5:
 > Guarda este post 🔖
 
 ### Hashtags
-#PrimerDepa #ArmarioConEspejo #SofaCama #TipsDeDecoracion #Interimobel
+#PrimerDepa #ArmarioDeMadera #SofaCama #TipsDeDecoracion #Interimobel
 
 ---
 

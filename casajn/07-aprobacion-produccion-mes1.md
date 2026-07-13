@@ -10,7 +10,7 @@
 |---|---|---|
 | Sala | Sala Modular Excellence Elite Especial | $27,080 MXN |
 | Sala | Sala Modular Excellence Premium Especial | $35,890 MXN |
-| Armario | Armario San Lorenzo Plus (8 puertas, espejo central) | $22,211 MXN |
+| Armario | Armario Lima (3 puertas, 2 cajones) | $6,655.56 MXN |
 | Sofá cama | Sofá Cama Break Gris | $10,600 MXN (confirmado por el cliente) |
 | Banco | Banco Turín Color Café | $1,790 MXN |
 
@@ -23,7 +23,7 @@
 ## Pieza 1 — "25 años vistiendo hogares mexicanos"
 **Segmento 3 · Semana 1 · Carrusel 6 slides · Facebook**
 
-**El espacio:** una casa mexicana de 25 años, contada a través de su sala, su armario con espejo y un cuarto de visitas con sofá cama.
+**El espacio:** una casa mexicana de 25 años, contada a través de su sala, su armario de madera y un cuarto de visitas con sofá cama.
 
 **Texto en imagen:** solo el cierre → *"25 años vistiendo hogares mexicanos."*
 
@@ -32,16 +32,16 @@
 > 25 años haciendo mobiliario en México — piezas pensadas para quedarse.
 > Conócenos en interimobel.mx.
 
-**Hashtags:** #SalaModular #ArmarioConEspejo #SofaCama #HechoEnMexico #Interimobel
+**Hashtags:** #SalaModular #ArmarioDeMadera #SofaCama #HechoEnMexico #Interimobel
 
-**Productos:** Sala Modular Excellence Elite + Armario San Lorenzo Plus + Sofá Cama Break Gris.
+**Productos:** Sala Modular Excellence Elite + Armario Lima + Sofá Cama Break Gris.
 
 ---
 
 ## Pieza 2 — "Tu primer espacio, con piezas que se quedan contigo"
 **Segmento 1 · Semana 1 · Carrusel 5 slides · Instagram/TikTok**
 
-**El espacio:** el primer depa de alguien joven, resuelto con un rincón de barra y un armario de línea superior.
+**El espacio:** el primer depa de alguien joven, resuelto con un rincón de barra y un buen armario.
 
 **Texto en imagen:** solo el cierre → *"Tu primer espacio, con piezas que se quedan contigo."*
 
@@ -50,9 +50,9 @@
 > Un buen armario y un rincón que se sienta tuyo — eso sí se queda contigo.
 > ¿Qué pieza elegirías primero?
 
-**Hashtags:** #PrimerDepa #ArmarioConEspejo #BancoDeBarra #DisenoDeInteriores #Interimobel
+**Hashtags:** #PrimerDepa #ArmarioDeMadera #BancoDeBarra #DisenoDeInteriores #Interimobel
 
-**Productos:** Banco Turín Café + Armario San Lorenzo Plus.
+**Productos:** Banco Turín Café + Armario Lima.
 
 ---
 
@@ -70,7 +70,7 @@
 
 **Hashtags:** #CasaNueva #SalaModular #SofaCama #MesesSinIntereses #Interimobel
 
-**Productos:** Sala Modular Excellence Premium + Sofá Cama Break Gris + Armario San Lorenzo Plus.
+**Productos:** Sala Modular Excellence Premium + Sofá Cama Break Gris + Armario Lima.
 
 ---
 
@@ -83,12 +83,12 @@
 
 **Caption:**
 > Ese cuarto ya tiene un nuevo lugar en tu casa.
-> Un armario con espejo, para el vestidor que siempre quisiste.
+> Un buen armario, para el vestidor que siempre quisiste.
 > Conócelo en interimobel.mx.
 
-**Hashtags:** #Vestidor #ArmarioConEspejo #RenovacionDeCuarto #HechoEnMexico #Interimobel
+**Hashtags:** #Vestidor #ArmarioDeMadera #RenovacionDeCuarto #HechoEnMexico #Interimobel
 
-**Productos:** Armario San Lorenzo Plus (sin cambios).
+**Productos:** Armario Lima (sin cambios).
 
 ---
 
@@ -141,9 +141,9 @@
 > Un buen armario. Un sofá cama para visitas. Un rincón que se sienta tuyo.
 > Guarda este post 🔖
 
-**Hashtags:** #PrimerDepa #ArmarioConEspejo #SofaCama #TipsDeDecoracion #Interimobel
+**Hashtags:** #PrimerDepa #ArmarioDeMadera #SofaCama #TipsDeDecoracion #Interimobel
 
-**Productos:** Armario San Lorenzo Plus + Sofá Cama Break Gris + Banco Turín Café.
+**Productos:** Armario Lima + Sofá Cama Break Gris + Banco Turín Café.
 
 ---
 
