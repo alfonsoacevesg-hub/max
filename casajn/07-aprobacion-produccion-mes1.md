@@ -37,7 +37,7 @@
 ## Pieza 2 — "Tu primer espacio, con piezas que se quedan contigo"
 **Segmento 1 · Semana 1 · Carrusel 5 slides · Instagram/TikTok**
 
-**El espacio:** el primer depa de alguien joven, con un rincón de barra y un armario que no se ven baratos — no hay que conformarse desde el día uno.
+**El espacio:** el primer depa de alguien joven, resuelto con un rincón de barra elegante y un armario de línea superior — la prueba de que no hay que conformarse desde el primer espacio propio.
 
 **Texto en imagen:** solo el cierre → *"Tu primer espacio, con piezas que se quedan contigo."*
 

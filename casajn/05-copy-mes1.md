@@ -37,7 +37,7 @@ Solo slide 6:
 
 **Plataforma:** Instagram/TikTok. **Formato:** carrusel de 5 slides.
 
-**El espacio:** el primer depa de alguien joven, con un rincón de barra y un armario que no se ven baratos — no hay que conformarse desde el día uno.
+**El espacio:** el primer depa de alguien joven, resuelto con un rincón de barra elegante y un armario de línea superior — la prueba de que no hay que conformarse desde el primer espacio propio.
 
 ### COPY IN
 Solo slide 5:
