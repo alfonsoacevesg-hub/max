@@ -14,7 +14,9 @@
 | Comedor completo | Paquete Mesa Comedor Yzma Merlot + 6 Sillas Kaitlin Camel | $19,990 MXN |
 | Bancos | 2× Banco Alto Mitlan (base dorada, terciopelo) | ~$6,980 MXN |
 
-**Reglas del mes:** cero superlativos/urgencia en Segmentos 3 y 4; ninguna pieza promete entrega inmediata; no se nombra proveedor; captions cortos (hook + dato + CTA); nada de jerga técnica de cámara ni "gama alta" como muletilla.
+**Reglas del mes:** cero superlativos/urgencia en Segmentos 3 y 4; ninguna pieza promete entrega inmediata; no se nombra proveedor; captions cortos (hook + dato + CTA de 2-4 palabras); nada de jerga técnica de cámara ni "gama alta" como muletilla.
+
+**Hashtags y SEO (13-jul-2026):** Instagram limitó los hashtags a 5 por publicación desde diciembre de 2025, y Meta confirmó que las palabras clave del caption ahora pesan más que los hashtags para la búsqueda y el algoritmo. Los 5 hashtags de cada pieza se actualizaron a versiones específicas del producto/tema exacto (no genéricos ni repetidos entre piezas). Fuentes: [Later](https://later.com/blog/ultimate-guide-to-using-instagram-hashtags/), [Social Media Today](https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/), consultado 13-jul-2026.
 
 ---
 
@@ -30,7 +32,7 @@
 > 25 años haciendo mobiliario en México — piezas pensadas para quedarse.
 > Conócenos en interimobel.mx.
 
-**Hashtags:** #Interimobel #HechoEnMexico #Muebles #Hogar #CDMX
+**Hashtags:** #SalaModular #ArmarioConEspejo #ComedorCompleto #HechoEnMexico #Interimobel
 
 ---
 
@@ -46,7 +48,7 @@
 > Un buen armario y un rincón que se sienta tuyo — eso sí se queda contigo.
 > ¿Qué pieza elegirías primero?
 
-**Hashtags:** #Interimobel #PrimerEspacio #Muebles #Mexico #Diseño
+**Hashtags:** #PrimerDepa #ArmarioConEspejo #BancosDeBarra #DisenoDeInteriores #Interimobel
 
 ---
 
@@ -62,7 +64,7 @@
 > Sala, comedor y recámara, a meses sin intereses.
 > ¿En qué habitación empezarías tú?
 
-**Hashtags:** #Interimobel #CasaNueva #Muebles #Mexico #Hogar
+**Hashtags:** #CasaNueva #SalaModular #ComedorCompleto #MesesSinIntereses #Interimobel
 
 ---
 
@@ -76,9 +78,9 @@
 **Caption:**
 > Ese cuarto ya tiene un nuevo lugar en tu casa.
 > Un armario con espejo, para el vestidor que siempre quisiste.
-> Conócelo en interimobel.mx o por WhatsApp.
+> Conócelo en interimobel.mx.
 
-**Hashtags:** #Interimobel #Armarios #Hogar #Mexico #Vestidor
+**Hashtags:** #Vestidor #ArmarioConEspejo #RenovacionDeCuarto #HechoEnMexico #Interimobel
 
 ---
 
@@ -95,7 +97,7 @@
 > Cada mueble Interimobel pasa por manos reales, no por una línea automatizada.
 > 25 años haciendo mobiliario en México — así se hace.
 
-**Hashtags:** #HechoEnMexico #Muebles #Mexico #Interimobel #DetrasDeCamaras
+**Hashtags:** #HechoEnMexico #DetrasDeCamaras #ManufacturaMexicana #MueblesDeCalidad #Interimobel
 
 ---
 
@@ -109,9 +111,9 @@
 **Caption:**
 > Cambió esa pieza, no todas.
 > Renovar con criterio: solo lo que tu casa realmente necesita hoy.
-> Conoce salas y comedores en interimobel.mx.
+> Conócelas en interimobel.mx.
 
-**Hashtags:** #Interimobel #Muebles #Mexico #Hogar #SalasModulares
+**Hashtags:** #SalaModular #ComedorCompleto #RenovarConCriterio #HechoEnMexico #Interimobel
 
 ---
 
@@ -127,7 +129,7 @@
 > Un buen armario. Un comedor completo. Un rincón que se sienta tuyo.
 > Guarda este post 🔖
 
-**Hashtags:** #Interimobel #PrimerEspacio #Muebles #Mexico #Diseño
+**Hashtags:** #PrimerDepa #ArmarioConEspejo #ComedorCompleto #TipsDeDecoracion #Interimobel
 
 ---
 
@@ -142,9 +144,9 @@
 
 **Caption:**
 > Una casa. Cuatro etapas de vida. El mismo techo, acomodándose siempre a lo que sigue.
-> 25 años haciendo lo mismo: mobiliario que se acomoda a cada etapa de tu casa.
+> ¿En qué etapa está tu casa? 👇
 
-**Hashtags:** #LaCasaSeAcomoda #HechoEnMexico #Muebles #Hogar #Interimobel
+**Hashtags:** #LaCasaSeAcomoda #HechoEnMexico #DisenoDeInteriores #RenovacionDeHogar #Interimobel
 
 ---
 

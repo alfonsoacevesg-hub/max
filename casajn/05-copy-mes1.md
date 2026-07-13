@@ -9,6 +9,8 @@
 
 **Reglas duras de tono:** cero superlativos/urgencia/descuento-gancho en Segmentos 3 y 4; Segmento 1 mantiene energía pero ya no discurso de "precio bajo" (pivote de marca); ninguna pieza promete entrega inmediata; no se nombra proveedor.
 
+**Revisión de hashtags y CTA (13-jul-2026):** Instagram limitó oficialmente los hashtags a **5 por publicación desde diciembre de 2025** (antes 30) — ya cumplíamos ese máximo en las 8 piezas, pero eran genéricos (#Muebles, #Hogar, #Mexico, repetidos entre piezas). Meta declaró públicamente que las palabras clave dentro del caption ahora pesan más que los hashtags para que el algoritmo entienda de qué trata el contenido y a quién mostrárselo — la estrategia 2026 es precisión (tags de nicho, específicos del producto/categoría de cada pieza), no volumen ni repetición genérica. Se reemplazan los 5 hashtags de cada pieza por versiones específicas del producto/tema exacto de esa pieza, y se recortan los CTA a frases cortas de acción (2-4 palabras). Fuentes: [Later — Instagram hashtags 2026, gana con el límite de 5](https://later.com/blog/ultimate-guide-to-using-instagram-hashtags/); [Social Media Today — Instagram implementa nuevos límites de hashtags](https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/), consultado 13-jul-2026.
+
 ---
 
 ## Semana 1 · Pieza 1 — "25 años vistiendo hogares mexicanos" (Segmento 3)
@@ -27,7 +29,7 @@ Solo slide 6:
 > Conócenos en interimobel.mx.
 
 ### Hashtags
-#Interimobel #HechoEnMexico #Muebles #Hogar #CDMX
+#SalaModular #ArmarioConEspejo #ComedorCompleto #HechoEnMexico #Interimobel
 
 ---
 
@@ -49,7 +51,7 @@ Solo slide 5:
 > ¿Qué pieza elegirías primero?
 
 ### Hashtags
-#Interimobel #PrimerEspacio #Muebles #Mexico #Diseño
+#PrimerDepa #ArmarioConEspejo #BancosDeBarra #DisenoDeInteriores #Interimobel
 
 ---
 
@@ -68,7 +70,7 @@ Ninguna slide lleva overlay — el contraste antes/después es el recurso narrat
 > ¿En qué habitación empezarías tú?
 
 ### Hashtags
-#Interimobel #CasaNueva #Muebles #Mexico #Hogar
+#CasaNueva #SalaModular #ComedorCompleto #MesesSinIntereses #Interimobel
 
 ---
 
@@ -87,10 +89,10 @@ Solo slide 6:
 ### COPY OUT
 > Ese cuarto ya tiene un nuevo lugar en tu casa.
 > Un armario con espejo, para el vestidor que siempre quisiste.
-> Conócelo en interimobel.mx o por WhatsApp.
+> Conócelo en interimobel.mx.
 
 ### Hashtags
-#Interimobel #Armarios #Hogar #Mexico #Vestidor
+#Vestidor #ArmarioConEspejo #RenovacionDeCuarto #HechoEnMexico #Interimobel
 
 ---
 
@@ -110,7 +112,7 @@ Solo slide 6 (titular + subtítulo):
 > 25 años haciendo mobiliario en México — así se hace.
 
 ### Hashtags
-#HechoEnMexico #Muebles #Mexico #Interimobel #DetrasDeCamaras
+#HechoEnMexico #DetrasDeCamaras #ManufacturaMexicana #MueblesDeCalidad #Interimobel
 
 ---
 
@@ -129,10 +131,10 @@ Solo slide 5:
 ### COPY OUT
 > Cambió esa pieza, no todas.
 > Renovar con criterio: solo lo que tu casa realmente necesita hoy.
-> Conoce salas y comedores en interimobel.mx.
+> Conócelas en interimobel.mx.
 
 ### Hashtags
-#Interimobel #Muebles #Mexico #Hogar #SalasModulares
+#SalaModular #ComedorCompleto #RenovarConCriterio #HechoEnMexico #Interimobel
 
 ---
 
@@ -155,7 +157,7 @@ Solo slide 5:
 > Guarda este post 🔖
 
 ### Hashtags
-#Interimobel #PrimerEspacio #Muebles #Mexico #Diseño
+#PrimerDepa #ArmarioConEspejo #ComedorCompleto #TipsDeDecoracion #Interimobel
 
 ---
 
@@ -172,7 +174,7 @@ Solo en el cierre (las primeras 5 escenas no llevan texto):
 
 ### COPY OUT
 > Una casa. Cuatro etapas de vida. El mismo techo, acomodándose siempre a lo que sigue.
-> 25 años haciendo lo mismo: mobiliario que se acomoda a cada etapa de tu casa.
+> ¿En qué etapa está tu casa? 👇
 
 ### Hashtags
-#LaCasaSeAcomoda #HechoEnMexico #Muebles #Hogar #Interimobel
+#LaCasaSeAcomoda #HechoEnMexico #DisenoDeInteriores #RenovacionDeHogar #Interimobel
