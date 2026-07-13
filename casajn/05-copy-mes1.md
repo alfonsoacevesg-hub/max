@@ -36,38 +36,37 @@ Si estás en el momento de renovar algo en tu casa —no de empezar de cero, sin
 
 ---
 
-## Semana 1 · Pieza 2 — "Amuebla lo esencial de tu depa por menos de $9,000 MXN" (Segmento 1 — Primer Espacio Propio)
+## Semana 1 · Pieza 2 — "Amuebla lo esencial de tu depa por menos de $10,500 MXN" (Segmento 1 — Primer Espacio Propio)
 
-*(Título y copy reescritos por el Decorador de Interiores, ver `09-validacion-decorador-mes1.md`. La corrección previa de QA de marca —`06-qa-marca-mes1.md`— había ajustado la cifra a "$12,000 MXN" bajo el supuesto de 4 categorías, incluyendo una sala/sofá-cama. La verificación de catálogo real (`08-seleccion-producto-mes1.md`) encontró que el sofá-cama real más barato del sitio oficial —Sofá Cama Sleepy, $8,580–$9,800 MXN— cuesta 3 a 3.7 veces más que "Sala Fantasy" (SKU de Mercado Libre que sostenía la cifra original, y que no existe en interimobel.mx). Se aplica la Opción A: se retira la sala del combo. El desglose queda en 3 elementos 100% reales y verificados — Silla Oslo Vento $590 + Mesa Comedor Erza $1,750 + Armario Lima $6,655.56 = **$8,995 MXN** — y el titular se ajusta a esa cifra real.)*
+*(Tercera corrección, aplicada directamente tras retroalimentación del cliente: la versión anterior combinaba "Mesa Comedor Erza + 2 Sillas Oslo Vento" como si fuera un set vendible — pero Interimobel no vende una mesa de comedor con solo 2 sillas sueltas de otra línea; los paquetes reales de comedor vienen en 4 o 6 sillas a juego, y ninguno cabe en este presupuesto. Se reemplaza el "comedor" por un **rincón de desayunador**, donde sí es correcto vender/mostrar un par de piezas: **Paquete de 2 Bancos Lexy** ($3,600 MXN) + **Mesa Alta para Barra Diam. 60** (precio no confirmado, no incluido en el total) + **Armario Lima** ($6,655.56 MXN). Total con precio confirmado: **$10,255.56 MXN**, titular redondeado a "menos de $10,500 MXN".)*
 
-**Plataforma:** Instagram (carrusel) / TikTok (formato carrusel de fotos) — tono TikTok adaptado a slides. **Formato:** carrusel de **7 slides** (antes 8 — ver justificación en `04-storyboard-mes1.md`: al pasar de 4 a 3 categorías, un slide dedicado al sofá-cama dejó de tener producto real que mostrar).
+**Plataforma:** Instagram (carrusel) / TikTok (formato carrusel de fotos) — tono TikTok adaptado a slides. **Formato:** carrusel de **7 slides** (ver `04-storyboard-mes1.md`).
 
 ### Texto en pantalla
 
 - **Slide 1 (cover, [ZONA DE TEXTO: cifra grande]):**
 
-> Menos de $9,000 MXN
+> Menos de $10,500 MXN
 > para amueblar lo esencial de tu depa
 
 - **Slides 2–5:** sin texto — visuales (sin marca de zona).
 - **Slide 6 ([ZONA DE TEXTO: desglose de precio]):**
 
-> Silla — $590
-> Mesa — $1,750
+> Bancos de barra (par) — $3,600
 > Armario — $6,655
-> Total — $8,995 MXN
+> Total — $10,255 MXN
 
-*(Nota de producción, no es texto de publicación: los 3 precios están confirmados reales y vigentes al 12-jul-2026 en `interimobel.mx` — ver `08-seleccion-producto-mes1.md`. El equipo comercial debe reconfirmar vigencia inmediatamente antes de publicar, ya que los precios de e-commerce de mueblería cambian con frecuencia — pero ya no hay ambigüedad de qué SKU se muestra ni riesgo de que la suma no cuadre con el titular.)*
+*(Nota de producción, no es texto de publicación: los 2 precios están confirmados reales y vigentes al 12-jul-2026 en `interimobel.mx`. La Mesa Alta para Barra aparece en la escena como ambientación pero su precio no está confirmado — no se incluye en el desglose. El equipo comercial debe reconfirmar vigencia de los 2 precios y, si lo desea, confirmar y sumar el precio de la mesa antes de publicar.)*
 
 - **Slide 7 (cierre):** sin texto — el Director no marcó esta slide con zona de texto.
 
 ### Caption (Instagram/TikTok)
 
-¿Te vas a independizar y tu presupuesto para amueblar el depa es de $9,000 pesos o menos? Se puede, y no es magia, es orden 👇
+¿Te vas a independizar y tu presupuesto para amueblar el depa es de $10,500 pesos o menos? Se puede, y no es magia, es orden 👇
 
-Empieza por lo que sí vas a usar todos los días (una silla, una mesa, un lugar donde guardar tu ropa) y deja lo demás para después. No necesitas comprar la casa completa en un solo fin de semana.
+Empieza por lo que sí vas a usar todos los días (un rincón de desayunador con sus bancos, un lugar donde guardar tu ropa) y deja lo demás para después. No necesitas comprar la casa completa en un solo fin de semana.
 
-Desliza y arma tu depa pieza por pieza. ¿Qué es lo primero que comprarías tú — silla, mesa o armario? Cuéntanos en comentarios 👀
+Desliza y arma tu depa pieza por pieza. ¿Qué es lo primero que comprarías tú — los bancos o el armario? Cuéntanos en comentarios 👀
 
 ### Hashtags
 

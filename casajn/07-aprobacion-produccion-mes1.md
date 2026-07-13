@@ -40,30 +40,32 @@
 
 ---
 
-## Pieza 2 — "Amuebla lo esencial de tu depa por menos de $9,000 MXN"
-**Segmento 1 (Primer Espacio Propio) · Semana 1 · Carrusel de 7 slides (antes 8) · Instagram/TikTok**
+## Pieza 2 — "Amuebla lo esencial de tu depa por menos de $10,500 MXN"
+**Segmento 1 (Primer Espacio Propio) · Semana 1 · Carrusel de 7 slides · Instagram/TikTok**
 
 > **Corrección de QA de marca (histórica):** el titular original decía "$15,000 MXN"; el desglose de precio de la misma pieza sumaba $11,745 MXN. Se corrigió a "menos de $12,000 MXN".
 >
-> **Corrección del Decorador de Interiores (vigente, sustituye la anterior):** la verificación de catálogo real (`08-seleccion-producto-mes1.md`) encontró que "Sala Fantasy" —el SKU que sostenía la cifra de $11,745 MXN— no existe en interimobel.mx, es un producto de Mercado Libre. El sofá-cama real más barato del sitio oficial (Sofá Cama Sleepy) cuesta $8,580–$9,800 MXN, 3 a 3.7 veces más — incluirlo rompería la promesa de presupuesto bajo del Segmento 1. Se aplica la Opción A del documento 08: se retira la sala/sofá-cama del combo. Queda en 3 elementos 100% reales: Silla Oslo Vento ($590) + Mesa Comedor Erza ($1,750) + Armario Lima ($6,655.56) = **$8,995 MXN**. Titular, desglose y caption ya actualizados en `04` y `05` — no queda pendiente.
+> **Corrección del Decorador de Interiores (histórica):** la verificación de catálogo real encontró que "Sala Fantasy" no existe en interimobel.mx (es SKU de Mercado Libre); se retiró la sala del combo, quedando Silla Oslo Vento + Mesa Comedor Erza + Armario Lima = $8,995 MXN.
+>
+> **Corrección de lógica de producto (vigente, sustituye las anteriores):** el cliente señaló que Interimobel no vende ni exhibe una mesa de comedor con solo 2 sillas sueltas de otra línea — los paquetes reales de comedor vienen en 4 o 6 sillas a juego, y ninguno cabe en este presupuesto. Se retira Mesa Comedor Erza y Silla Oslo Vento por completo. Se reemplazan por un **rincón de desayunador**, donde sí es correcto vender/mostrar un par de piezas: **Paquete de 2 Bancos Lexy** ($3,600 MXN, confirmado — los bancos de barra sí se venden en pareja) + **Armario Lima** ($6,655.56 MXN, confirmado) = **$10,255.56 MXN**. La **Mesa Alta para Barra Diam. 60** aparece en escena como ambientación (una pareja de bancos necesita una mesa) pero su precio no se pudo confirmar — no se incluye en el total. Titular redondeado a "menos de $10,500 MXN". Ya actualizado en `04` y `05` — no queda pendiente.
 
-**Concepto visual:** flat-lay cenital de un depa pequeño con zonas de comedor y recámara delimitadas por color (ya no hay zona de sala), persona joven (~24 años) entrando con maleta, Silla Oslo Vento suelta, Mesa Comedor Erza + 2 sillas instaladas, recámara mínima con Armario Lima, desglose cenital de precio (3 líneas), cierre con persona de espaldas admirando el depa desde el umbral. Acento ocre/mostaza, luz dura de mediodía, energía tipo TikTok (dutch angles permitidos). *(El slide de sala/sofá-cama con persona revisando el teléfono se retiró del carrusel — de ahí que baje de 8 a 7 slides.)*
+**Concepto visual:** flat-lay cenital de un depa pequeño con zonas de desayunador y recámara delimitadas por color, persona joven (~24 años) entrando con maleta, Paquete de 2 Bancos Lexy mostrados juntos como se venden, Mesa Alta para Barra con los 2 bancos integrados formando un rincón de desayunador, recámara mínima con Armario Lima, desglose cenital de precio (2 líneas + total), cierre con persona de espaldas admirando el depa desde el umbral. Acento ocre/mostaza, luz dura de mediodía, energía tipo TikTok (dutch angles permitidos).
 
 **Texto en pantalla:**
-- Slide 1 (cover): *"Menos de $9,000 MXN / para amueblar lo esencial de tu depa"*
-- Slide 6 (desglose): *"Silla — $590 / Mesa — $1,750 / Armario — $6,655 / Total — $8,995 MXN"*
-  *(Nota de producción: los 3 precios están confirmados reales y vigentes al 12-jul-2026 en interimobel.mx; reconfirmar vigencia con equipo comercial inmediatamente antes de publicar.)*
+- Slide 1 (cover): *"Menos de $10,500 MXN / para amueblar lo esencial de tu depa"*
+- Slide 6 (desglose): *"Bancos de barra (par) — $3,600 / Armario — $6,655 / Total — $10,255 MXN"*
+  *(Nota de producción: los 2 precios están confirmados reales y vigentes al 12-jul-2026 en interimobel.mx. La Mesa Alta para Barra no lleva precio en el desglose por no estar confirmado — reconfirmar con equipo comercial antes de publicar, y sumarla al total si se confirma.)*
 
 **Caption (Instagram/TikTok):**
-> ¿Te vas a independizar y tu presupuesto para amueblar el depa es de $9,000 pesos o menos? Se puede, y no es magia, es orden 👇
+> ¿Te vas a independizar y tu presupuesto para amueblar el depa es de $10,500 pesos o menos? Se puede, y no es magia, es orden 👇
 >
-> Empieza por lo que sí vas a usar todos los días (una silla, una mesa, un lugar donde guardar tu ropa) y deja lo demás para después. No necesitas comprar la casa completa en un solo fin de semana.
+> Empieza por lo que sí vas a usar todos los días (un rincón de desayunador con sus bancos, un lugar donde guardar tu ropa) y deja lo demás para después. No necesitas comprar la casa completa en un solo fin de semana.
 >
-> Desliza y arma tu depa pieza por pieza. ¿Qué es lo primero que comprarías tú — silla, mesa o armario? Cuéntanos en comentarios 👀
+> Desliza y arma tu depa pieza por pieza. ¿Qué es lo primero que comprarías tú — los bancos o el armario? Cuéntanos en comentarios 👀
 
 **Hashtags:** #fyp #paratii #PrimerDepa #Muebles #Mexico
 
-**QA:** ✅ Aprobado. Corrección de producto y precio del Decorador de Interiores ya integrada; los 3 productos y el total ($8,995 MXN) son reales y verificados, no una cifra ilustrativa.
+**QA:** ✅ Aprobado. Los 2 productos con precio en pantalla (bancos y armario) son reales, verificados, y se venden en la configuración exacta mostrada (par de bancos, no una mesa con cantidad de sillas que la marca no vende así). La mesa de acompañamiento queda marcada como pendiente de precio, no como cifra inventada.
 
 ---
 
@@ -192,7 +194,7 @@
 | Toma | Duración | Movimiento | Qué representa |
 |---|---|---|---|
 | 1 | 0:00–0:05 | Dolly in hacia la puerta principal | Establecimiento: "la casa" |
-| 2 | 0:05–0:10 | Paneo lateral | Segmento 1 — depa con Silla Oslo Vento + Mesa Comedor Erza (mismos SKU de Piezas 2 y 7) |
+| 2 | 0:05–0:10 | Paneo lateral | Segmento 1 — depa con Mesa Alta para Barra + Paquete de 2 Bancos Lexy (mismos SKU corregidos de la Pieza 2) |
 | 3 | 0:10–0:16 | Órbita lenta | Segmento 2 — Sala Kenia (Sofá y Love Seat, Gris) + Paquete Mesa Yzma Merlot/6 Sillas Kaitlin Camel (mismos productos de Pieza 3) |
 | 4 | 0:16–0:22 | Dolly in | Segmento 3 — Sala Modular Excellence Elite Especial (misma línea de la Pieza 1) |
 | 5 | 0:22–0:28 | Tilt down | Segmento 4 — Sillón Reclinable Milan (Beige) + Colchón Freedom - América (mismos productos de Pieza 4) |
@@ -223,7 +225,7 @@
 
 ## Acciones pendientes antes de publicar (no bloquean la aprobación del concepto/copy)
 
-1. **Precios y SKU de la Pieza 2 (actualizado):** el equipo comercial debe **confirmar vigencia real de precios** de los 3 productos ya verificados como reales en `interimobel.mx` — Silla Oslo Vento ($590), Mesa Comedor Erza ($1,750), Armario Lima ($6,655.56), total $8,995 MXN — inmediatamente antes de publicar, ya que el catálogo de mueblería cambia de precio con frecuencia (ver `08-seleccion-producto-mes1.md`). Ya no queda pendiente confirmar *qué producto* se muestra (eso se resolvió en esta validación), solo *el precio vigente*.
+1. **Precios y SKU de la Pieza 2 (actualizado):** el equipo comercial debe **confirmar vigencia real de precios** de los 2 productos con precio en pantalla — Paquete de 2 Bancos Lexy ($3,600), Armario Lima ($6,655.56), total $10,255.56 MXN — inmediatamente antes de publicar. Adicionalmente, debe **confirmar el precio de la Mesa Alta para Barra Diam. 60** (ambientación de la escena, sin precio en el desglose actual) y decidir si se agrega al total mostrado.
 2. **URL exacta del Sillón Reclinable Milan (Piezas 1, 4 y 8):** el nombre y precio ($11,500, antes $23,000) están confirmados reales, pero la URL de producto exacta no quedó indexada en la verificación de catálogo. El equipo de producción debe localizarla/confirmarla en `interimobel.mx` antes de publicar cualquiera de las 3 piezas que usan este producto.
 3. **Precio del Colchón Kivu - Sealy (Pieza 6):** el producto es real, pero su precio no se confirmó en esta sesión. No bloquea publicación porque ninguna slide ni el copy de la Pieza 6 muestran precio de colchón — solo aplica si en producción se decide agregar una cifra que hoy no existe.
 4. **Ver el detalle completo de cambios por pieza en `09-validacion-decorador-mes1.md`.**
