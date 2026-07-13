@@ -7,7 +7,7 @@
 
 **Dirección fotográfica:** estética Pinterest para Gen Z/millennial, iluminación profesional consistente tipo catálogo IKEA, cero apariencia de render — fotografía real, con textura y pequeñas imperfecciones de un espacio habitado.
 
-**Reglas duras de tono:** cero superlativos/urgencia/descuento-gancho en Segmentos 3 y 4; Segmento 1 mantiene energía pero ya no discurso de "precio bajo"; ninguna pieza promete entrega inmediata; no se nombra proveedor.
+**Reglas duras de tono:** cero superlativos/urgencia/descuento-gancho en Segmentos 3 y 4; Segmento 1 mantiene energía pero ya no discurso de "precio bajo"; ninguna pieza promete entrega inmediata; no se nombra proveedor; **no se anuncian precios en ningún caption ni overlay** (decisión del cliente, 14-jul-2026).
 
 **Hashtags:** máximo 5, específicos del producto/tema de cada pieza (política de Instagram desde diciembre 2025).
 

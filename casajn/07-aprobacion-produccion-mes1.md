@@ -16,7 +16,7 @@
 
 **Dirección fotográfica:** estética Pinterest, cálida y curada pero habitada de verdad; iluminación profesional pareja tipo catálogo IKEA; cero apariencia de render — grano, sombras naturales, texturas reales, pequeñas imperfecciones de un espacio habitado.
 
-**Reglas del mes:** cero superlativos/urgencia en Segmentos 3 y 4; ninguna pieza promete entrega inmediata; no se nombra proveedor; captions cortos (hook + dato + CTA de 2-4 palabras); hashtags de nicho, máximo 5.
+**Reglas del mes:** cero superlativos/urgencia en Segmentos 3 y 4; ninguna pieza promete entrega inmediata; no se nombra proveedor; captions cortos (hook + dato + CTA de 2-4 palabras); hashtags de nicho, máximo 5. **No se anuncian precios en ninguna pieza** — los precios de la tabla de abajo son solo referencia interna de producción (para identificar el SKU), nunca aparecen en captions ni overlays.
 
 ---
 
