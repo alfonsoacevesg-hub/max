@@ -1,7 +1,7 @@
 # Mes 1 "La Casa se Acomoda" — Documento de Aprobación a Producción
 ## Interimobel — concepto + copy in/out + QA consolidados, 8 piezas (7 carruseles + 1 video ancla)
 
-**Fecha:** 12 de julio de 2026. **Última revisión:** 13-jul-2026, Analista de Meta Ads + Copywriter Senior (estructura copy IN/copy OUT, ver `11-analisis-meta-ads-mes1.md`).
+**Fecha:** 12 de julio de 2026. **Última revisión:** 13-jul-2026, Copywriter Senior — recorte de brevedad en las 8 captions tras retroalimentación del cliente (párrafos largos no son scroll-stoppers competitivos hoy). Revisión anterior: Analista de Meta Ads + Copywriter Senior (estructura copy IN/copy OUT, ver `11-analisis-meta-ads-mes1.md`).
 **Flujo de trabajo:** Director Creativo (concepto/storyboard) → Copywriter Senior (copy inicial) → Estratega de Marca (QA de consistencia y reglas duras) → Especialista de Marketing Comercial (verificación de catálogo real) → Decorador de Interiores (validación de estilismo) → corrección directa de lógica de producto (Pieza 2) → **Analista de Meta Ads** (auditoría de estructura copy IN/OUT y specs técnicas) → **Copywriter Senior** (reescritura final aplicando esa especificación). Este documento consolida todas las entregas en una sola vista por pieza, para aprobación única.
 **Veredicto general:** **Listo para producción.** Historial de correcciones: (1) QA de marca corrigió un error aritmético en la Pieza 2; (2) Marketing Comercial/Decorador de Interiores reemplazaron productos no verificables ("Sala Fantasy", "Colchón Comfort Tech") por SKU reales de `interimobel.mx`; (3) corrección directa de lógica de producto en la Pieza 2 (bancos de barra en vez de mesa+2 sillas sueltas — Interimobel no vende comedores así); (4) Analista de Meta Ads + Copywriter Senior reestructuraron el copy de las 8 piezas en formato COPY IN / COPY OUT explícito, reescribieron 4 captions que enterraban su gancho tras el corte de vista previa, y resolvieron el aspect ratio del video (9:16) y el formato de la Pieza 7 (overlay por tip).
 **Documentos fuente completos:** `01` a `11` en `/casajn/` (ver README de la carpeta para el índice completo).
@@ -13,7 +13,7 @@
 - **Idea-paraguas:** "La Casa se Acomoda" — una sola casa, cuatro etapas de vida, misma marca (25+ años).
 - **Formatos:** 4:5 para carruseles de feed (cover duplicable a 1:1 donde se indica); el video ancla (Pieza 8) es **9:16 fijo** — resuelto por incompatibilidad con el placement de Reels, ver Pieza 8 abajo.
 - **Estructura de copy (nueva, ver `11-analisis-meta-ads-mes1.md`):** cada pieza separa explícitamente **COPY IN** (texto que va dentro de la imagen/video, siempre en zonas marcadas **[ZONA DE TEXTO]** en el storyboard) de **COPY OUT** (el caption de la publicación). El copy IN nunca lo genera el modelo de IA como tipografía — se sobrepone en post (Canva/Figma) sobre el espacio negativo reservado.
-- **Regla de gancho en captions:** el corte de "ver más" de Instagram/Facebook cae aproximadamente a los 125 caracteres — la frase con más fuerza de cada caption debe quedar completa antes de ese corte. 4 piezas (2, 4, 5, 6) se reescribieron para cumplir esto.
+- **Brevedad de caption (regla vigente):** máximo 2-3 líneas cortas por caption — hook, un dato, CTA. Se eliminó la narrativa extendida de la versión anterior en las 8 piezas por retroalimentación directa del cliente: párrafos largos compiten mal en el scroll actual, sin importar que el gancho ya quepa antes del corte de "ver más".
 - **Continuidad visual:** paleta madre cálida neutra + acento cromático propio por segmento (ocre Seg.1, terracota Seg.2, verde salvia/nogal Seg.3, arena/beige Seg.4); motivo recurrente de "umbral" (puerta/ventana) en al menos un slide/toma por pieza.
 - **Reglas duras de tono:** Segmentos 3 y 4 — cero superlativos, cero urgencia/FOMO, cero descuento como gancho. Segmento 1 — conserva la energía tipo TikTok ya validada, en formato carrusel. Ninguna pieza promete entrega inmediata. No se nombra proveedor.
 - **Productos:** las 8 piezas usan exclusivamente SKU reales y verificados de `interimobel.mx` (nunca Mercado Libre), con combinaciones que respetan la lógica comercial real de cada categoría (ver `10-correccion-logica-producto-pieza2.md` para el caso más relevante: bancos de barra en pareja, no mesa de comedor con cantidad de sillas que la marca no vende así).
@@ -29,14 +29,10 @@
 
 **COPY IN (texto en imagen):** solo slide 7 → *"25 años vistiendo hogares mexicanos."*
 
-**COPY OUT (caption, Facebook):**
-> Hay sillas en esta casa que ya vieron pasar dos o tres épocas distintas de quien las tiene. Un sillón que cambió de sala tres veces. Un comedor que sigue siendo el lugar donde se sientan todos, aunque "todos" ya no sean los mismos de hace quince años.
->
-> Interimobel lleva 25 años haciendo mobiliario en México — no para que dure una temporada, sino para que acompañe las que sigan. Salas modulares, recámaras completas, piezas pensadas para quedarse.
->
-> Si estás en el momento de renovar algo en tu casa —no de empezar de cero, sino de cambiar lo que ya cumplió su ciclo— te invitamos a conocer la colección en interimobel.mx o en tu sucursal más cercana.
-
-*(Gancho de 91 caracteres, verificado por el Analista de Meta Ads — cabe entero antes del corte. Sin cambios.)*
+**COPY OUT (caption, Facebook) — recortado para brevedad (13-jul-2026, ver nota de brevedad en `05-copy-mes1.md`):**
+> Hay sillas en esta casa que ya vieron pasar dos o tres épocas de quien las tiene.
+> 25 años haciendo mobiliario en México — piezas pensadas para quedarse.
+> Conócenos en interimobel.mx.
 
 **Hashtags:** #Interimobel #HechoEnMexico #Muebles #Hogar #CDMX
 
@@ -58,16 +54,10 @@
 - Slide 6 (desglose): *"Bancos de barra (par) — $3,600 / Armario — $6,655 / Total — $10,255 MXN"*
   *(Mesa Alta para Barra no lleva precio en el desglose por no estar confirmado — reconfirmar con equipo comercial antes de publicar.)*
 
-**COPY OUT (caption, Instagram/TikTok):**
-> ¿Te vas a independizar y tu presupuesto para amueblar el depa es de $10,500 pesos o menos?
->
-> Se puede, y no es magia, es orden 👇
->
-> Empieza por lo que sí vas a usar todos los días (un rincón de desayunador con sus bancos, un lugar donde guardar tu ropa) y deja lo demás para después. No necesitas comprar la casa completa en un solo fin de semana.
->
-> Desliza y arma tu depa pieza por pieza. ¿Qué es lo primero que comprarías tú — los bancos o el armario? Cuéntanos en comentarios 👀
-
-*(Reescrito por el Copywriter Senior: el párrafo original medía 126 caracteres en una sola oración, enterrando "es orden 👇" justo tras el corte de vista previa. Se separó el gancho ["¿Te vas a independizar...?"] de su resolución ["Se puede, y no es magia, es orden 👇"] en dos líneas independientes.)*
+**COPY OUT (caption, Instagram/TikTok) — recortado para brevedad:**
+> ¿Amueblar tu depa con menos de $10,500 pesos? Se puede, y no es magia, es orden 👇
+> Un rincón de desayunador + un armario. Lo demás, después.
+> ¿Bancos o armario primero? 👀
 
 **Hashtags:** #fyp #paratii #PrimerDepa #Muebles #Mexico
 
@@ -86,16 +76,12 @@
 
 **COPY IN (texto en imagen):** ninguna slide lleva overlay — el Director diseñó las 8 slides como puramente visuales; el contraste antes/después con encuadre idéntico es el recurso narrativo completo. *(Nota: la "zona superior limpia" del slide 1 es solo espacio de composición, no una instrucción de overlay — no debe confundirse con [ZONA DE TEXTO].)*
 
-**COPY OUT (caption, Instagram):**
+**COPY OUT (caption, Instagram) — recortado para brevedad:**
 > De la casa vacía a la casa que ya se siente de ustedes.
->
-> Cuando te cambias a un espacio más grande, no amueblas un rincón: amuebla la sala, el comedor y la recámara casi al mismo tiempo. Por eso armar sets completos tiene más sentido que ir pieza por pieza — y por eso, si prefieres organizarlo en pagos, la mayoría de nuestras colecciones están disponibles a meses sin intereses.
->
-> Desliza para ver la misma casa, antes y después.
->
-> ¿En qué habitación empezarías tú? Te leemos en comentarios.
+> Sala, comedor y recámara, a meses sin intereses.
+> ¿En qué habitación empezarías tú?
 
-*(Gancho de 55 caracteres, verificado por el Analista de Meta Ads. Sin cambios. Mención de "meses sin intereses" es práctica real vigente, no promesa inventada.)*
+*("Meses sin intereses" es práctica real vigente, no promesa inventada.)*
 
 **Hashtags:** #Interimobel #CasaNueva #Muebles #Mexico #Hogar
 
@@ -114,18 +100,12 @@
 
 **COPY IN (texto en imagen):** solo slide 7 → *"Ese cuarto ya tiene un nuevo lugar en tu casa."*
 
-**COPY OUT (caption, Facebook):**
-> El cuarto se quedó como estaba durante un tiempo.
->
-> Ni vacío del todo, ni realmente en uso — solo esperando a que alguien decidiera qué seguía.
->
-> Un sillón reclinable junto a la ventana. Un colchón listo para cuando llegue quien se quede a dormir. La misma habitación, ahora con un motivo distinto para entrar a ella.
->
-> Si tienes un espacio así en casa, en Interimobel encuentras el Sillón Reclinable Milan y el Colchón Freedom - América, pensados para ese tipo de cambio — el que no se apura, pero que sí se disfruta cuando por fin sucede.
->
-> Conócelos en interimobel.mx o platícanos por WhatsApp qué habitación estás por cambiarle el uso.
+**COPY OUT (caption, Facebook) — recortado para brevedad:**
+> Ese cuarto ya tiene un nuevo lugar en tu casa.
+> Sillón reclinable + colchón, para el cambio que no se apura pero sí se disfruta.
+> Conócelos en interimobel.mx o por WhatsApp.
 
-*(Reescrito por el Copywriter Senior: el párrafo original medía 141 caracteres, enterrando "...decidiera qué seguía" tras el corte. Se separó en dos oraciones independientes. Tono sereno sin exclamación, regla dura del Segmento 4.)*
+*(Tono sereno sin exclamación, regla dura del Segmento 4.)*
 
 **Hashtags:** #Interimobel #Reclinables #Colchones #Hogar #Mexico
 
@@ -146,16 +126,9 @@
 
 *(Reescrito por el Copywriter Senior: el overlay original —"Así nace cada mueble Interimobel: hecho en México, hecho para durar."— medía 68 caracteres en una sola línea, en el borde superior de lo legible en scroll. Se dividió en titular + subtítulo, mismo contenido, mejor jerarquía.)*
 
-**COPY OUT (caption, Facebook + Instagram):**
+**COPY OUT (caption, Facebook + Instagram) — recortado para brevedad:**
 > Cada mueble Interimobel pasa por manos reales, no por una línea automatizada.
->
-> Antes de llegar a tu casa, cada pieza pasa por manos que lijan, cortan tela, cosen y ensamblan — gente que lleva años haciendo esto en talleres mexicanos.
->
-> Quisimos abrirte la puerta a ese proceso: la madera antes de convertirse en estructura, la tela antes de convertirse en tapizado, la pieza terminada antes de salir a bodega.
->
-> 25 años haciendo mobiliario en México — esto es parte de cómo.
-
-*(Reescrito por el Copywriter Senior — hallazgo más claro de la auditoría: el párrafo original medía 206 caracteres, y el gancho real ["no por una línea automatizada sin nombre, sino por gente..."] quedaba muy por detrás del corte. Se reescribió el arranque como oración corta e independiente que ya contiene el contraste central.)*
+> 25 años haciendo mobiliario en México — así se hace.
 
 **Hashtags:** #HechoEnMexico #Muebles #Mexico #Interimobel #DetrasDeCamaras
 
@@ -174,16 +147,10 @@
 
 **COPY IN (texto en imagen):** solo slide 6 → *"Renovar no es empezar de cero. Es elegir con criterio lo que sigue."*
 
-**COPY OUT (caption, Facebook):**
-> Llevaba tiempo pensándolo: no necesitaba una casa nueva. Cambió esa pieza, no todas.
->
-> Necesitaba que la sala dejara de sentirse cansada — y con ella, sin buscarlo, también cambió el colchón de la habitación de visitas, que ya lo pedía hace rato.
->
-> Así se ve renovar con criterio: no todo a la vez, no por moda, sino por lo que la casa realmente necesita en esta etapa.
->
-> Si hay una pieza en tu casa que ya cumplió su ciclo, conoce nuestra línea de salas modulares y colchones en interimobel.mx.
-
-*(Reescrito por el Copywriter Senior: el párrafo original medía 263 caracteres, y solo la primera oración ya medía 126 — excedía el límite incluso aislada. La frase con más fuerza, "Cambió esa pieza, no todas", quedaba oculta tras el corte. Se acortó el gancho y se adelantó esa frase para que quede visible.)*
+**COPY OUT (caption, Facebook) — recortado para brevedad:**
+> Cambió esa pieza, no todas.
+> Renovar con criterio: solo lo que tu casa realmente necesita hoy.
+> Conoce salas modulares y colchones en interimobel.mx.
 
 **Hashtags:** #Interimobel #Muebles #Mexico #Hogar #SalasModulares
 
@@ -205,19 +172,10 @@
 - Slides 2–7 (etiqueta corta por tip, 4-6 palabras): *Mide antes de comprar · Multiuso: vale por dos · Piezas sueltas, arma sobre la marcha · Aprovecha la luz natural · Un solo color guía · Deja espacio para crecer.*
 - Slide 8 (cierre): *"Y así, tu primer depa ya se siente tuyo."*
 
-**COPY OUT (caption, Instagram/TikTok):**
-> Cosas que hubiéramos querido saber antes de amueblar el primer depa 📋
->
-> 1. Mide antes de comprar. Sí, en serio, mide.
-> 2. Prioriza piezas multiuso (un sofá cama vale por dos).
-> 3. Compra piezas sueltas antes que sets grandes — arma sobre la marcha.
-> 4. Aprovecha la luz natural, es la decoración más barata que existe.
-> 5. Elige un solo color guía y ya, no le busques más.
-> 6. Deja algo de espacio vacío. No hay que llenarlo todo el primer mes.
->
-> Guarda este post para cuando te toque a ti 🔖
-
-*(Gancho de 69 caracteres, verificado por el Analista de Meta Ads — la lista numerada y el CTA de guardado ya son la estructura correcta para este formato. Sin cambios en el caption; el overlay por tip es la única adición.)*
+**COPY OUT (caption, Instagram/TikTok) — recortado para brevedad:**
+> Antes de amueblar tu primer depa 📋
+> 1. Mide. 2. Multiuso. 3. Piezas sueltas. 4. Luz natural. 5. Un solo color. 6. Deja espacio.
+> Guarda este post 🔖
 
 **Hashtags:** #fyp #paratii #PrimerDepa #Muebles #CDMX
 
@@ -250,16 +208,9 @@
 > Interimobel
 > La casa se acomoda.
 
-**COPY OUT (caption, Facebook + Instagram):**
-> Una casa. Cuatro momentos distintos de la vida de quien la habita. El mismo techo, acomodándose cada vez a lo que sigue.
->
-> El depa que es el primero de alguien. La casa que se amuebla completa porque una familia recién empieza ahí. La sala que se renueva sin necesidad de mudarse. El cuarto que encuentra un nuevo uso cuando alguien más se va.
->
-> 25 años después, seguimos haciendo lo mismo: mobiliario mexicano que se acomoda a cada etapa de tu casa.
->
-> ¿En qué momento está tu casa hoy? Cuéntanos.
-
-*(Gancho de 120 caracteres, verificado por el Analista de Meta Ads — cabe justo dentro del umbral, sin margen. No requiere reescritura, pero cualquier edición futura no debe alargarlo.)*
+**COPY OUT (caption, Facebook + Instagram) — recortado para brevedad:**
+> Una casa. Cuatro etapas de vida. El mismo techo, acomodándose siempre a lo que sigue.
+> 25 años haciendo lo mismo: mobiliario que se acomoda a cada etapa de tu casa.
 
 **Hashtags:** #LaCasaSeAcomoda #HechoEnMexico #Muebles #Hogar #Interimobel
 *(Primer y único uso del hashtag de campaña — nace aquí, no se usa prematuramente en piezas 1-7.)*
