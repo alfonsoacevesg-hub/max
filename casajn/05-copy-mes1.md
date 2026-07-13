@@ -1,26 +1,26 @@
 # Copy Final — Mes 1 "La Casa se Acomoda"
 ## Interimobel — 7 carruseles + 1 video ancla (agosto 2026)
 
-**Rol de este documento:** copy final sobre el storyboard visual aprobado en `04-storyboard-mes1.md`. No se modifica ningún concepto, slide, toma, encuadre, prompt de IA ni producto — solo el texto en pantalla (**[ZONA DE TEXTO]**), el caption y los hashtags de cada pieza.
+**Rol de este documento:** copy final sobre el storyboard visual en `04-storyboard-mes1.md`. Captions cortos (hook + dato + CTA, máximo 2-3 líneas), regla vigente por retroalimentación del cliente.
 
-**Reglas duras de tono:** cero superlativos/urgencia artificial/descuento-gancho en Segmentos 3 y 4; tono TikTok permitido en Segmento 1, adaptado a carrusel; ninguna pieza promete entrega inmediata; no se nombra proveedor mayorista; español de México natural.
+**Revisión mayor (13-jul-2026):** las 8 piezas ahora usan exclusivamente 4 categorías — **bancos, salas, armarios y comedores completos** — en gama media-alta real del catálogo. Se retiran colchones, reclinables y piezas sueltas de entrada. Detalle del pivote: `12-pivote-gama-media-alta.md`.
 
-**Revisión de brevedad (Copywriter Senior, 13-jul-2026):** el cliente señaló que, incluso con el gancho ya corregido dentro del umbral de "ver más", los captions seguían siendo párrafos largos tipo blog — no copy de scroll-stopper para el nivel de competencia y atención actual en redes. Se recortan las 8 piezas a **máximo 2-3 líneas cortas por caption** (hook + un dato + CTA), eliminando la narrativa extendida de la versión anterior. Historial completo de revisiones previas (corrección de producto, estructura copy IN/OUT, gancho antes del corte): ver `09`, `10` y `11` en esta carpeta — no se repite aquí para no alargar el documento.
+**Reglas duras de tono:** cero superlativos/urgencia/descuento-gancho en Segmentos 3 y 4; Segmento 1 mantiene energía pero ya no discurso de "precio bajo" (pivote de marca); ninguna pieza promete entrega inmediata; no se nombra proveedor.
 
 ---
 
-## Semana 1 · Pieza 1 — "25 años vistiendo hogares mexicanos" (Segmento 3 — Renovación con Criterio)
+## Semana 1 · Pieza 1 — "25 años vistiendo hogares mexicanos" (Segmento 3)
 
-**Plataforma:** Facebook. **Formato:** carrusel de 7 slides.
+**Plataforma:** Facebook. **Formato:** carrusel de 6 slides.
 
-**Tema visual (Higgsfield):** Un recorrido sereno por una casa mexicana habitada durante 25 años, donde cada mueble real muestra señales de uso y permanencia, sin nostalgia impostada ni personas posando a cámara.
+**Tema visual (Higgsfield):** Una casa mexicana de 25 años donde una sala modular, un armario con espejo y un comedor completo, todos de gama alta, muestran permanencia sin nostalgia impostada.
 
-### COPY IN (texto en imagen)
-Solo slide 7:
+### COPY IN
+Solo slide 6:
 > 25 años vistiendo hogares mexicanos.
 
-### COPY OUT (caption)
-> Hay sillas en esta casa que ya vieron pasar dos o tres épocas de quien las tiene.
+### COPY OUT
+> Hay muebles en esta casa que ya vieron pasar dos o tres épocas de quien los tiene.
 > 25 años haciendo mobiliario en México — piezas pensadas para quedarse.
 > Conócenos en interimobel.mx.
 
@@ -29,37 +29,38 @@ Solo slide 7:
 
 ---
 
-## Semana 1 · Pieza 2 — "Amuebla lo esencial de tu depa por menos de $10,500 MXN" (Segmento 1 — Primer Espacio Propio)
+## Semana 1 · Pieza 2 — "Tu primer espacio, con piezas que se quedan contigo" (Segmento 1)
 
-**Plataforma:** Instagram/TikTok (carrusel). **Formato:** carrusel de 7 slides.
+*(Pivote de marca: se retira el enfoque de precio bajo. Nuevo ángulo: invertir en calidad real desde el primer espacio propio.)*
 
-**Tema visual (Higgsfield):** Una persona joven amuebla su primer depa por partes reales y verificadas —un rincón de desayunador con bancos y mesa alta, un armario— dentro de un presupuesto honesto, con energía visual tipo TikTok.
+**Plataforma:** Instagram/TikTok. **Formato:** carrusel de 5 slides.
 
-### COPY IN (texto en imagen)
-- Slide 1 (cover): *"Menos de $10,500 MXN / para amueblar lo esencial de tu depa"*
-- Slide 6 (desglose): *"Bancos de barra (par) — $3,600 / Armario — $6,655 / Total — $10,255 MXN"*
-  *(Mesa Alta para Barra: ambientación, precio pendiente de confirmar, no incluido en el total.)*
+**Tema visual (Higgsfield):** Una persona joven arma un rincón de barra de diseño y un armario de gama alta en su primer depa — no hay que conformarse con lo económico desde el día uno.
 
-### COPY OUT (caption)
-> ¿Amueblar tu depa con menos de $10,500 pesos? Se puede, y no es magia, es orden 👇
-> Un rincón de desayunador + un armario. Lo demás, después.
-> ¿Bancos o armario primero? 👀
+### COPY IN
+Solo slide 5:
+> Tu primer espacio, con piezas que se quedan contigo.
+
+### COPY OUT
+> No tienes que conformarte en tu primer depa.
+> Un buen armario y un rincón que se sienta tuyo — eso sí se queda contigo.
+> ¿Qué pieza elegirías primero?
 
 ### Hashtags
-#fyp #paratii #PrimerDepa #Muebles #Mexico
+#Interimobel #PrimerEspacio #Muebles #Mexico #Diseño
 
 ---
 
-## Semana 2 · Pieza 3 — Antes/después: casa completa amueblada (Segmento 2 — Casa Nueva/Familia Joven)
+## Semana 2 · Pieza 3 — Antes/después: casa completa amueblada (Segmento 2)
 
-**Plataforma:** Instagram. **Formato:** carrusel de 8 slides.
+**Plataforma:** Instagram. **Formato:** carrusel de 7 slides.
 
-**Tema visual (Higgsfield):** Una casa recién comprada se transforma, habitación por habitación con el mismo encuadre, de vacía a completamente habitada, unificada por una sola paleta terracota.
+**Tema visual (Higgsfield):** Una casa recién comprada se transforma, con el mismo encuadre por habitación, de vacía a completamente amueblada con sala, comedor y armario de gama alta, en una sola paleta terracota.
 
-### COPY IN (texto en imagen)
-Ninguna slide lleva overlay — el contraste antes/después con encuadre idéntico es el recurso narrativo completo.
+### COPY IN
+Ninguna slide lleva overlay — el contraste antes/después es el recurso narrativo.
 
-### COPY OUT (caption)
+### COPY OUT
 > De la casa vacía a la casa que ya se siente de ustedes.
 > Sala, comedor y recámara, a meses sin intereses.
 > ¿En qué habitación empezarías tú?
@@ -69,38 +70,40 @@ Ninguna slide lleva overlay — el contraste antes/después con encuadre idénti
 
 ---
 
-## Semana 2 · Pieza 4 — El cuarto que cambia de uso: Sillón Reclinable Milan + Colchón Freedom - América (Segmento 4 — Cuando el Cuarto Cambia de Dueño)
+## Semana 2 · Pieza 4 — "El cuarto que ahora es tu vestidor" (Segmento 4)
 
-**Plataforma:** Facebook. **Formato:** carrusel de 7 slides.
+*(Pivote: el ángulo ya no es reclinable+colchón, sino un vestidor con armario de gama alta — escenario real de esta etapa de vida.)*
 
-**Tema visual (Higgsfield):** Una habitación en limbo entre vacía y en uso encuentra, sin prisa, un nuevo propósito de descanso gracias a un sillón reclinable y un colchón.
+**Plataforma:** Facebook. **Formato:** carrusel de 6 slides.
 
-### COPY IN (texto en imagen)
-Solo slide 7:
+**Tema visual (Higgsfield):** Una habitación que quedó vacía encuentra, con calma, un nuevo propósito como vestidor gracias a un armario de espejo de gama alta.
+
+### COPY IN
+Solo slide 6:
 > Ese cuarto ya tiene un nuevo lugar en tu casa.
 
-### COPY OUT (caption)
+### COPY OUT
 > Ese cuarto ya tiene un nuevo lugar en tu casa.
-> Sillón reclinable + colchón, para el cambio que no se apura pero sí se disfruta.
-> Conócelos en interimobel.mx o por WhatsApp.
+> Un armario con espejo, para el vestidor que siempre quisiste.
+> Conócelo en interimobel.mx o por WhatsApp.
 
 ### Hashtags
-#Interimobel #Reclinables #Colchones #Hogar #Mexico
+#Interimobel #Armarios #Hogar #Mexico #Vestidor
 
 ---
 
 ## Semana 3 · Pieza 5 — "Así se fabrica": detrás de cámaras (Todos los segmentos)
 
-**Plataforma:** Facebook + Instagram. **Formato:** carrusel de 7 slides.
+**Plataforma:** Facebook + Instagram. **Formato:** carrusel de 6 slides.
 
-**Tema visual (Higgsfield):** El proceso de manufactura real detrás de cada mueble Interimobel, contado como puente visual hacia los 4 acentos cromáticos del mes, sin necesidad de mostrar un SKU específico.
+**Tema visual (Higgsfield):** El proceso de manufactura real detrás de cada mueble de gama alta Interimobel, puente visual hacia los 4 acentos del mes.
 
-### COPY IN (texto en imagen)
-Solo slide 7:
+### COPY IN
+Solo slide 6 (titular + subtítulo):
 > Así nace cada mueble Interimobel.
 > Hecho en México. Hecho para durar.
 
-### COPY OUT (caption)
+### COPY OUT
 > Cada mueble Interimobel pasa por manos reales, no por una línea automatizada.
 > 25 años haciendo mobiliario en México — así se hace.
 
@@ -109,62 +112,65 @@ Solo slide 7:
 
 ---
 
-## Semana 3 · Pieza 6 — Testimonio: renovar con criterio (Segmento 3 — Renovación con Criterio)
+## Semana 3 · Pieza 6 — Testimonio: renovar con criterio (Segmento 3)
 
-**Plataforma:** Facebook. **Formato:** carrusel de 6 slides.
+*(Pivote: la "otra habitación" ahora revela un comedor completo, no un colchón.)*
 
-**Tema visual (Higgsfield):** Una persona de mediana edad renueva, con calma y sin urgencia, solo la pieza de su casa que ya cumplió su ciclo, sin aparentar ser un cliente real específico no verificado.
+**Plataforma:** Facebook. **Formato:** carrusel de 5 slides.
 
-### COPY IN (texto en imagen)
-Solo slide 6:
+**Tema visual (Higgsfield):** Una persona de mediana edad renueva, con calma, solo la sala de su casa — y de forma discreta, también el comedor.
+
+### COPY IN
+Solo slide 5:
 > Renovar no es empezar de cero. Es elegir con criterio lo que sigue.
 
-### COPY OUT (caption)
+### COPY OUT
 > Cambió esa pieza, no todas.
 > Renovar con criterio: solo lo que tu casa realmente necesita hoy.
-> Conoce salas modulares y colchones en interimobel.mx.
+> Conoce salas y comedores en interimobel.mx.
 
 ### Hashtags
 #Interimobel #Muebles #Mexico #Hogar #SalasModulares
 
 ---
 
-## Semana 4 · Pieza 7 — "Antes de amueblar tu primer depa": 6 tips (Segmento 1 — Primer Espacio Propio)
+## Semana 4 · Pieza 7 — "Piezas que valen la pena en tu primer espacio" (Segmento 1)
 
-**Plataforma:** Instagram/TikTok. **Formato:** carrusel de 8 slides.
+*(Pivote completo: ya no son tips de "amueblar barato" — son criterios de inversión en calidad.)*
 
-**Tema visual (Higgsfield):** Seis lecciones prácticas de primerizo, contadas como un checklist visual rápido de scroll, con energía TikTok.
+**Plataforma:** Instagram/TikTok. **Formato:** carrusel de 6 slides.
 
-### COPY IN (texto en imagen)
-- Slide 1 (cover): sin texto.
-- Slides 2–7 (etiqueta corta por tip): *Mide antes de comprar · Multiuso: vale por dos · Piezas sueltas, arma sobre la marcha · Aprovecha la luz natural · Un solo color guía · Deja espacio para crecer.*
-- Slide 8 (cierre): *"Y así, tu primer depa ya se siente tuyo."*
+**Tema visual (Higgsfield):** Cuatro criterios para elegir bien tus primeras piezas —armario, comedor completo, un rincón especial, luz natural— con energía visual TikTok.
 
-### COPY OUT (caption)
-> Antes de amueblar tu primer depa 📋
-> 1. Mide. 2. Multiuso. 3. Piezas sueltas. 4. Luz natural. 5. Un solo color. 6. Deja espacio.
+### COPY IN
+- Slide 1: sin texto.
+- Slides 2-5 (etiqueta corta): Invierte en un buen armario · Un comedor completo, no piezas sueltas · Un rincón que se sienta especial · Aprovecha la luz natural.
+- Slide 6 (cierre): *"Y así, tu primer depa ya se siente tuyo."*
+
+### COPY OUT
+> Piezas que valen la pena en tu primer espacio 📋
+> Un buen armario. Un comedor completo. Un rincón que se sienta tuyo.
 > Guarda este post 🔖
 
 ### Hashtags
-#fyp #paratii #PrimerDepa #Muebles #CDMX
+#Interimobel #PrimerEspacio #Muebles #Mexico #Diseño
 
 ---
 
 ## Semana 4 · Pieza 8 — Video ancla "La Casa se Acomoda" (Todos los segmentos)
 
-**Plataforma:** Facebook + Instagram Reels. **Duración:** 38 segundos, 7 tomas, 9:16.
+**Plataforma:** Facebook + Instagram Reels. **Duración:** 32 segundos, 6 tomas, 9:16.
 
-**Tema visual (Higgsfield):** Un recorrido encadenado por una sola casa que atraviesa sus cuatro etapas de vida en un solo movimiento de cámara por toma, cerrando con el wordmark y tagline de marca.
+**Tema visual (Higgsfield):** Un recorrido encadenado por una sola casa que atraviesa sus cuatro etapas de vida, un solo movimiento de cámara por toma.
 
-### COPY IN (texto en imagen)
-Solo toma 7 (tomas 1-6 mudas de texto, música instrumental sin letra):
+### COPY IN
+Solo toma 6 (tomas 1-5 mudas de texto):
 > Interimobel
 > La casa se acomoda.
 
-### COPY OUT (caption)
+### COPY OUT
 > Una casa. Cuatro etapas de vida. El mismo techo, acomodándose siempre a lo que sigue.
 > 25 años haciendo lo mismo: mobiliario que se acomoda a cada etapa de tu casa.
 
 ### Hashtags
 #LaCasaSeAcomoda #HechoEnMexico #Muebles #Hogar #Interimobel
-*(Primer y único uso del hashtag de campaña.)*
