@@ -3,7 +3,9 @@
 
 **Rol de este documento:** copy final sobre el storyboard visual en `04-storyboard-mes1.md`. Captions cortos (hook + dato + CTA, máximo 2-3 líneas), regla vigente por retroalimentación del cliente.
 
-**Revisión mayor (13-jul-2026):** las 8 piezas ahora usan exclusivamente 4 categorías — **bancos, salas, armarios y comedores completos** — en gama media-alta real del catálogo. Se retiran colchones, reclinables y piezas sueltas de entrada. Detalle del pivote: `12-pivote-gama-media-alta.md`.
+**Revisión mayor (13-jul-2026):** las 8 piezas ahora usan exclusivamente 4 categorías — **bancos, salas, armarios y comedores completos** — piezas que se sienten bien hechas, no baratas. Se retiran colchones, reclinables y piezas sueltas de entrada. Detalle del pivote: `12-pivote-gama-media-alta.md`.
+
+**Revisión de lenguaje (13-jul-2026):** se retira jerga técnica de cine/mercadotecnia de las descripciones de este documento y del storyboard (`04-storyboard-mes1.md`, ahora renombrado "Guía de Espacios") — el protagonista de cada pieza es el espacio de la casa, no la cámara ni la etiqueta "gama alta" repetida como muletilla.
 
 **Reglas duras de tono:** cero superlativos/urgencia/descuento-gancho en Segmentos 3 y 4; Segmento 1 mantiene energía pero ya no discurso de "precio bajo" (pivote de marca); ninguna pieza promete entrega inmediata; no se nombra proveedor.
 
@@ -13,7 +15,7 @@
 
 **Plataforma:** Facebook. **Formato:** carrusel de 6 slides.
 
-**Tema visual (Higgsfield):** Una casa mexicana de 25 años donde una sala modular, un armario con espejo y un comedor completo, todos de gama alta, muestran permanencia sin nostalgia impostada.
+**El espacio:** una casa mexicana de 25 años, contada a través de su sala, su armario con espejo y su comedor — piezas que se quedaron, no que se cambiaron cada temporada.
 
 ### COPY IN
 Solo slide 6:
@@ -35,7 +37,7 @@ Solo slide 6:
 
 **Plataforma:** Instagram/TikTok. **Formato:** carrusel de 5 slides.
 
-**Tema visual (Higgsfield):** Una persona joven arma un rincón de barra de diseño y un armario de gama alta en su primer depa — no hay que conformarse con lo económico desde el día uno.
+**El espacio:** el primer depa de alguien joven, con un rincón de barra y un armario que no se ven baratos — no hay que conformarse desde el día uno.
 
 ### COPY IN
 Solo slide 5:
@@ -55,7 +57,7 @@ Solo slide 5:
 
 **Plataforma:** Instagram. **Formato:** carrusel de 7 slides.
 
-**Tema visual (Higgsfield):** Una casa recién comprada se transforma, con el mismo encuadre por habitación, de vacía a completamente amueblada con sala, comedor y armario de gama alta, en una sola paleta terracota.
+**El espacio:** una casa recién comprada, habitación por habitación, de vacía a resuelta — sala, comedor y recámara, todo en una misma paleta cálida.
 
 ### COPY IN
 Ninguna slide lleva overlay — el contraste antes/después es el recurso narrativo.
@@ -76,7 +78,7 @@ Ninguna slide lleva overlay — el contraste antes/después es el recurso narrat
 
 **Plataforma:** Facebook. **Formato:** carrusel de 6 slides.
 
-**Tema visual (Higgsfield):** Una habitación que quedó vacía encuentra, con calma, un nuevo propósito como vestidor gracias a un armario de espejo de gama alta.
+**El espacio:** una habitación que quedó vacía encuentra, con calma, un nuevo uso como vestidor.
 
 ### COPY IN
 Solo slide 6:
@@ -96,7 +98,7 @@ Solo slide 6:
 
 **Plataforma:** Facebook + Instagram. **Formato:** carrusel de 6 slides.
 
-**Tema visual (Higgsfield):** El proceso de manufactura real detrás de cada mueble de gama alta Interimobel, puente visual hacia los 4 acentos del mes.
+**El espacio:** el taller donde nacen los muebles Interimobel — madera, tela y manos, antes de que la pieza llegue a una casa.
 
 ### COPY IN
 Solo slide 6 (titular + subtítulo):
@@ -118,7 +120,7 @@ Solo slide 6 (titular + subtítulo):
 
 **Plataforma:** Facebook. **Formato:** carrusel de 5 slides.
 
-**Tema visual (Higgsfield):** Una persona de mediana edad renueva, con calma, solo la sala de su casa — y de forma discreta, también el comedor.
+**El espacio:** una casa donde solo se cambió lo que ya no daba más — la sala, y de forma discreta, también el comedor.
 
 ### COPY IN
 Solo slide 5:
@@ -140,7 +142,7 @@ Solo slide 5:
 
 **Plataforma:** Instagram/TikTok. **Formato:** carrusel de 6 slides.
 
-**Tema visual (Higgsfield):** Cuatro criterios para elegir bien tus primeras piezas —armario, comedor completo, un rincón especial, luz natural— con energía visual TikTok.
+**El espacio:** el mismo primer depa de la Pieza 2, contado esta vez como consejos prácticos.
 
 ### COPY IN
 - Slide 1: sin texto.
@@ -159,12 +161,12 @@ Solo slide 5:
 
 ## Semana 4 · Pieza 8 — Video ancla "La Casa se Acomoda" (Todos los segmentos)
 
-**Plataforma:** Facebook + Instagram Reels. **Duración:** 32 segundos, 6 tomas, 9:16.
+**Plataforma:** Facebook + Instagram Reels. **Duración:** 30-35 segundos, 6 escenas, vertical.
 
-**Tema visual (Higgsfield):** Un recorrido encadenado por una sola casa que atraviesa sus cuatro etapas de vida, un solo movimiento de cámara por toma.
+**El espacio:** una sola casa, recorrida de principio a fin por sus cuatro etapas de vida.
 
 ### COPY IN
-Solo toma 6 (tomas 1-5 mudas de texto):
+Solo en el cierre (las primeras 5 escenas no llevan texto):
 > Interimobel
 > La casa se acomoda.
 
