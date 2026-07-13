@@ -1,15 +1,15 @@
 # Copy Final — Mes 1 "La Casa se Acomoda"
 ## Interimobel — 7 carruseles + 1 video ancla (agosto 2026)
 
-**Rol de este documento:** copy final sobre el storyboard visual en `04-storyboard-mes1.md`. Captions cortos (hook + dato + CTA, máximo 2-3 líneas), regla vigente por retroalimentación del cliente.
+**Rol de este documento:** copy final sobre el storyboard visual en `04-storyboard-mes1.md`. Captions cortos (hook + dato + CTA de 2-4 palabras).
 
-**Revisión mayor (13-jul-2026):** las 8 piezas ahora usan exclusivamente 4 categorías — **bancos, salas, armarios y comedores completos** — piezas que se sienten bien hechas, no baratas. Se retiran colchones, reclinables y piezas sueltas de entrada. Detalle del pivote: `12-pivote-gama-media-alta.md`.
+**Cambio de producto (14-jul-2026):** se retiran el Comedor Yzma Merlot/Kaitlin Camel y el Banco Alto Mitlan. Se reemplazan por **Sofá Cama Break Gris** ($10,600–$10,990 MXN) y **Banco Turín Color Café** ($1,790 MXN). Detalle: `14-cambio-producto-turin-break.md`.
 
-**Revisión de lenguaje (13-jul-2026):** se retira jerga técnica de cine/mercadotecnia de las descripciones de este documento y del storyboard (`04-storyboard-mes1.md`, ahora renombrado "Guía de Espacios") — el protagonista de cada pieza es el espacio de la casa, no la cámara ni la etiqueta "gama alta" repetida como muletilla.
+**Dirección fotográfica:** estética Pinterest para Gen Z/millennial, iluminación profesional consistente tipo catálogo IKEA, cero apariencia de render — fotografía real, con textura y pequeñas imperfecciones de un espacio habitado.
 
-**Reglas duras de tono:** cero superlativos/urgencia/descuento-gancho en Segmentos 3 y 4; Segmento 1 mantiene energía pero ya no discurso de "precio bajo" (pivote de marca); ninguna pieza promete entrega inmediata; no se nombra proveedor.
+**Reglas duras de tono:** cero superlativos/urgencia/descuento-gancho en Segmentos 3 y 4; Segmento 1 mantiene energía pero ya no discurso de "precio bajo"; ninguna pieza promete entrega inmediata; no se nombra proveedor.
 
-**Revisión de hashtags y CTA (13-jul-2026):** Instagram limitó oficialmente los hashtags a **5 por publicación desde diciembre de 2025** (antes 30) — ya cumplíamos ese máximo en las 8 piezas, pero eran genéricos (#Muebles, #Hogar, #Mexico, repetidos entre piezas). Meta declaró públicamente que las palabras clave dentro del caption ahora pesan más que los hashtags para que el algoritmo entienda de qué trata el contenido y a quién mostrárselo — la estrategia 2026 es precisión (tags de nicho, específicos del producto/categoría de cada pieza), no volumen ni repetición genérica. Se reemplazan los 5 hashtags de cada pieza por versiones específicas del producto/tema exacto de esa pieza, y se recortan los CTA a frases cortas de acción (2-4 palabras). Fuentes: [Later — Instagram hashtags 2026, gana con el límite de 5](https://later.com/blog/ultimate-guide-to-using-instagram-hashtags/); [Social Media Today — Instagram implementa nuevos límites de hashtags](https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/), consultado 13-jul-2026.
+**Hashtags:** máximo 5, específicos del producto/tema de cada pieza (política de Instagram desde diciembre 2025).
 
 ---
 
@@ -17,7 +17,7 @@
 
 **Plataforma:** Facebook. **Formato:** carrusel de 6 slides.
 
-**El espacio:** una casa mexicana de 25 años, contada a través de su sala, su armario con espejo y su comedor — piezas que se quedaron, no que se cambiaron cada temporada.
+**El espacio:** una casa mexicana de 25 años, contada a través de su sala, su armario con espejo y un cuarto de visitas con sofá cama — piezas que se quedaron, no que se cambiaron cada temporada.
 
 ### COPY IN
 Solo slide 6:
@@ -29,17 +29,15 @@ Solo slide 6:
 > Conócenos en interimobel.mx.
 
 ### Hashtags
-#SalaModular #ArmarioConEspejo #ComedorCompleto #HechoEnMexico #Interimobel
+#SalaModular #ArmarioConEspejo #SofaCama #HechoEnMexico #Interimobel
 
 ---
 
 ## Semana 1 · Pieza 2 — "Tu primer espacio, con piezas que se quedan contigo" (Segmento 1)
 
-*(Pivote de marca: se retira el enfoque de precio bajo. Nuevo ángulo: invertir en calidad real desde el primer espacio propio.)*
-
 **Plataforma:** Instagram/TikTok. **Formato:** carrusel de 5 slides.
 
-**El espacio:** el primer depa de alguien joven, resuelto con un rincón de barra elegante y un armario de línea superior — la prueba de que no hay que conformarse desde el primer espacio propio.
+**El espacio:** el primer depa de alguien joven, resuelto con un rincón de barra y un armario de línea superior — la prueba de que no hay que conformarse desde el primer espacio propio.
 
 ### COPY IN
 Solo slide 5:
@@ -51,7 +49,7 @@ Solo slide 5:
 > ¿Qué pieza elegirías primero?
 
 ### Hashtags
-#PrimerDepa #ArmarioConEspejo #BancosDeBarra #DisenoDeInteriores #Interimobel
+#PrimerDepa #ArmarioConEspejo #BancoDeBarra #DisenoDeInteriores #Interimobel
 
 ---
 
@@ -59,24 +57,22 @@ Solo slide 5:
 
 **Plataforma:** Instagram. **Formato:** carrusel de 7 slides.
 
-**El espacio:** una casa recién comprada, habitación por habitación, de vacía a resuelta — sala, comedor y recámara, todo en una misma paleta cálida.
+**El espacio:** una casa recién comprada, habitación por habitación, de vacía a resuelta — sala, cuarto de visitas y recámara, todo en una misma paleta cálida.
 
 ### COPY IN
 Ninguna slide lleva overlay — el contraste antes/después es el recurso narrativo.
 
 ### COPY OUT
 > De la casa vacía a la casa que ya se siente de ustedes.
-> Sala, comedor y recámara, a meses sin intereses.
+> Sala, cuarto de visitas y recámara, a meses sin intereses.
 > ¿En qué habitación empezarías tú?
 
 ### Hashtags
-#CasaNueva #SalaModular #ComedorCompleto #MesesSinIntereses #Interimobel
+#CasaNueva #SalaModular #SofaCama #MesesSinIntereses #Interimobel
 
 ---
 
 ## Semana 2 · Pieza 4 — "El cuarto que ahora es tu vestidor" (Segmento 4)
-
-*(Pivote: el ángulo ya no es reclinable+colchón, sino un vestidor con armario de gama alta — escenario real de esta etapa de vida.)*
 
 **Plataforma:** Facebook. **Formato:** carrusel de 6 slides.
 
@@ -118,11 +114,9 @@ Solo slide 6 (titular + subtítulo):
 
 ## Semana 3 · Pieza 6 — Testimonio: renovar con criterio (Segmento 3)
 
-*(Pivote: la "otra habitación" ahora revela un comedor completo, no un colchón.)*
-
 **Plataforma:** Facebook. **Formato:** carrusel de 5 slides.
 
-**El espacio:** una casa donde solo se cambió lo que ya no daba más — la sala, y de forma discreta, también el comedor.
+**El espacio:** una casa donde solo se cambió lo que ya no daba más — la sala, y de forma discreta, también el cuarto de visitas.
 
 ### COPY IN
 Solo slide 5:
@@ -134,13 +128,11 @@ Solo slide 5:
 > Conócelas en interimobel.mx.
 
 ### Hashtags
-#SalaModular #ComedorCompleto #RenovarConCriterio #HechoEnMexico #Interimobel
+#SalaModular #SofaCama #RenovarConCriterio #HechoEnMexico #Interimobel
 
 ---
 
 ## Semana 4 · Pieza 7 — "Piezas que valen la pena en tu primer espacio" (Segmento 1)
-
-*(Pivote completo: ya no son tips de "amueblar barato" — son criterios de inversión en calidad.)*
 
 **Plataforma:** Instagram/TikTok. **Formato:** carrusel de 6 slides.
 
@@ -148,16 +140,16 @@ Solo slide 5:
 
 ### COPY IN
 - Slide 1: sin texto.
-- Slides 2-5 (etiqueta corta): Invierte en un buen armario · Un comedor completo, no piezas sueltas · Un rincón que se sienta especial · Aprovecha la luz natural.
+- Slides 2-5 (etiqueta corta): Invierte en un buen armario · Un sofá cama para tus visitas · Un rincón que se sienta especial · Aprovecha la luz natural.
 - Slide 6 (cierre): *"Y así, tu primer depa ya se siente tuyo."*
 
 ### COPY OUT
 > Piezas que valen la pena en tu primer espacio 📋
-> Un buen armario. Un comedor completo. Un rincón que se sienta tuyo.
+> Un buen armario. Un sofá cama para visitas. Un rincón que se sienta tuyo.
 > Guarda este post 🔖
 
 ### Hashtags
-#PrimerDepa #ArmarioConEspejo #ComedorCompleto #TipsDeDecoracion #Interimobel
+#PrimerDepa #ArmarioConEspejo #SofaCama #TipsDeDecoracion #Interimobel
 
 ---
 
