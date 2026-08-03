@@ -60,8 +60,21 @@
     text-shadow:0 2px 14px rgba(0,0,0,.6);max-width:20ch}
   .cierre .fn{position:absolute;bottom:13px;left:16px;right:16px;font-family:var(--font-mono);
     font-size:9px;color:rgba(255,255,255,.7);letter-spacing:.03em}
+  /* Portada / gancho: hook impreso + cue de deslizar */
+  .cover{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;
+    gap:14px;padding:24px;text-align:center}
+  .cover .tag{font-family:var(--font-mono);font-size:9px;letter-spacing:.09em;text-transform:uppercase;
+    color:#111;background:#fff;padding:5px 11px;border-radius:20px;font-weight:700}
+  .cover .ci{font-family:var(--font-brand);font-size:26px;line-height:1.24;color:#fff;font-weight:600;
+    text-shadow:0 2px 16px rgba(0,0,0,.62);max-width:15ch}
+  .cover .swipe{font-family:var(--font-ui);font-size:12.5px;font-weight:700;color:#111;background:#fff;
+    padding:7px 15px;border-radius:20px;animation:nudge 1.4s ease-in-out infinite}
+  .cover .fn{position:absolute;bottom:13px;left:16px;right:16px;font-family:var(--font-mono);
+    font-size:9px;color:rgba(255,255,255,.72);letter-spacing:.03em}
+  @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
   body.hide-notes .note .tag,body.hide-notes .note .what,
-  body.hide-notes .cierre .tag,body.hide-notes .cierre .fn{display:none}
+  body.hide-notes .cierre .tag,body.hide-notes .cierre .fn,
+  body.hide-notes .cover .tag,body.hide-notes .cover .fn{display:none}
   .legend{max-width:470px;margin:10px auto 0;display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:center;
     font-size:11.5px;color:var(--muted);line-height:1.5;padding:0 16px}
   .legend b{color:var(--ink)}
@@ -83,16 +96,16 @@
     text-transform:uppercase;font-family:var(--font-mono)}
   .foot{max-width:470px;margin:30px auto 40px;text-align:center;color:var(--muted);font-size:12px;line-height:1.6;padding:0 16px}
   .foot code{font-family:var(--font-mono);font-size:11px;background:var(--surface);border:1px solid var(--line);padding:1px 6px;border-radius:5px;color:var(--ink)}
-  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 </style>
 
 <div class="page-head">
   <div class="kicker">Interimobel · Agosto 2026</div>
   <h1>31 días de salas — antes/después</h1>
-  <p>1 sala por día (6 ago – 5 sep). Cada pieza es un <b>hogar</b> distinto: de Gen Z a boomer, solteros, familias, mascotas y parejas. Todavía <b>no hay imágenes</b>: la zona gris describe la escena. <b>Sin precios en ningún caption.</b></p>
+  <p>1 sala por día (6 ago – 5 sep), un <b>hogar</b> distinto cada día. Cada carrusel tiene <b>4 slides</b>: <b>1) Portada con gancho</b> (frena el scroll) → <b>2) Antes</b> → <b>3) Después</b> → <b>4) Cierre</b>. El contraste antes/después + el gancho es lo que invita a deslizar. Todavía <b>no hay imágenes</b>: la zona gris describe la escena. <b>Sin precios.</b></p>
   <div class="legend">
     <span><span class="chip-note">📷 Descripción de la toma</span> = qué mostrará la foto. <b>Nota interna, NO se imprime.</b></span>
-    <span><span class="chip-ci">Aa Texto en la imagen</span> = el Copy IN que <b>SÍ se imprime</b> sobre la publicación.</span>
+    <span><span class="chip-ci">Aa Texto impreso</span> = lo que <b>SÍ se imprime</b> sobre la imagen (solo en portada y cierre).</span>
   </div>
   <div class="controls">
     <button id="toggleNotes" aria-pressed="true">Ocultar notas de producción</button>
@@ -146,6 +159,20 @@ const POSTS = [
  {d:31,fecha:"5 sep",wd:"Sáb ⭐",g:"other",hogar:"Cierre · todos los hogares",sala:"Sala Modular Cloud",antes:"Montaje de los hogares del mes",despues:"Una misma marca, muchas casas",copyin:"Cada casa se acomoda distinto.",likes:"4,120",cap:["Solteros, familias, parejas, mascotas… cada quien su sala, cada casa su historia.","La tuya, la armamos contigo."],cta:"¿En qué etapa está tu casa? 👇",tags:"#LaCasaSeAcomoda #SalaInterimobel #DecoracionDeHogar #HechoEnMexico #Interimobel"}
 ];
 
+// Gancho impreso en la portada (slide 1) — scroll-stopper por día
+const HOOKS = {
+ 1:"Adiós al depa vacío", 2:"Una sala 100% suya", 3:"La sala que aguanta a los niños",
+ 4:"El domingo perfecto existe", 5:"Tu primer depa, a tu modo", 6:"Una sala para dos (y el gato)",
+ 7:"Nunca es tarde para renovar", 8:"Su primer hogar juntos", 9:"Se la compró ella sola",
+ 10:"La sala que aguanta todo", 11:"Casa nueva, primera gran sala", 12:"Tu oficina también es tu sala",
+ 13:"Su casa, a su ritmo", 14:"La sala donde empieza todo", 15:"Aquí caben tres generaciones",
+ 16:"La casa vuelve a ser suya", 17:"El depa compartido, por fin cómodo", 18:"Su primer depa en pareja",
+ 19:"Una sala para tu manada", 20:"El mejor plan: quedarse en casa", 21:"Tu espacio, tus reglas",
+ 22:"Aquí sí caben todos", 23:"Café, libros y casa propia", 24:"Su lugar en el sillón, listo",
+ 25:"Noches de peli con cama extra", 26:"Su cine privado cada noche", 27:"La casa donde cae la reunión",
+ 28:"El depa que armaron entre todas", 29:"A prueba de niños", 30:"Siempre hay lugar para quien llega",
+ 31:"¿En qué etapa está tu casa?"
+};
 function grad(hex, kind){
   if(kind==="antes"){
     return `linear-gradient(135deg, color-mix(in srgb, ${hex} 10%, var(--ground)) 0%, color-mix(in srgb, ${hex} 4%, var(--ground)) 100%)`;
@@ -163,12 +190,14 @@ function render(){
   const feed = document.getElementById('feed');
   feed.innerHTML = POSTS.map(p=>{
     const hex = G[p.g];
+    const hook = HOOKS[p.d] || p.copyin;
     const slides = [
-      `<div class="slide" style="background:${grad(hex,'antes')}"><span class="badge">Antes · slide 1</span><div class="note"><div class="tag">📷 Descripción · no aparece en el post</div><div class="what">${p.antes}</div></div></div>`,
-      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">Después · slide 2</span><div class="note"><div class="tag">📷 Descripción · no aparece en el post</div><div class="what">Con la ${p.sala}: ${p.despues}</div></div></div>`,
-      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">Cierre · slide 3</span><div class="cierre"><div class="tag">Aa · Texto SOBRE la imagen</div><div class="ci">${p.copyin}</div><div class="fn">📷 se imprime sobre la foto de la sala ya resuelta</div></div></div>`
+      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">Portada · slide 1 · gancho</span><div class="cover"><div class="tag">Aa · texto impreso</div><div class="ci">${hook}</div><div class="swipe">desliza →</div><div class="fn">📷 foto de la ${p.sala} ya resuelta — la imagen que frena el scroll</div></div></div>`,
+      `<div class="slide" style="background:${grad(hex,'antes')}"><span class="badge">Antes · slide 2</span><div class="note"><div class="tag">📷 Descripción · sin texto impreso</div><div class="what">${p.antes}</div></div></div>`,
+      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">Después · slide 3</span><div class="note"><div class="tag">📷 Descripción · sin texto impreso</div><div class="what">Con la ${p.sala}: ${p.despues}</div></div></div>`,
+      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">Cierre · slide 4</span><div class="cierre"><div class="tag">Aa · texto impreso</div><div class="ci">${p.copyin}</div><div class="fn">📷 sobre la foto de la sala ya resuelta</div></div></div>`
     ].join('');
-    const dots = [0,1,2].map((_,i)=>`<div class="dot" style="${i===0?`background:${hex}`:''}"></div>`).join('');
+    const dots = [0,1,2,3].map((_,i)=>`<div class="dot" style="${i===0?`background:${hex}`:''}"></div>`).join('');
     const caption = p.cap.map(l=>`<div>${l}</div>`).join('') + `<div class="cta">${p.cta}</div>`;
     return `<article class="post">
       <div class="phead">

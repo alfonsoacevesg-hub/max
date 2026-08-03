@@ -2,7 +2,13 @@
 ## Interimobel — 1 sala por día · formato antes/después · multigeneracional
 
 **Arranque:** 6 de agosto 2026 · **Cierre:** 5 de septiembre 2026 (31 días consecutivos).
-**Formato único:** carrusel antes/después (espacio vacío o viejo → resuelto y habitado). Producción en Higgsfield con las imágenes oficiales de cada sala (jaladas del Shopify de Interimobel).
+**Formato único:** carrusel antes/después de **4 slides**:
+1. **Portada / gancho** — foto de la sala ya resuelta + **hook impreso** (frase corta que frena el scroll) + cue **"desliza →"**.
+2. **Antes** — el espacio vacío o viejo (sin texto impreso).
+3. **Después** — la misma toma resuelta (sin texto impreso); el contraste es el gancho para deslizar.
+4. **Cierre** — el Copy IN de marca + CTA.
+
+Solo la **portada** y el **cierre** llevan texto impreso; los antes/después van limpios. Producción en Higgsfield con las imágenes oficiales de cada sala (jaladas del Shopify de Interimobel). El **gancho de cada día** está en la tabla al final.
 
 **Concepto:** cada día, una sala real encarna un **hogar distinto** — una generación, un género y un tipo de familia diferentes. El hogar se sugiere con **props** (dos tazas, un plato de croquetas, juguetes, lentes de lectura), no con caras forzadas: **el espacio sigue siendo el protagonista**.
 
@@ -362,3 +368,26 @@
 | Cierre | 31 | 1 |
 
 **SKU:** las 31 piezas usan salas reales del catálogo Shopify con SKU confirmado (verificado 3-ago-2026).
+
+---
+
+## Ganchos (slide 1 · scroll-stopper impreso)
+
+| Día | Gancho (portada) | Día | Gancho (portada) |
+|---|---|---|---|
+| 1 | Adiós al depa vacío | 17 | El depa compartido, por fin cómodo |
+| 2 | Una sala 100% suya | 18 | Su primer depa en pareja |
+| 3 | La sala que aguanta a los niños | 19 | Una sala para tu manada |
+| 4 | El domingo perfecto existe | 20 | El mejor plan: quedarse en casa |
+| 5 | Tu primer depa, a tu modo | 21 | Tu espacio, tus reglas |
+| 6 | Una sala para dos (y el gato) | 22 | Aquí sí caben todos |
+| 7 | Nunca es tarde para renovar | 23 | Café, libros y casa propia |
+| 8 | Su primer hogar juntos | 24 | Su lugar en el sillón, listo |
+| 9 | Se la compró ella sola | 25 | Noches de peli con cama extra |
+| 10 | La sala que aguanta todo | 26 | Su cine privado cada noche |
+| 11 | Casa nueva, primera gran sala | 27 | La casa donde cae la reunión |
+| 12 | Tu oficina también es tu sala | 28 | El depa que armaron entre todas |
+| 13 | Su casa, a su ritmo | 29 | A prueba de niños |
+| 14 | La sala donde empieza todo | 30 | Siempre hay lugar para quien llega |
+| 15 | Aquí caben tres generaciones | 31 | ¿En qué etapa está tu casa? |
+| 16 | La casa vuelve a ser suya | | |
