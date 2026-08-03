@@ -43,13 +43,19 @@
   .slide{flex:0 0 100%;scroll-snap-align:start;position:relative;display:grid;place-items:center;overflow:hidden}
   .badge{position:absolute;top:11px;left:11px;font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;
     text-transform:uppercase;background:rgba(0,0,0,.55);color:#fff;padding:4px 8px;border-radius:6px;backdrop-filter:blur(3px)}
-  .scene{position:absolute;bottom:11px;left:11px;right:11px;font-size:12px;color:#fff;
-    text-shadow:0 1px 6px rgba(0,0,0,.6);opacity:0;transition:opacity .2s}
-  body.show-notes .scene{opacity:1}
-  .copyin{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:22px}
+  .desc{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;
+    gap:9px;padding:30px 22px;text-align:center}
+  .desc .lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+    color:rgba(255,255,255,.85)}
+  .desc .what{font-size:14px;line-height:1.5;color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.7);
+    max-width:32ch;margin:0 auto}
+  body.hide-notes .desc .what,body.hide-notes .desc .lbl{display:none}
+  .copyin{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;
+    gap:12px;text-align:center;padding:24px}
   .copyin span{font-family:var(--font-brand);color:#fff;font-size:23px;line-height:1.28;font-weight:600;
     text-shadow:0 2px 14px rgba(0,0,0,.55)}
-  .copyin.band span{font-size:20px}
+  .copyin small{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.06em;
+    color:rgba(255,255,255,.78);text-transform:uppercase;max-width:26ch}
   .dots{display:flex;gap:5px;justify-content:center;padding:9px 0 2px}
   .dot{width:5px;height:5px;border-radius:50%;background:var(--line-strong)}
   .actions{display:flex;align-items:center;gap:15px;padding:6px 13px 2px}
@@ -70,9 +76,9 @@
 <div class="page-head">
   <div class="kicker">Interimobel · Agosto 2026</div>
   <h1>31 días de salas — antes/después</h1>
-  <p>1 sala por día (6 ago – 5 sep). Cada pieza es un <b>hogar</b> distinto: de Gen Z a boomer, solteros, familias, mascotas y parejas. Arte de referencia (placeholder por color de hogar); el final se produce en Higgsfield con las fotos oficiales de cada sala. <b>Sin precios en ningún caption.</b></p>
+  <p>1 sala por día (6 ago – 5 sep). Cada pieza es un <b>hogar</b> distinto: de Gen Z a boomer, solteros, familias, mascotas y parejas. Todavía <b>no hay imágenes</b> — cada zona gris <b>describe qué mostrará esa foto</b> (Antes / Después / Cierre) para que apruebes la escena antes de producirla en Higgsfield. <b>Sin precios en ningún caption.</b></p>
   <div class="controls">
-    <button id="toggleNotes" aria-pressed="false">Mostrar notas de escena</button>
+    <button id="toggleNotes" aria-pressed="true">Ocultar descripciones</button>
     <button id="toggleTheme" aria-pressed="false">Cambiar tema</button>
   </div>
 </div>
@@ -141,9 +147,9 @@ function render(){
   feed.innerHTML = POSTS.map(p=>{
     const hex = G[p.g];
     const slides = [
-      `<div class="slide" style="background:${grad(hex,'antes')}"><span class="badge">Antes</span><div class="scene">${p.antes}</div></div>`,
-      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">Después</span><div class="scene">${p.despues}</div></div>`,
-      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">Cierre</span><div class="copyin"><span>${p.copyin}</span></div></div>`
+      `<div class="slide" style="background:${grad(hex,'antes')}"><span class="badge">Antes · slide 1</span><div class="desc"><div class="lbl">Así se ve hoy</div><div class="what">${p.antes}</div></div></div>`,
+      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">Después · slide 2</span><div class="desc"><div class="lbl">Con la ${p.sala}</div><div class="what">${p.despues}</div></div></div>`,
+      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">Cierre · slide 3</span><div class="copyin"><span>${p.copyin}</span><small>texto sobre la foto de la sala ya resuelta</small></div></div>`
     ].join('');
     const dots = [0,1,2].map((_,i)=>`<div class="dot" style="${i===0?`background:${hex}`:''}"></div>`).join('');
     const caption = p.cap.map(l=>`<div>${l}</div>`).join('') + `<div class="cta">${p.cta}</div>`;
@@ -166,8 +172,9 @@ function render(){
 render();
 
 document.getElementById('toggleNotes').addEventListener('click',e=>{
-  const on = document.body.classList.toggle('show-notes');
-  e.currentTarget.setAttribute('aria-pressed', on);
+  const hidden = document.body.classList.toggle('hide-notes');
+  e.currentTarget.setAttribute('aria-pressed', !hidden);
+  e.currentTarget.textContent = hidden ? 'Mostrar descripciones' : 'Ocultar descripciones';
 });
 document.getElementById('toggleTheme').addEventListener('click',e=>{
   const root = document.documentElement;
