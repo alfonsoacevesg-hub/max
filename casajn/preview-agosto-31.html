@@ -72,7 +72,10 @@
   .cover .fn{position:absolute;bottom:13px;left:16px;right:16px;font-family:var(--font-mono);
     font-size:9px;color:rgba(255,255,255,.72);letter-spacing:.03em}
   @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
-  body.hide-notes .note .what{display:none}
+  /* Descripción del fondo en portada y cierre (cursiva = referencia, no se imprime) */
+  .bg{position:absolute;bottom:12px;left:15px;right:15px;font-family:var(--font-mono);font-style:italic;
+    font-size:10.5px;line-height:1.45;color:rgba(255,255,255,.82);text-shadow:0 1px 6px rgba(0,0,0,.7)}
+  body.hide-notes .note .what,body.hide-notes .bg{display:none}
   .legend{max-width:470px;margin:10px auto 0;display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:center;
     font-size:11.5px;color:var(--muted);line-height:1.5;padding:0 16px}
   .legend b{color:var(--ink)}
@@ -103,7 +106,7 @@
   <p>1 sala por día (6 ago – 5 sep), un <b>hogar</b> distinto cada día. Cada carrusel: <b>1) Portada con gancho</b> → <b>2) Antes</b> → <b>3) Después</b> → <b>4) Cierre</b>. Todavía <b>no hay imágenes</b>; el gris es un placeholder. <b>Sin precios.</b></p>
   <div class="legend">
     <span><span class="chip-ci">Texto grande</span> (serif, en portada y cierre) = lo que <b>SÍ se imprime</b> en el post.</span>
-    <span><span class="chip-note">texto en cursiva</span> (en antes/después) = <b>descripción de la escena</b>, solo referencia — no se imprime.</span>
+    <span><span class="chip-note">📷 texto en cursiva</span> = <b>descripción de la foto</b> (incluye el <b>"Fondo:"</b> de portada y cierre). Solo referencia — no se imprime.</span>
   </div>
   <div class="controls">
     <button id="toggleNotes" aria-pressed="true">Ver como se publicará (ocultar descripciones)</button>
@@ -190,10 +193,10 @@ function render(){
     const hex = G[p.g];
     const hook = HOOKS[p.d] || p.copyin;
     const slides = [
-      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">1 · Portada</span><div class="cover"><div class="ci">${hook}</div><div class="swipe">desliza →</div></div></div>`,
-      `<div class="slide" style="background:${grad(hex,'antes')}"><span class="badge">2 · Antes</span><div class="note"><div class="what">${p.antes}</div></div></div>`,
-      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">3 · Después</span><div class="note"><div class="what">${p.despues}</div></div></div>`,
-      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">4 · Cierre</span><div class="cierre"><div class="ci">${p.copyin}</div></div></div>`
+      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">1 · Portada</span><div class="cover"><div class="ci">${hook}</div><div class="swipe">desliza →</div></div><div class="bg">📷 Fondo: ${p.sala} ya resuelta y bien iluminada — ${p.despues.toLowerCase()}</div></div>`,
+      `<div class="slide" style="background:${grad(hex,'antes')}"><span class="badge">2 · Antes</span><div class="note"><div class="what">📷 ${p.antes}</div></div></div>`,
+      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">3 · Después</span><div class="note"><div class="what">📷 Con la ${p.sala}: ${p.despues}</div></div></div>`,
+      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">4 · Cierre</span><div class="cierre"><div class="ci">${p.copyin}</div></div><div class="bg">📷 Fondo: la misma ${p.sala} ya resuelta</div></div>`
     ].join('');
     const dots = [0,1,2,3].map((_,i)=>`<div class="dot" style="${i===0?`background:${hex}`:''}"></div>`).join('');
     const caption = p.cap.map(l=>`<div>${l}</div>`).join('') + `<div class="cta">${p.cta}</div>`;
