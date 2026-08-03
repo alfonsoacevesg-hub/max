@@ -67,6 +67,8 @@
     color:#111;background:#fff;padding:5px 11px;border-radius:20px;font-weight:700}
   .cover .ci{font-family:var(--font-brand);font-size:26px;line-height:1.24;color:#fff;font-weight:600;
     text-shadow:0 2px 16px rgba(0,0,0,.62);max-width:15ch}
+  .cover .sub{font-family:var(--font-brand);font-style:italic;font-size:15px;color:rgba(255,255,255,.94);
+    margin-top:-6px;text-shadow:0 2px 12px rgba(0,0,0,.55)}
   .cover .swipe{font-family:var(--font-ui);font-size:12.5px;font-weight:700;color:#111;background:#fff;
     padding:7px 15px;border-radius:20px;animation:nudge 1.4s ease-in-out infinite}
   .cover .fn{position:absolute;bottom:13px;left:16px;right:16px;font-family:var(--font-mono);
@@ -127,7 +129,15 @@ const G = {
   pet:"#9A7B4F", lgbt:"#8A6D8C", elder:"#6E7B8A", other:"#7C8B93"
 };
 const POSTS = [
- {d:1,fecha:"6 ago",wd:"Jue",g:"genz",hogar:"Gen Z · mujer soltera",sala:"Sofá Cama Sleepy",antes:"Caja de mudanza, piso frío",despues:"Rincón Pinterest con sofá cama y manta",copyin:"Tu primer espacio, ya se siente tuyo.",likes:"1,204",cap:["De caja vacía a tu rincón favorito.","Un sofá cama resuelve la sala hoy y la visita del finde."],cta:"Guarda la idea 🔖",tags:"#PrimerDepa #SofaCama #DecoracionDeSala #GenZEnCasa #Interimobel"},
+ {d:1,fecha:"6 ago",wd:"Jue",g:"genz",hogar:"Gen Z · mujer soltera",sala:"Sofá Cama Sleepy",antes:"Caja de mudanza, piso frío",despues:"Rincón Pinterest con sofá cama y manta",copyin:"Sofá de día, cine de noche.",likes:"1,204",
+  guion:[
+   {rol:"1 · Portada",tipo:"portada",impreso:"Mi primer sofá",sub:"…y también es mi cine",fondo:"Chica Gen Z de pie en su depa a medio decorar, sonriendo a cámara; cajas, un par de plantas y luz de tarde. Estética Pinterest, natural, cero render."},
+   {rol:"2 · Proceso",tipo:"foto",desc:"Arranca la decoración: cortinas claras, una planta y un cuadro en la pared. El centro de la sala sigue vacío."},
+   {rol:"3 · Proceso",tipo:"foto",desc:"Suma el tapete, la mesa de centro y una lámpara de luz cálida. El rincón toma forma; el lugar del sofá aún libre."},
+   {rol:"4 · Pieza focal",tipo:"foto",focal:true,desc:"Llega el Sofá Cama Sleepy — la pieza que realza todo. Toma que lo destaca y muestra cómo se acomoda de sofá a modo relax para ver series."},
+   {rol:"5 · Cierre",tipo:"cierre",impreso:"Sofá de día, cine de noche.",fondo:"Ella y una amiga en el sofá, palomitas, a oscuras; la luz azulada de la pantalla en sus caras y expresión de suspenso (viendo algo de terror). Cine en casa."}
+  ],
+  cap:["Tu primer sofá también es tu cine en casa 🍿","Un sofá cama que de día es sala y de noche, tu maratón de series."],cta:"Guárdalo para tu depa 🔖",tags:"#PrimerDepa #SofaCama #CineEnCasa #GenZEnCasa #Interimobel"},
  {d:2,fecha:"7 ago",wd:"Vie",g:"mono",hogar:"Mamá soltera",sala:"Sala Kenia",antes:"Sala heredada, muebles viejos",despues:"Sala propia, cálida",copyin:"Una sala que por fin es de ustedes dos.",likes:"1,588",cap:["No era heredada. Esta la elegiste tú.","Una sala nueva para las tardes de ustedes dos."],cta:"Encuéntrala en interimobel.mx",tags:"#SalaModerna #MamaSoltera #DecoracionDeSala #HogarPropio #Interimobel"},
  {d:3,fecha:"8 ago",wd:"Sáb ⭐",g:"fam",hogar:"Familia · hijos Gen Alfa",sala:"Sala Modular Cloud",antes:"Sala vacía el lunes",despues:"Cine familiar el sábado, palomitas",copyin:"La sala donde pasan las mejores tardes.",likes:"3,410",cap:["Sala vacía el lunes, cine familiar el sábado.","Espacio de sobra para toda la familia (y las palomitas)."],cta:"¿Peli en familia este finde?",tags:"#SalaModular #SalaFamiliar #TardeDePeliculas #DecoracionDeHogar #Interimobel"},
  {d:4,fecha:"9 ago",wd:"Dom ⭐",g:"lgbt",hogar:"Pareja de hombres (discreta)",sala:"Sala Esquinera Cosmos",antes:"Estancia sin vida",despues:"Domingo sin prisa, dos tazas, manta compartida",copyin:"Un domingo sin prisa, en casa.",likes:"2,980",cap:["Dos tazas, una sala nueva y el domingo entero por delante.","Así se ve una casa que ya se siente suya."],cta:"¿Qué tan tuyo se siente tu espacio?",tags:"#SalaEsquinera #DomingoEnCasa #DecoracionDeSala #DisenoDeInteriores #Interimobel"},
@@ -192,13 +202,23 @@ function render(){
   feed.innerHTML = POSTS.map(p=>{
     const hex = G[p.g];
     const hook = HOOKS[p.d] || p.copyin;
-    const slides = [
-      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">1 · Portada</span><div class="cover"><div class="ci">${hook}</div><div class="swipe">desliza →</div></div><div class="bg">📷 Fondo: ${p.sala} ya resuelta y bien iluminada — ${p.despues.toLowerCase()}</div></div>`,
-      `<div class="slide" style="background:${grad(hex,'antes')}"><span class="badge">2 · Antes</span><div class="note"><div class="what">📷 ${p.antes}</div></div></div>`,
-      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">3 · Después</span><div class="note"><div class="what">📷 Con la ${p.sala}: ${p.despues}</div></div></div>`,
-      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">4 · Cierre</span><div class="cierre"><div class="ci">${p.copyin}</div></div><div class="bg">📷 Fondo: la misma ${p.sala} ya resuelta</div></div>`
-    ].join('');
-    const dots = [0,1,2,3].map((_,i)=>`<div class="dot" style="${i===0?`background:${hex}`:''}"></div>`).join('');
+    const guion = p.guion || [
+      {rol:"1 · Portada",tipo:"portada",impreso:hook,fondo:`${p.sala} ya resuelta y bien iluminada — ${p.despues.toLowerCase()}`},
+      {rol:"2 · Antes",tipo:"foto",desc:p.antes},
+      {rol:"3 · Después",tipo:"foto",desc:`Con la ${p.sala}: ${p.despues}`},
+      {rol:"4 · Cierre",tipo:"cierre",impreso:p.copyin,fondo:`la misma ${p.sala} ya resuelta`}
+    ];
+    const slides = guion.map(s=>{
+      if(s.tipo==="portada"){
+        return `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">${s.rol}</span><div class="cover"><div class="ci">${s.impreso}</div>${s.sub?`<div class="sub">${s.sub}</div>`:''}<div class="swipe">desliza →</div></div><div class="bg">📷 Fondo: ${s.fondo}</div></div>`;
+      }
+      if(s.tipo==="cierre"){
+        return `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">${s.rol}</span><div class="cierre"><div class="ci">${s.impreso}</div></div><div class="bg">📷 Fondo: ${s.fondo}</div></div>`;
+      }
+      const bg = s.rol.includes("Antes") ? grad(hex,'antes') : grad(hex,'despues');
+      return `<div class="slide" style="background:${bg}"><span class="badge">${s.rol}${s.focal?' ⭐ realce':''}</span><div class="note"><div class="what">📷 ${s.desc}</div></div></div>`;
+    }).join('');
+    const dots = guion.map((_,i)=>`<div class="dot" style="${i===0?`background:${hex}`:''}"></div>`).join('');
     const caption = p.cap.map(l=>`<div>${l}</div>`).join('') + `<div class="cta">${p.cta}</div>`;
     return `<article class="post">
       <div class="phead">

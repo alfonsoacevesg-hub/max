@@ -25,14 +25,20 @@ Solo la **portada** y el **cierre** llevan texto impreso; los antes/después van
 
 ## Semana 1
 
-### Día 1 · 6-ago (Jue) — Gen Z mujer soltera · **Sofá Cama Sleepy**
-**Antes → Después:** caja de mudanza y piso frío → rincón Pinterest con sofá cama, manta y taza.
-**Copy IN** (cierre): *"Tu primer espacio, ya se siente tuyo."*
+### Día 1 · 6-ago (Jue) — Gen Z mujer soltera · **Sofá Cama Sleepy** — *pieza modelo (narrativa persona + proceso + payoff cine)*
+**Estructura:** carrusel de 5 slides. Persona al frente, decoración construida poco a poco dejando el sofá como **pieza focal de realce**, y cierre cinematográfico.
+
+1. **Portada (gancho):** chica Gen Z de pie en su depa a medio decorar, sonriendo a cámara; cajas, plantas y luz de tarde. **Copy IN impreso:** *"Mi primer sofá"* + subtítulo *"…y también es mi cine"*. Cue "desliza →".
+2. **Proceso 1** (foto, sin texto): arranca la decoración — cortinas claras, una planta, un cuadro. El centro de la sala aún vacío.
+3. **Proceso 2** (foto, sin texto): tapete, mesa de centro y lámpara de luz cálida. El rincón toma forma; el lugar del sofá sigue libre.
+4. **Pieza focal ⭐** (foto, sin texto): llega el **Sofá Cama Sleepy**, la pieza que realza todo. Toma que lo destaca y muestra cómo se acomoda de sofá a modo relax para ver series.
+5. **Cierre (payoff):** ella y una amiga en el sofá, palomitas, a oscuras, la **luz azulada de la pantalla en sus caras y expresión de suspenso** (viendo algo de terror). **Copy IN impreso:** *"Sofá de día, cine de noche."*
+
 **Copy OUT:**
-> De caja vacía a tu rincón favorito.
-> Un sofá cama resuelve la sala hoy y la visita del finde.
-> Guarda la idea 🔖
-**Hashtags:** #PrimerDepa #SofaCama #DecoracionDeSala #GenZEnCasa #Interimobel
+> Tu primer sofá también es tu cine en casa 🍿
+> Un sofá cama que de día es sala y de noche, tu maratón de series.
+> Guárdalo para tu depa 🔖
+**Hashtags:** #PrimerDepa #SofaCama #CineEnCasa #GenZEnCasa #Interimobel
 **Producto:** Sofá Cama Sleepy · SKU SAL-0007-B
 
 ### Día 2 · 7-ago (Vie) — Mamá soltera · **Sala Kenia (3-2)**
