@@ -14,7 +14,7 @@ Solo la **portada** y el **cierre** llevan texto impreso; los antes/después van
 
 **Reglas de tono (aplican a las 31):**
 - Marca cercana, nada técnica. Cero jerga de cine.
-- **No se anuncian precios** en ningún caption ni overlay (los SKU/precios de abajo son solo referencia interna de producción).
+- **Precio + link en el caption (copy OUT) de cada pieza.** Precio real verificado en Shopify. **Meta permite mostrar precio** (no es categoría prohibida), pero **exige que coincida con el de la página** y prohíbe descuentos falsos → re-verificar el precio al momento de publicar. El **overlay/Copy IN sobre la imagen sigue SIN precio** (imagen limpia); el precio va solo en el texto del caption.
 - Ninguna pieza promete entrega inmediata. No se nombra proveedor.
 - Captions cortos: hook + emoción/dato + CTA de 2-4 palabras.
 - Máximo 5 hashtags de nicho por pieza (política Instagram dic-2025). El SEO del caption pesa más que el hashtag.

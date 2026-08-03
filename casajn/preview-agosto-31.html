@@ -107,7 +107,7 @@
 <div class="page-head">
   <div class="kicker">Interimobel · Agosto 2026</div>
   <h1>31 días de salas — antes/después</h1>
-  <p>1 sala por día (6 ago – 5 sep), un <b>hogar</b> distinto cada día. Formato <b>micro-influencer</b>: cada slide lo narra la persona en <b>primera persona</b> (proceso, decisiones y por qué). Arco de 5 slides: <b>gancho → decisión → la sala llega → payoff con gente → cierre solo el mueble</b> (la slide 5 va <b>sin personas</b>, el mueble como único protagonista). <b>Los 31 ya con este molde.</b> Sin imágenes aún; el gris es placeholder. <b>Sin precios.</b></p>
+  <p>1 sala por día (6 ago – 5 sep), un <b>hogar</b> distinto cada día. Formato <b>micro-influencer</b>: cada slide lo narra la persona en <b>primera persona</b> (proceso, decisiones y por qué). Arco de 5 slides: <b>gancho → decisión → la sala llega → payoff con gente → cierre solo el mueble</b> (la slide 5 va <b>sin personas</b>, el mueble como único protagonista). <b>Los 31 ya con este molde.</b> Sin imágenes aún; el gris es placeholder. <b>Precio + link real en cada caption</b> (verificado en Shopify); la imagen queda sin precio.</p>
   <div class="legend">
     <span><span class="chip-ci">Texto grande</span> (serif) = <b>Copy IN</b>: lo que la persona narra y <b>SÍ se imprime</b> en cada slide.</span>
     <span><span class="chip-note">📷 texto en cursiva</span> = <b>descripción de la foto/escena</b>. Solo referencia — no se imprime.</span>
@@ -339,6 +339,40 @@ const HOOKS = {
  28:"El depa que armaron entre todas", 29:"A prueba de niños", 30:"Siempre hay lugar para quien llega",
  31:"¿En qué etapa está tu casa?"
 };
+// Precio + link por día (verificado en Shopify 3-ago-2026). Meta exige que el precio coincida con la página → re-verificar al publicar.
+const PRECIOS = {
+ 1:{n:"Sofá Cama Sleepy",p:"$10,990",u:"interimobel.mx/products/sofa-cama-sleepy"},
+ 2:{n:"Sala Kenia",p:"$9,350",u:"interimobel.mx/products/sala-kenia-sofa-y-love-seat"},
+ 3:{n:"Sala Modular Cloud",p:"$22,950",u:"interimobel.mx/products/sala-modular-cloud"},
+ 4:{n:"Sala Cosmos",p:"$14,590",u:"interimobel.mx/products/sala-esquinera-cosmos-gris-copia"},
+ 5:{n:"Sofá Cama Break",p:"$10,990",u:"interimobel.mx/products/sofa-cama-break"},
+ 6:{n:"Sala Nessy",p:"$10,990",u:"interimobel.mx/products/sala-esquinera-nessy"},
+ 7:{n:"Sala Nicollo",p:"$12,550",u:"interimobel.mx/products/sala-esquinera-nicollo"},
+ 8:{n:"Sala Vittale",p:"$15,090",u:"interimobel.mx/products/sala-vitale-sofa-y-love-seat"},
+ 9:{n:"Sala Fussion",p:"$12,190",u:"interimobel.mx/products/sala-esquinera-fussion"},
+ 10:{n:"Sala Eternity",p:"$15,750",u:"interimobel.mx/products/sala-esquinera-eternity-gris"},
+ 11:{n:"Sala Columbus",p:"$16,290",u:"interimobel.mx/products/sala-esquinera-columbus-color-beige"},
+ 12:{n:"Sala Loose",p:"$15,390",u:"interimobel.mx/products/sala-esquinera-loose"},
+ 13:{n:"Sala Lucerna",p:"$13,290",u:"interimobel.mx/products/sala-lucerna-esquinera-color-amber"},
+ 14:{n:"Sala Lugano",p:"$10,590",u:"interimobel.mx/products/sala-lugano-sofa-y-love-seat-gris"},
+ 15:{n:"Sala Modular Fancy",p:"$20,950",u:"interimobel.mx/products/sala-modular-cloud-copia"},
+ 16:{n:"Sala Excellence Elite",p:"$18,990",u:"interimobel.mx/products/sala-modular-excelllence-elite-especial"},
+ 17:{n:"Sala Zurich",p:"$16,590",u:"interimobel.mx/products/sala-esquinera-zurich-gris"},
+ 18:{n:"Sala Cocy",p:"$12,790",u:"interimobel.mx/products/sala-esquinera-cocy-gris"},
+ 19:{n:"Sala Nilda",p:"$11,990",u:"interimobel.mx/products/sala-esquinera-nilda"},
+ 20:{n:"Sala Lucca",p:"$10,950",u:"interimobel.mx/products/sala-lucca-sofa-y-love-seat"},
+ 21:{n:"Sala Versage",p:"$14,550",u:"interimobel.mx/products/sala-versage-sofa-y-love-seat"},
+ 22:{n:"Sala Excellence Premium",p:"$23,950",u:"interimobel.mx/products/sala-modular-excellence-premium-especial"},
+ 23:{n:"Sala Cosmos",p:"$14,590",u:"interimobel.mx/products/sala-esquinera-cosmos-gris-copia"},
+ 24:{n:"Sala Novaopulence",p:"$13,590",u:"interimobel.mx/products/sala-esquinera-novaopulence-smoke"},
+ 25:{n:"Sala Gremory",p:"$13,990",u:"interimobel.mx/products/sala-esquinera-gremory"},
+ 26:{n:"Sala Cocy",p:"$12,790",u:"interimobel.mx/products/sala-esquinera-cocy-gris"},
+ 27:{n:"Sala Eternity",p:"$15,750",u:"interimobel.mx/products/sala-esquinera-eternity-gris"},
+ 28:{n:"Sofá Cama Sleepy",p:"$10,990",u:"interimobel.mx/products/sofa-cama-sleepy"},
+ 29:{n:"Sala Columbus",p:"$16,290",u:"interimobel.mx/products/sala-esquinera-columbus-color-beige"},
+ 30:{n:"Sala Zurich",p:"$16,590",u:"interimobel.mx/products/sala-esquinera-zurich-gris"},
+ 31:{n:"Sala Modular Cloud",p:"$22,950",u:"interimobel.mx/products/sala-modular-cloud"}
+};
 function grad(hex, kind){
   if(kind==="antes"){
     return `linear-gradient(135deg, color-mix(in srgb, ${hex} 10%, var(--ground)) 0%, color-mix(in srgb, ${hex} 4%, var(--ground)) 100%)`;
@@ -375,7 +409,9 @@ function render(){
       return `<div class="slide" style="background:${bg}"><span class="badge">${s.rol}${s.focal?' ⭐ realce':''}</span><div class="note">${narr}<div class="what">📷 ${s.escena}</div></div></div>`;
     }).join('');
     const dots = guion.map((_,i)=>`<div class="dot" style="${i===0?`background:${hex}`:''}"></div>`).join('');
-    const caption = p.cap.map(l=>`<div>${l}</div>`).join('') + `<div class="cta">${p.cta}</div>`;
+    const pr = PRECIOS[p.d];
+    const precioLinea = pr ? `<div class="cta">🛋️ ${pr.n} · ${pr.p} MXN → ${pr.u}</div>` : '';
+    const caption = p.cap.map(l=>`<div>${l}</div>`).join('') + `<div class="cta">${p.cta}</div>` + precioLinea;
     return `<article class="post">
       <div class="phead">
         <div class="avatar" style="background:${hex}">i</div>
