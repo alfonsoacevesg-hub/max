@@ -25,19 +25,21 @@ Solo la **portada** y el **cierre** llevan texto impreso; los antes/después van
 
 ## Semana 1
 
-### Día 1 · 6-ago (Jue) — Gen Z mujer soltera · **Sofá Cama Sleepy** — *pieza modelo (narrativa persona + proceso + payoff cine)*
-**Estructura:** carrusel de 5 slides. Persona al frente, decoración construida poco a poco dejando el sofá como **pieza focal de realce**, y cierre cinematográfico.
+### Día 1 · 6-ago (Jue) — Gen Z mujer soltera · **Sofá Cama Sleepy** — *pieza modelo (micro-influencer en 1ª persona)*
+**Estructura:** carrusel de 5 slides. La protagonista **narra su propio proceso** en cada slide (decisiones + por qué); el sofá se deja como **pieza focal de realce** y cierra en modo cine.
 
-1. **Portada (gancho):** chica Gen Z de pie en su depa a medio decorar, sonriendo a cámara; cajas, plantas y luz de tarde. **Copy IN impreso:** *"Mi primer sofá"* + subtítulo *"…y también es mi cine"*. Cue "desliza →".
-2. **Proceso 1** (foto, sin texto): arranca la decoración — cortinas claras, una planta, un cuadro. El centro de la sala aún vacío.
-3. **Proceso 2** (foto, sin texto): tapete, mesa de centro y lámpara de luz cálida. El rincón toma forma; el lugar del sofá sigue libre.
-4. **Pieza focal ⭐** (foto, sin texto): llega el **Sofá Cama Sleepy**, la pieza que realza todo. Toma que lo destaca y muestra cómo se acomoda de sofá a modo relax para ver series.
-5. **Cierre (payoff):** ella y una amiga en el sofá, palomitas, a oscuras, la **luz azulada de la pantalla en sus caras y expresión de suspenso** (viendo algo de terror). **Copy IN impreso:** *"Sofá de día, cine de noche."*
+| # | Copy IN (1ª persona, impreso en la slide) | Escena (foto) |
+|---|---|---|
+| 1 · Portada | *"Renté mi primer depa sola. Cero muebles, mil ideas 👇"* | Ella parada en el depa vacío con cajas, sonriendo a cámara; luz de tarde. |
+| 2 · Proceso | *"Empecé por lo barato que rinde: cortinas claras para que entrara toda la luz."* | Cortinas claras + una planta; el cuarto se ve más grande. Centro vacío. |
+| 3 · Proceso | *"Sumé un tapete y una lámpara cálida. Truco: la luz amarilla hace que todo se sienta acogedor."* | Tapete, mesa de centro y lámpara cálida. El lugar del sofá sigue libre. |
+| 4 · Pieza focal ⭐ | *"La decisión que cambió todo: no gasté en sala Y en cama de visitas. Compré las dos en una."* | Llega el Sofá Cama Sleepy; toma que lo realza y muestra cómo se abre de sofá a cama/relax. |
+| 5 · Cierre | *"Hoy es mi salita de día… y mi cine de noche 🍿"* | Ella y una amiga, palomitas, a oscuras, la luz de la pantalla en sus caras y cara de suspenso. |
 
-**Copy OUT:**
-> Tu primer sofá también es tu cine en casa 🍿
-> Un sofá cama que de día es sala y de noche, tu maratón de series.
-> Guárdalo para tu depa 🔖
+**Copy OUT (caption):**
+> Así convertí mi primer depa vacío en mi lugar favorito 🍿
+> Y lo mejor: mi sofá es sala de día y cine de noche.
+> ¿Tú por dónde empezarías? Guárdalo 🔖
 **Hashtags:** #PrimerDepa #SofaCama #CineEnCasa #GenZEnCasa #Interimobel
 **Producto:** Sofá Cama Sleepy · SKU SAL-0007-B
 
