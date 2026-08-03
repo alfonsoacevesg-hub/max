@@ -1,0 +1,179 @@
+<title>Interimobel · Agosto — 31 días de salas (antes/después)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --ground:#FBF8F3; --surface:#FFFFFF; --ink:#1A1714; --muted:#8C837B;
+    --line:#EAE3D8; --line-strong:#DDD4C6; --link:#00375B;
+    --font-ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --font-brand:"Georgia","Times New Roman",serif;
+    --font-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --heart:#ED4956;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ground:#131009; --surface:#1B1712; --ink:#F1EBE1; --muted:#9C9089;
+      --line:#2C2620; --line-strong:#3A332B; --link:#7CC0F0; }
+  }
+  :root[data-theme="dark"]{ --ground:#131009; --surface:#1B1712; --ink:#F1EBE1; --muted:#9C9089;
+    --line:#2C2620; --line-strong:#3A332B; --link:#7CC0F0; }
+  :root[data-theme="light"]{ --ground:#FBF8F3; --surface:#FFFFFF; --ink:#1A1714; --muted:#8C837B;
+    --line:#EAE3D8; --line-strong:#DDD4C6; --link:#00375B; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--font-ui);
+    -webkit-font-smoothing:antialiased}
+  .page-head{max-width:470px;margin:0 auto;padding:26px 16px 8px;text-align:center}
+  .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  h1{font-family:var(--font-brand);font-weight:600;font-size:26px;margin:6px 0 4px}
+  .page-head p{font-size:13.5px;line-height:1.5;color:var(--muted);margin:6px 0}
+  .controls{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:12px 0 4px}
+  .controls button{font-family:var(--font-ui);font-size:12px;padding:7px 12px;border-radius:20px;
+    border:1px solid var(--line-strong);background:var(--surface);color:var(--ink);cursor:pointer}
+  .controls button[aria-pressed="true"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+  .feed{max-width:470px;margin:12px auto 0;padding:0 8px}
+  .post{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin:0 0 20px;overflow:hidden}
+  .phead{display:flex;align-items:center;gap:10px;padding:11px 13px}
+  .avatar{width:34px;height:34px;border-radius:50%;flex:0 0 34px;display:grid;place-items:center;
+    color:#fff;font-family:var(--font-brand);font-size:15px;font-weight:700}
+  .pmeta{line-height:1.2;flex:1;min-width:0}
+  .pname{font-size:13px;font-weight:600}
+  .ptag{font-size:11px;color:var(--muted)}
+  .pday{font-family:var(--font-mono);font-size:10.5px;color:var(--muted);text-align:right;white-space:nowrap}
+  .pday b{color:var(--ink)}
+  .rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;aspect-ratio:4/5;scrollbar-width:none}
+  .rail::-webkit-scrollbar{display:none}
+  .slide{flex:0 0 100%;scroll-snap-align:start;position:relative;display:grid;place-items:center;overflow:hidden}
+  .badge{position:absolute;top:11px;left:11px;font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;
+    text-transform:uppercase;background:rgba(0,0,0,.55);color:#fff;padding:4px 8px;border-radius:6px;backdrop-filter:blur(3px)}
+  .scene{position:absolute;bottom:11px;left:11px;right:11px;font-size:12px;color:#fff;
+    text-shadow:0 1px 6px rgba(0,0,0,.6);opacity:0;transition:opacity .2s}
+  body.show-notes .scene{opacity:1}
+  .copyin{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:22px}
+  .copyin span{font-family:var(--font-brand);color:#fff;font-size:23px;line-height:1.28;font-weight:600;
+    text-shadow:0 2px 14px rgba(0,0,0,.55)}
+  .copyin.band span{font-size:20px}
+  .dots{display:flex;gap:5px;justify-content:center;padding:9px 0 2px}
+  .dot{width:5px;height:5px;border-radius:50%;background:var(--line-strong)}
+  .actions{display:flex;align-items:center;gap:15px;padding:6px 13px 2px}
+  .actions svg{width:23px;height:23px;stroke:var(--ink);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+  .actions .save{margin-left:auto}
+  .likes{padding:5px 13px 0;font-size:13px;font-weight:600}
+  .caption{padding:4px 13px 0;font-size:13.5px;line-height:1.5}
+  .caption .u{font-weight:600;margin-right:5px}
+  .caption .cta{color:var(--link);font-weight:500}
+  .tags{padding:3px 13px 0;font-size:13px;color:var(--link);line-height:1.5}
+  .meta{padding:8px 13px 13px;font-size:10px;letter-spacing:.05em;color:var(--muted);
+    text-transform:uppercase;font-family:var(--font-mono)}
+  .foot{max-width:470px;margin:30px auto 40px;text-align:center;color:var(--muted);font-size:12px;line-height:1.6;padding:0 16px}
+  .foot code{font-family:var(--font-mono);font-size:11px;background:var(--surface);border:1px solid var(--line);padding:1px 6px;border-radius:5px;color:var(--ink)}
+  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+
+<div class="page-head">
+  <div class="kicker">Interimobel · Agosto 2026</div>
+  <h1>31 días de salas — antes/después</h1>
+  <p>1 sala por día (6 ago – 5 sep). Cada pieza es un <b>hogar</b> distinto: de Gen Z a boomer, solteros, familias, mascotas y parejas. Arte de referencia (placeholder por color de hogar); el final se produce en Higgsfield con las fotos oficiales de cada sala. <b>Sin precios en ningún caption.</b></p>
+  <div class="controls">
+    <button id="toggleNotes" aria-pressed="false">Mostrar notas de escena</button>
+    <button id="toggleTheme" aria-pressed="false">Cambiar tema</button>
+  </div>
+</div>
+
+<main class="feed" id="feed"></main>
+
+<div class="foot">
+  Placeholder de color por tipo de hogar — <b>no es la imagen final</b>. Copy completo en <code>agosto-31dias-copy.md</code> · parrilla en <code>parrilla-agosto-31dias.csv</code>.
+</div>
+
+<script>
+// grupos de hogar → color de acento
+const G = {
+  genz:"#C7902B", mill:"#B05738", fam:"#77876A", mono:"#B99B6C",
+  pet:"#9A7B4F", lgbt:"#8A6D8C", elder:"#6E7B8A", other:"#7C8B93"
+};
+const POSTS = [
+ {d:1,fecha:"6 ago",wd:"Jue",g:"genz",hogar:"Gen Z · mujer soltera",sala:"Sofá Cama Sleepy",antes:"Caja de mudanza, piso frío",despues:"Rincón Pinterest con sofá cama y manta",copyin:"Tu primer espacio, ya se siente tuyo.",likes:"1,204",cap:["De caja vacía a tu rincón favorito.","Un sofá cama resuelve la sala hoy y la visita del finde."],cta:"Guarda la idea 🔖",tags:"#PrimerDepa #SofaCama #DecoracionDeSala #GenZEnCasa #Interimobel"},
+ {d:2,fecha:"7 ago",wd:"Vie",g:"mono",hogar:"Mamá soltera",sala:"Sala Kenia",antes:"Sala heredada, muebles viejos",despues:"Sala propia, cálida",copyin:"Una sala que por fin es de ustedes dos.",likes:"1,588",cap:["No era heredada. Esta la elegiste tú.","Una sala nueva para las tardes de ustedes dos."],cta:"Encuéntrala en interimobel.mx",tags:"#SalaModerna #MamaSoltera #DecoracionDeSala #HogarPropio #Interimobel"},
+ {d:3,fecha:"8 ago",wd:"Sáb ⭐",g:"fam",hogar:"Familia · hijos Gen Alfa",sala:"Sala Modular Cloud",antes:"Sala vacía el lunes",despues:"Cine familiar el sábado, palomitas",copyin:"La sala donde pasan las mejores tardes.",likes:"3,410",cap:["Sala vacía el lunes, cine familiar el sábado.","Espacio de sobra para toda la familia (y las palomitas)."],cta:"¿Peli en familia este finde?",tags:"#SalaModular #SalaFamiliar #TardeDePeliculas #DecoracionDeHogar #Interimobel"},
+ {d:4,fecha:"9 ago",wd:"Dom ⭐",g:"lgbt",hogar:"Pareja de hombres (discreta)",sala:"Sala Esquinera Cosmos",antes:"Estancia sin vida",despues:"Domingo sin prisa, dos tazas, manta compartida",copyin:"Un domingo sin prisa, en casa.",likes:"2,980",cap:["Dos tazas, una sala nueva y el domingo entero por delante.","Así se ve una casa que ya se siente suya."],cta:"¿Qué tan tuyo se siente tu espacio?",tags:"#SalaEsquinera #DomingoEnCasa #DecoracionDeSala #DisenoDeInteriores #Interimobel"},
+ {d:5,fecha:"10 ago",wd:"Lun",g:"genz",hogar:"Gen Z · hombre soltero",sala:"Sofá Cama Break Gris",antes:"Cuarto vacío",despues:"Su lugar para desconectar, minimal",copyin:"Tu primer depa, a tu manera.",likes:"1,120",cap:["De cuarto vacío a tu lugar favorito para desconectar.","Un sofá cama que aguanta la maratón… y a los que se quedan."],cta:"Guárdalo para tu depa 🔖",tags:"#PrimerDepa #SofaCama #EspacioPropio #DecoracionMinimalista #Interimobel"},
+ {d:6,fecha:"11 ago",wd:"Mar",g:"pet",hogar:"Soltera con gato",sala:"Sala Esquinera Nessy",antes:"Sala neutra y fría",despues:"Espacio suave, plantas, el gato en un cojín",copyin:"Su rincón. Tu calma.",likes:"1,760",cap:["La sala nueva ya tiene dueña… y copiloto.","Un espacio suave para las tardes lentas (y las siestas de gato)."],cta:"Encuéntrala en interimobel.mx",tags:"#SalaEsquinera #PetLovers #DecoracionDeSala #VidaEnCasa #Interimobel"},
+ {d:7,fecha:"12 ago",wd:"Mié",g:"elder",hogar:"Boomer viudo",sala:"Sala Esquinera Nicollo",antes:"Sala de siempre, desgastada",despues:"Renovada con calma, misma casa",copyin:"Renovar también es empezar algo nuevo.",likes:"1,340",cap:["Después de tantos años, tocaba renovar la sala.","No para cambiarlo todo — para volver a disfrutarla."],cta:"Conócela en interimobel.mx",tags:"#RenovarConCriterio #SalaEsquinera #HechoEnMexico #DecoracionDeHogar #Interimobel"},
+ {d:8,fecha:"13 ago",wd:"Jue",g:"mill",hogar:"Recién casados",sala:"Sala Vittale",antes:"Depa vacío recién entregado",despues:"Primera sala elegida juntos",copyin:"El primer hogar de los dos.",likes:"2,050",cap:["Del depa vacío a la primera sala que eligieron juntos.","Aquí van a empezar un montón de historias."],cta:"¿Ya tienen su rincón favorito?",tags:"#ReciénCasados #PrimerHogar #SalaModerna #DecoracionDeSala #Interimobel"},
+ {d:9,fecha:"14 ago",wd:"Vie",g:"mill",hogar:"Soltera millennial",sala:"Sala Esquinera Fussion",antes:"Depa a medio amueblar",despues:"Su primer gran mueble, comprado sola",copyin:"Comprada por ti. Para ti.",likes:"2,240",cap:["Tu primer gran mueble, elegido sin pedir permiso.","Una sala que dice justo quién eres."],cta:"Encuéntrala en interimobel.mx",tags:"#MujerIndependiente #SalaEsquinera #DecoracionDeSala #HogarPropio #Interimobel"},
+ {d:10,fecha:"15 ago",wd:"Sáb ⭐",g:"fam",hogar:"Familia · adolescentes",sala:"Sala Esquinera Eternity",antes:"Sala apretada",despues:"Sala amplia: tarea, series, amigos",copyin:"La sala que aguanta a toda la bola.",likes:"3,120",cap:["Tarea, series y amigos que llegan sin avisar.","Una sala amplia que aguanta el ritmo de la casa."],cta:"¿Sala grande o sala tranquila?",tags:"#SalaEsquinera #SalaFamiliar #DecoracionDeHogar #EspacioAmplio #Interimobel"},
+ {d:11,fecha:"16 ago",wd:"Dom ⭐",g:"mill",hogar:"Pareja millennial · casa nueva",sala:"Sala Esquinera Columbus",antes:"Casa recién entregada, cajas",despues:"Su primera sala de adultos",copyin:"Casa nueva, primera sala de adultos.",likes:"3,300",cap:["De la casa recién entregada a su primera sala de verdad.","El espacio ya se siente de ustedes."],cta:"¿Por qué habitación empezarían?",tags:"#CasaNueva #SalaEsquinera #DecoracionDeSala #PrimerHogar #Interimobel"},
+ {d:12,fecha:"17 ago",wd:"Lun",g:"other",hogar:"Freelancer · home office",sala:"Sala Esquinera Loose",antes:"Rincón de trabajo improvisado",despues:"Sala que de día trabaja, de tarde descansa",copyin:"Tu sala de día. Tu descanso de noche.",likes:"1,410",cap:["En la mañana es tu oficina; en la tarde, tu sala.","Un espacio que trabaja tan flexible como tú."],cta:"Encuéntrala en interimobel.mx",tags:"#HomeOffice #SalaEnCasa #TrabajoRemoto #DecoracionDeSala #Interimobel"},
+ {d:13,fecha:"18 ago",wd:"Mar",g:"lgbt",hogar:"Pareja de mujeres (discreta)",sala:"Sala Lucerna",antes:"Estancia sin personalidad",despues:"Plantas, buena luz, sala elegida por las dos",copyin:"Su casa, a su ritmo.",likes:"2,610",cap:["Plantas, buena luz y una sala que las dos eligieron.","Los domingos saben distinto en casa propia."],cta:"¿Qué no puede faltar en tu sala?",tags:"#SalaEsquinera #DomingoEnCasa #DisenoDeInteriores #DecoracionDeSala #Interimobel"},
+ {d:14,fecha:"19 ago",wd:"Mié",g:"fam",hogar:"Familia con bebé",sala:"Sala Lugano",antes:"Sala en pausa",despues:"Sala cómoda y suave para los primeros recuerdos",copyin:"La sala donde empieza todo.",likes:"2,180",cap:["Llega un integrante nuevo y la casa se acomoda.","Una sala cómoda y suave para los primeros recuerdos."],cta:"Encuéntrala en interimobel.mx",tags:"#FamiliaNueva #SalaModerna #DecoracionDeHogar #VidaEnFamilia #Interimobel"},
+ {d:15,fecha:"20 ago",wd:"Jue",g:"fam",hogar:"Familia multigeneracional",sala:"Sala Modular Fancy",antes:"Sala que no daba abasto",despues:"Espacio amplio: abuelos, hijos y nietos",copyin:"La sala donde caben todas las edades.",likes:"2,540",cap:["Abuelos, hijos y nietos, en el mismo sillón.","Una sala amplia para la familia que no cabe en ningún lado… menos aquí."],cta:"¿Cuántos caben en la tuya?",tags:"#SalaModular #FamiliaGrande #DecoracionDeHogar #EspacioAmplio #Interimobel"},
+ {d:16,fecha:"21 ago",wd:"Vie",g:"elder",hogar:"Pareja boomer · nido vacío",sala:"Sala Modular Excellence Elite",antes:"Casa de siempre",despues:"Sala renovada para esta etapa de los dos",copyin:"Ahora la casa vuelve a ser de ustedes.",likes:"1,920",cap:["Los hijos volaron y la casa pide un nuevo aire.","Una sala amplia para esta etapa, con calma y estilo."],cta:"Conócela en interimobel.mx",tags:"#NidoVacio #SalaModular #RenovarConCriterio #DecoracionDeHogar #Interimobel"},
+ {d:17,fecha:"22 ago",wd:"Sáb ⭐",g:"genz",hogar:"Roomies",sala:"Sala Esquinera Zurich (sofá cama)",antes:"Depa compartido sin sala",despues:"Sofá cama: estar y dormir",copyin:"El depa compartido, por fin cómodo.",likes:"2,870",cap:["Renta dividida, sala compartida, buenos ratos incluidos.","Un sofá cama para el amigo que siempre se queda."],cta:"Guárdalo para el depa 🔖",tags:"#DepaCompartido #SofaCama #SalaEsquinera #VidaDeRoomies #Interimobel"},
+ {d:18,fecha:"23 ago",wd:"Dom ⭐",g:"genz",hogar:"Gen Z en pareja",sala:"Sala Esquinera Cocy",antes:"Primer depa a medio armar",despues:"Su primera sala en pareja",copyin:"Primer depa, primera sala juntos.",likes:"3,040",cap:["Poquito presupuesto, muchas ganas… y su primera sala en pareja.","El principio de su lugar en el mundo."],cta:"¿Cuál sería su rincón favorito?",tags:"#PrimerDepa #SalaEsquinera #ParejaJoven #DecoracionDeSala #Interimobel"},
+ {d:19,fecha:"24 ago",wd:"Lun",g:"pet",hogar:"Soltera con perro y gato",sala:"Sala Modular Nilda",antes:"Sala neutra",despues:"Cómoda para ti y tu pequeña manada",copyin:"Su pequeña manada, su sala nueva.",likes:"1,830",cap:["Una sala nueva para ti… y para tu pequeña manada.","Cómoda para todos, incluidos los de cuatro patas."],cta:"Encuéntrala en interimobel.mx",tags:"#PetFriendly #SalaEsquinera #PetLovers #DecoracionDeSala #Interimobel"},
+ {d:20,fecha:"25 ago",wd:"Mar",g:"lgbt",hogar:"Pareja de hombres (discreta)",sala:"Sala Lucca",antes:"Estancia apagada",despues:"Su lugar para bajar el ritmo, café",copyin:"Su lugar para bajar el ritmo.",likes:"2,480",cap:["Café, buena plática y una sala que ya es de los dos.","Los mejores planes a veces son quedarse en casa."],cta:"¿Plan en casa este finde?",tags:"#SalaModerna #FinDeSemanaEnCasa #DecoracionDeSala #DisenoDeInteriores #Interimobel"},
+ {d:21,fecha:"26 ago",wd:"Mié",g:"elder",hogar:"Hombre Gen X soltero",sala:"Sala Versage",antes:"Sala sin identidad",despues:"Armada exactamente como él quería",copyin:"Tu espacio, sin darle explicaciones a nadie.",likes:"1,560",cap:["La sala que armaste exactamente como querías.","Tu música, tu sillón, tu ritmo."],cta:"Conócela en interimobel.mx",tags:"#EspacioPropio #SalaModerna #DecoracionParaEl #VidaEnCasa #Interimobel"},
+ {d:22,fecha:"27 ago",wd:"Jue",g:"fam",hogar:"Familia numerosa",sala:"Sala Modular Excellence Premium",antes:"Sala que se quedaba corta",despues:"Espacio de sobra para todos y las visitas",copyin:"Aquí sí caben todos.",likes:"2,360",cap:["Familia grande, visitas seguido y una sala que nunca se queda corta.","Espacio de sobra para todos."],cta:"¿Sala grande en tu lista?",tags:"#SalaModular #FamiliaGrande #SalaFamiliar #DecoracionDeHogar #Interimobel"},
+ {d:23,fecha:"28 ago",wd:"Vie",g:"lgbt",hogar:"Pareja de mujeres (discreta)",sala:"Sala Esquinera Cosmos",antes:"Tarde cualquiera",despues:"Tarde tranquila, dos libros, su sala",copyin:"Café, libros y casa propia.",likes:"2,520",cap:["Una tarde tranquila, dos libros y su sala favorita.","El plan perfecto no siempre sale de casa."],cta:"¿Qué lees este finde?",tags:"#SalaEsquinera #TardeEnCasa #DecoracionDeSala #DisenoDeInteriores #Interimobel"},
+ {d:24,fecha:"29 ago",wd:"Sáb ⭐",g:"pet",hogar:"Soltero con perro",sala:"Sala Esquinera Novaopulence",antes:"Sala nueva",despues:"Él estrena su lugar en el sillón",copyin:"Su lugar en el sillón ya está listo.",likes:"2,910",cap:["Estrenas sala y él estrena su lugar favorito.","Cómoda para los dos, resistente para la vida real."],cta:"Encuéntrala en interimobel.mx",tags:"#PetLovers #SalaEsquinera #PetFriendly #DecoracionDeSala #Interimobel"},
+ {d:25,fecha:"30 ago",wd:"Dom ⭐",g:"mono",hogar:"Papá soltero",sala:"Sala Esquinera Gremory (sofá cama)",antes:"Sala básica",despues:"Noches de peli con los hijos, cama extra",copyin:"Noches de peli, cama extra incluida.",likes:"2,760",cap:["Los findes con los hijos piden sala cómoda… y cama de sobra.","Un sofá cama que resuelve las dos cosas."],cta:"Guárdalo para las noches de peli 🔖",tags:"#PapaSoltero #SofaCama #SalaEsquinera #NochesDePelicula #Interimobel"},
+ {d:26,fecha:"31 ago",wd:"Lun",g:"mill",hogar:"Pareja sin hijos (DINK)",sala:"Sala Esquinera Cocy",antes:"Sala común",despues:"Su cine privado, sin interrupciones",copyin:"Su cine privado, cada noche.",likes:"1,990",cap:["Sin prisas, sin apuros: su sala, su serie, su noche.","Espacio para estirarse y no moverse hasta el final."],cta:"¿Serie o película hoy?",tags:"#SalaEsquinera #HomeTheater #NocheDeSerie #DecoracionDeSala #Interimobel"},
+ {d:27,fecha:"1 sep",wd:"Mar",g:"other",hogar:"Amigos · casa de la reunión",sala:"Sala Esquinera Eternity",antes:"Sala apretada",despues:"La casa donde todos caben",copyin:"La sala donde siempre acaba la fiesta.",likes:"2,300",cap:["La casa a la que todos llegan… porque hay dónde sentarse.","Una sala amplia para los planes que no se planean."],cta:"¿En casa de quién cae la reunión?",tags:"#SalaEsquinera #ReunionEnCasa #EspacioAmplio #DecoracionDeSala #Interimobel"},
+ {d:28,fecha:"2 sep",wd:"Mié",g:"genz",hogar:"Roomies (amigas)",sala:"Sofá Cama Sleepy",antes:"Primer depa lejos de casa",despues:"Sala elegida entre amigas, cama extra",copyin:"El depa que armaron entre todas.",likes:"1,680",cap:["Primer depa lejos de casa, primera sala elegida entre amigas.","Cómoda para las tres… y para la que se queda a dormir."],cta:"Guárdalo para el depa 🔖",tags:"#DepaCompartido #SofaCama #VidaDeRoomies #PrimerDepa #Interimobel"},
+ {d:29,fecha:"3 sep",wd:"Jue",g:"fam",hogar:"Familia · hijos Gen Alfa",sala:"Sala Esquinera Columbus",antes:"Sala formal",despues:"Cuartel general de los peques",copyin:"El cuartel general de los peques.",likes:"2,440",cap:["Juegos en el piso, dibujos en el sillón, risas por todos lados.","Una sala pensada para la vida real en familia."],cta:"¿Sala a prueba de niños?",tags:"#SalaEsquinera #SalaFamiliar #VidaEnFamilia #DecoracionDeHogar #Interimobel"},
+ {d:30,fecha:"4 sep",wd:"Vie",g:"fam",hogar:"Casa que recibe (abuelos)",sala:"Sala Esquinera Zurich (sofá cama)",antes:"Sala normal",despues:"Cama lista cuando la familia visita",copyin:"Siempre hay lugar para quien llega.",likes:"1,870",cap:["Cuando la familia visita, la casa se estira.","Sala cómoda de día, cama lista de noche."],cta:"Encuéntrala en interimobel.mx",tags:"#SofaCama #SalaEsquinera #CasaQueRecibe #DecoracionDeHogar #Interimobel"},
+ {d:31,fecha:"5 sep",wd:"Sáb ⭐",g:"other",hogar:"Cierre · todos los hogares",sala:"Sala Modular Cloud",antes:"Montaje de los hogares del mes",despues:"Una misma marca, muchas casas",copyin:"Cada casa se acomoda distinto.",likes:"4,120",cap:["Solteros, familias, parejas, mascotas… cada quien su sala, cada casa su historia.","La tuya, la armamos contigo."],cta:"¿En qué etapa está tu casa? 👇",tags:"#LaCasaSeAcomoda #SalaInterimobel #DecoracionDeHogar #HechoEnMexico #Interimobel"}
+];
+
+function grad(hex, kind){
+  if(kind==="antes"){
+    return `linear-gradient(135deg, color-mix(in srgb, ${hex} 10%, var(--ground)) 0%, color-mix(in srgb, ${hex} 4%, var(--ground)) 100%)`;
+  }
+  return `linear-gradient(135deg, color-mix(in srgb, ${hex} 48%, var(--ground)) 0%, color-mix(in srgb, ${hex} 22%, var(--ground)) 55%, color-mix(in srgb, ${hex} 60%, #000 8%) 100%)`;
+}
+const ic = {
+  heart:'<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.3C.4 8.4 2 5 5.2 5c2 0 3.3 1.1 4.1 2.3l.7 1 .7-1C11.5 6.1 12.8 5 14.8 5 18 5 19.6 8.4 22 11.7 19.5 16.4 12 21 12 21z"/></svg>',
+  comment:'<svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5z"/></svg>',
+  share:'<svg viewBox="0 0 24 24"><path d="M22 3 11 14M22 3l-7 19-4-8-8-4 19-7z"/></svg>',
+  save:'<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4V3z"/></svg>'
+};
+
+function render(){
+  const feed = document.getElementById('feed');
+  feed.innerHTML = POSTS.map(p=>{
+    const hex = G[p.g];
+    const slides = [
+      `<div class="slide" style="background:${grad(hex,'antes')}"><span class="badge">Antes</span><div class="scene">${p.antes}</div></div>`,
+      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">Después</span><div class="scene">${p.despues}</div></div>`,
+      `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">Cierre</span><div class="copyin"><span>${p.copyin}</span></div></div>`
+    ].join('');
+    const dots = [0,1,2].map((_,i)=>`<div class="dot" style="${i===0?`background:${hex}`:''}"></div>`).join('');
+    const caption = p.cap.map(l=>`<div>${l}</div>`).join('') + `<div class="cta">${p.cta}</div>`;
+    return `<article class="post">
+      <div class="phead">
+        <div class="avatar" style="background:${hex}">i</div>
+        <div class="pmeta"><div class="pname">interimobel</div><div class="ptag">${p.hogar} · ${p.sala}</div></div>
+        <div class="pday">DÍA <b>${p.d}</b><br>${p.fecha} ${p.wd}</div>
+      </div>
+      <div class="rail">${slides}</div>
+      <div class="dots">${dots}</div>
+      <div class="actions">${ic.heart}${ic.comment}${ic.share}<span class="save">${ic.save}</span></div>
+      <div class="likes">${p.likes} Me gusta</div>
+      <div class="caption"><span class="u">interimobel</span>${caption}</div>
+      <div class="tags">${p.tags}</div>
+      <div class="meta">Carrusel antes/después · producción Higgsfield pendiente</div>
+    </article>`;
+  }).join('');
+}
+render();
+
+document.getElementById('toggleNotes').addEventListener('click',e=>{
+  const on = document.body.classList.toggle('show-notes');
+  e.currentTarget.setAttribute('aria-pressed', on);
+});
+document.getElementById('toggleTheme').addEventListener('click',e=>{
+  const root = document.documentElement;
+  const cur = root.getAttribute('data-theme');
+  const next = cur==='dark' ? 'light' : (cur==='light' ? 'dark' : (matchMedia('(prefers-color-scheme: dark)').matches?'light':'dark'));
+  root.setAttribute('data-theme', next);
+  e.currentTarget.setAttribute('aria-pressed', next==='dark');
+});
+</script>
