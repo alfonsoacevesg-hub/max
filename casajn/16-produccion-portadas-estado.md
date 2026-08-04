@@ -53,6 +53,7 @@
 
 ## Presupuesto
 - Saldo ~247 créditos · 2 cr/portada a 2K · 30 portadas restantes = **60 cr**
-- Regla del cliente: NO desperdiciar créditos. Batch con `generate_image_batch`, verificando cada tanda.
+- Regla del cliente: NO desperdiciar créditos. **Trabajar en LOTES DE 3** (decisión del cliente, 4-ago): importar 3 fotos → generar 3 portadas → verificar/mostrar → siguiente lote. Si la conexión se cae, solo se pierde una tanda.
+- Orden de lotes: [D2,D3,D4] → [D5,D6,D7] → [D8,D9,D10] → [D11,D12,D13] → [D14,D15,D16] → [D17,D18,D19] → [D20,D21,D22] → [D23,D24,D25] → [D26,D27,D28] → [D29,D30,D31].
 
 ## Protagonistas/escena por día: ver guiones en `preview-agosto-31.html` (const GUIONES) y paleta rotada por pieza.
