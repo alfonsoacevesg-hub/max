@@ -1,0 +1,462 @@
+<title>Interimobel · Agosto — 31 días de salas (antes/después)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --ground:#FBF8F3; --surface:#FFFFFF; --ink:#1A1714; --muted:#8C837B;
+    --line:#EAE3D8; --line-strong:#DDD4C6; --link:#00375B;
+    --font-ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --font-brand:"Georgia","Times New Roman",serif;
+    --font-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --heart:#ED4956;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --ground:#131009; --surface:#1B1712; --ink:#F1EBE1; --muted:#9C9089;
+      --line:#2C2620; --line-strong:#3A332B; --link:#7CC0F0; }
+  }
+  :root[data-theme="dark"]{ --ground:#131009; --surface:#1B1712; --ink:#F1EBE1; --muted:#9C9089;
+    --line:#2C2620; --line-strong:#3A332B; --link:#7CC0F0; }
+  :root[data-theme="light"]{ --ground:#FBF8F3; --surface:#FFFFFF; --ink:#1A1714; --muted:#8C837B;
+    --line:#EAE3D8; --line-strong:#DDD4C6; --link:#00375B; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--font-ui);
+    -webkit-font-smoothing:antialiased}
+  .page-head{max-width:470px;margin:0 auto;padding:26px 16px 8px;text-align:center}
+  .kicker{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  h1{font-family:var(--font-brand);font-weight:600;font-size:26px;margin:6px 0 4px}
+  .page-head p{font-size:13.5px;line-height:1.5;color:var(--muted);margin:6px 0}
+  .controls{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:12px 0 4px}
+  .controls button{font-family:var(--font-ui);font-size:12px;padding:7px 12px;border-radius:20px;
+    border:1px solid var(--line-strong);background:var(--surface);color:var(--ink);cursor:pointer}
+  .controls button[aria-pressed="true"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+  .feed{max-width:470px;margin:12px auto 0;padding:0 8px}
+  .post{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin:0 0 20px;overflow:hidden}
+  .phead{display:flex;align-items:center;gap:10px;padding:11px 13px}
+  .avatar{width:34px;height:34px;border-radius:50%;flex:0 0 34px;display:grid;place-items:center;
+    color:#fff;font-family:var(--font-brand);font-size:15px;font-weight:700}
+  .pmeta{line-height:1.2;flex:1;min-width:0}
+  .pname{font-size:13px;font-weight:600}
+  .ptag{font-size:11px;color:var(--muted)}
+  .pday{font-family:var(--font-mono);font-size:10.5px;color:var(--muted);text-align:right;white-space:nowrap}
+  .pday b{color:var(--ink)}
+  .rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;aspect-ratio:4/5;scrollbar-width:none}
+  .rail::-webkit-scrollbar{display:none}
+  .slide{flex:0 0 100%;scroll-snap-align:start;position:relative;display:grid;place-items:center;overflow:hidden}
+  .badge{position:absolute;top:11px;left:11px;font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;
+    text-transform:uppercase;background:rgba(0,0,0,.55);color:#fff;padding:4px 8px;border-radius:6px;backdrop-filter:blur(3px)}
+  /* Descripción de la toma = nota de producción (NO se imprime en el post) */
+  .note{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;
+    gap:12px;padding:28px 22px;text-align:center}
+  .note .tag{align-self:center;font-family:var(--font-mono);font-size:9px;letter-spacing:.09em;text-transform:uppercase;
+    color:rgba(255,255,255,.92);background:rgba(0,0,0,.4);border:1px dashed rgba(255,255,255,.55);
+    padding:4px 9px;border-radius:6px}
+  .note .narr{font-family:var(--font-brand);font-size:16.5px;line-height:1.4;color:#fff;font-weight:600;
+    text-shadow:0 2px 12px rgba(0,0,0,.72);max-width:26ch;margin:0 auto}
+  .note .what{font-family:var(--font-mono);font-style:italic;font-size:11.5px;line-height:1.5;
+    color:rgba(255,255,255,.88);text-shadow:0 1px 8px rgba(0,0,0,.75);max-width:32ch;margin:0 auto}
+  /* Copy IN = texto que SÍ se imprime sobre la imagen */
+  .cierre{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;
+    gap:13px;padding:24px;text-align:center}
+  .cierre .tag{font-family:var(--font-mono);font-size:9px;letter-spacing:.09em;text-transform:uppercase;
+    color:#111;background:#fff;padding:5px 11px;border-radius:20px;font-weight:700}
+  .cierre .ci{font-family:var(--font-brand);font-size:24px;line-height:1.28;color:#fff;font-weight:600;
+    text-shadow:0 2px 14px rgba(0,0,0,.6);max-width:20ch}
+  .cierre .fn{position:absolute;bottom:13px;left:16px;right:16px;font-family:var(--font-mono);
+    font-size:9px;color:rgba(255,255,255,.7);letter-spacing:.03em}
+  /* Portada / gancho: hook impreso + cue de deslizar */
+  .cover{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;
+    gap:14px;padding:24px;text-align:center}
+  .cover .tag{font-family:var(--font-mono);font-size:9px;letter-spacing:.09em;text-transform:uppercase;
+    color:#111;background:#fff;padding:5px 11px;border-radius:20px;font-weight:700}
+  .cover .ci{font-family:var(--font-brand);font-size:26px;line-height:1.24;color:#fff;font-weight:600;
+    text-shadow:0 2px 16px rgba(0,0,0,.62);max-width:15ch}
+  .cover .sub{font-family:var(--font-brand);font-style:italic;font-size:15px;color:rgba(255,255,255,.94);
+    margin-top:-6px;text-shadow:0 2px 12px rgba(0,0,0,.55)}
+  .cover .swipe{font-family:var(--font-ui);font-size:12.5px;font-weight:700;color:#111;background:#fff;
+    padding:7px 15px;border-radius:20px;animation:nudge 1.4s ease-in-out infinite}
+  .cover .fn{position:absolute;bottom:13px;left:16px;right:16px;font-family:var(--font-mono);
+    font-size:9px;color:rgba(255,255,255,.72);letter-spacing:.03em}
+  @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+  /* Descripción del fondo en portada y cierre (cursiva = referencia, no se imprime) */
+  .bg{position:absolute;bottom:12px;left:15px;right:15px;font-family:var(--font-mono);font-style:italic;
+    font-size:10.5px;line-height:1.45;color:rgba(255,255,255,.82);text-shadow:0 1px 6px rgba(0,0,0,.7)}
+  body.hide-notes .note .what,body.hide-notes .bg{display:none}
+  /* Foto real generada, conectada a la slide */
+  .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .badge,.note,.cover,.cierre,.bg{z-index:2}
+  .slide.has-photo:not(.img-blocked) .note,.slide.has-photo:not(.img-blocked) .bg{display:none}
+  .slide.has-photo:not(.img-blocked) .cover .ci,.slide.has-photo:not(.img-blocked) .cierre .ci{
+    text-shadow:0 2px 18px rgba(0,0,0,.78)}
+  .ver{position:absolute;top:11px;right:11px;z-index:3;font-family:var(--font-ui);font-size:11px;
+    font-weight:700;background:#fff;color:#111;padding:5px 10px;border-radius:14px;text-decoration:none;
+    box-shadow:0 1px 6px rgba(0,0,0,.25)}
+  .legend{max-width:470px;margin:10px auto 0;display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:center;
+    font-size:11.5px;color:var(--muted);line-height:1.5;padding:0 16px}
+  .legend b{color:var(--ink)}
+  .chip-note{font-family:var(--font-mono);font-style:italic;font-size:11px;border:1px dashed var(--line-strong);
+    padding:1px 7px;border-radius:6px;color:var(--ink)}
+  .chip-ci{font-family:var(--font-brand);font-size:12px;background:var(--ink);color:var(--ground);
+    padding:1px 8px;border-radius:12px}
+  .dots{display:flex;gap:5px;justify-content:center;padding:9px 0 2px}
+  .dot{width:5px;height:5px;border-radius:50%;background:var(--line-strong)}
+  .actions{display:flex;align-items:center;gap:15px;padding:6px 13px 2px}
+  .actions svg{width:23px;height:23px;stroke:var(--ink);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+  .actions .save{margin-left:auto}
+  .likes{padding:5px 13px 0;font-size:13px;font-weight:600}
+  .caption{padding:4px 13px 0;font-size:13.5px;line-height:1.5}
+  .caption .u{font-weight:600;margin-right:5px}
+  .caption .cta{color:var(--link);font-weight:500}
+  .tags{padding:3px 13px 0;font-size:13px;color:var(--link);line-height:1.5}
+  .meta{padding:8px 13px 13px;font-size:10px;letter-spacing:.05em;color:var(--muted);
+    text-transform:uppercase;font-family:var(--font-mono)}
+  .foot{max-width:470px;margin:30px auto 40px;text-align:center;color:var(--muted);font-size:12px;line-height:1.6;padding:0 16px}
+  .foot code{font-family:var(--font-mono);font-size:11px;background:var(--surface);border:1px solid var(--line);padding:1px 6px;border-radius:5px;color:var(--ink)}
+  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+</style>
+
+<div class="page-head">
+  <div class="kicker">Interimobel · Agosto 2026</div>
+  <h1>31 días de salas — antes/después</h1>
+  <p>1 sala por día (6 ago – 5 sep), un <b>hogar</b> distinto cada día. Formato <b>micro-influencer</b>: cada slide lo narra la persona en <b>primera persona</b> (proceso, decisiones y por qué). Arco de 5 slides: <b>gancho → decisión → la sala llega → payoff con gente → cierre solo el mueble</b> (la slide 5 va <b>sin personas</b>, el mueble como único protagonista). <b>Los 31 ya con este molde.</b> Las slides con botón <b>📸 foto real</b> ya tienen imagen generada y aprobada (si este visor bloquea la imagen por seguridad, el botón la abre en una pestaña); el gris es placeholder de lo pendiente. <b>Precio + link real en cada caption</b> (verificado en Shopify); la imagen queda sin precio.</p>
+  <div class="legend">
+    <span><span class="chip-ci">Texto grande</span> (serif) = <b>Copy IN</b>: lo que la persona narra y <b>SÍ se imprime</b> en cada slide.</span>
+    <span><span class="chip-note">📷 texto en cursiva</span> = <b>descripción de la foto/escena</b>. Solo referencia — no se imprime.</span>
+  </div>
+  <div class="controls">
+    <button id="toggleNotes" aria-pressed="true">Ver como se publicará (ocultar descripciones)</button>
+    <button id="toggleTheme" aria-pressed="false">Cambiar tema</button>
+  </div>
+</div>
+
+<main class="feed" id="feed"></main>
+
+<div class="foot">
+  Placeholder de color por tipo de hogar — <b>no es la imagen final</b>. Copy completo en <code>agosto-31dias-copy.md</code> · parrilla en <code>parrilla-agosto-31dias.csv</code>.
+</div>
+
+<script>
+// grupos de hogar → color de acento
+const G = {
+  genz:"#C7902B", mill:"#B05738", fam:"#77876A", mono:"#B99B6C",
+  pet:"#9A7B4F", lgbt:"#8A6D8C", elder:"#6E7B8A", other:"#7C8B93"
+};
+const POSTS = [
+ {d:1,fecha:"6 ago",wd:"Jue",g:"genz",hogar:"Gen Z · mujer soltera",sala:"Sofá Cama Sleepy",antes:"Caja de mudanza, piso frío",despues:"Rincón Pinterest con sofá cama y manta",copyin:"Sofá de día, cine de noche.",likes:"1,204",
+  cap:["Así convertí mi primer depa vacío en mi lugar favorito 🍿","Y lo mejor: mi sofá es sala de día y cine de noche.","¿Tú por dónde empezarías? Guárdalo 🔖"],cta:"Guárdalo para tu depa 🔖",tags:"#PrimerDepa #SofaCama #CineEnCasa #GenZEnCasa #Interimobel"},
+ {d:2,fecha:"7 ago",wd:"Vie",g:"fam",hogar:"Regalo a mis papás · sala nueva",sala:"Sala Kenia",antes:"La sala querida y algo cansada de los papás",despues:"Sala nueva para los papás",copyin:"Porque ellos también merecen estrenar.",likes:"2,930",cap:["Les cambié la sala a mis papás y su reacción no tuvo precio ❤️","Nunca se compran nada; esta vez les tocó estrenar a ellos.","Etiqueta a quien le harías esta sorpresa 👇"],cta:"Etiqueta a tus papás",tags:"#DetalleParaPapas #SalaNueva #DecoracionDeSala #FamiliaMexicana #Interimobel"},
+ {d:3,fecha:"8 ago",wd:"Sáb ⭐",g:"mill",hogar:"Fan del diseño · sofá nube",sala:"Sala Modular Cloud",antes:"Depa con estilo, esperando el sofá soñado",despues:"El sofá nube, mullido y acogedor",copyin:"El sofá que ves en todos lados.",likes:"3,410",cap:["El sofá nube que ves en todos lados… y por fin es nuestro ☁️","Lo guardamos en Pinterest por meses; valió cada peso.","¿Team sofá nube? Guárdalo 🔖"],cta:"Guárdalo 🔖",tags:"#SofaNube #SalaModular #EsteticaPinterest #DecoracionDeSala #Interimobel"},
+ {d:4,fecha:"9 ago",wd:"Dom ⭐",g:"lgbt",hogar:"Pareja de hombres (discreta)",sala:"Sala Esquinera Cosmos",antes:"Estancia sin vida",despues:"Domingo sin prisa, dos tazas, manta compartida",copyin:"Un domingo sin prisa, en casa.",likes:"2,980",cap:["Dos tazas, una sala nueva y el domingo entero por delante.","Así se ve una casa que ya se siente suya."],cta:"¿Qué tan tuyo se siente tu espacio?",tags:"#SalaEsquinera #DomingoEnCasa #DecoracionDeSala #DisenoDeInteriores #Interimobel"},
+ {d:5,fecha:"10 ago",wd:"Lun",g:"genz",hogar:"Gen Z gamer · primer depa",sala:"Sofá Cama Break Gris",antes:"Cuarto vacío, solo el setup",despues:"Su lugar para jugar y descansar, minimal",copyin:"Tu primer depa, a tu modo.",likes:"1,120",cap:["Mi primer depa gamer, con lo justo y bien resuelto 🎮","Un sofá cama: sala para las partidas de día, cama para descansar."],cta:"Guárdalo para tu depa 🔖",tags:"#PrimerDepa #SofaCama #SetupGamer #GenZEnCasa #Interimobel"},
+ {d:6,fecha:"11 ago",wd:"Mar",g:"pet",hogar:"Soltera con gato",sala:"Sala Esquinera Nessy",antes:"Sala neutra y fría",despues:"Espacio suave, plantas, el gato en un cojín",copyin:"El lugar favorito del copiloto ya está listo.",likes:"1,760",cap:["La sala nueva ya tiene dueña… y copiloto.","Un espacio suave para las tardes lentas (y las siestas de gato)."],cta:"Encuéntrala en interimobel.mx",tags:"#SalaEsquinera #PetLovers #DecoracionDeSala #VidaEnCasa #Interimobel"},
+ {d:7,fecha:"12 ago",wd:"Mié",g:"elder",hogar:"Hombre boomer · renovación práctica",sala:"Sala Esquinera Nicollo",antes:"Sala de siempre, desgastada",despues:"Renovada con lo justo, misma casa",copyin:"Una sala cómoda, para disfrutarla a diario.",likes:"1,340",cap:["La sala llevaba años sin cambiar. Ya tocaba.","Cambié lo justo: cómodo, firme y bien hecho."],cta:"Conócela en interimobel.mx",tags:"#SalaEsquinera #RenovarLaSala #HechoEnMexico #DecoracionDeHogar #Interimobel"},
+ {d:8,fecha:"13 ago",wd:"Jue",g:"mill",hogar:"Recién casados",sala:"Sala Vittale",antes:"Depa vacío recién entregado",despues:"Primera sala elegida juntos",copyin:"El primer hogar de los dos.",likes:"2,050",cap:["Del depa vacío a la primera sala que eligieron juntos.","Aquí van a empezar un montón de historias."],cta:"¿Ya tienen su rincón favorito?",tags:"#ReciénCasados #PrimerHogar #SalaModerna #DecoracionDeSala #Interimobel"},
+ {d:9,fecha:"14 ago",wd:"Vie",g:"mill",hogar:"Millennial independiente",sala:"Sala Esquinera Fussion",antes:"Depa a medio amueblar",despues:"Su primer gran mueble, comprado sola",copyin:"Comprada por ti. Para ti.",likes:"2,240",cap:["Tu primer gran mueble, elegido sin pedir permiso.","Una sala que dice justo quién eres."],cta:"Encuéntrala en interimobel.mx",tags:"#MujerIndependiente #SalaEsquinera #DecoracionDeSala #HogarPropio #Interimobel"},
+ {d:10,fecha:"15 ago",wd:"Sáb ⭐",g:"fam",hogar:"Familia · adolescentes",sala:"Sala Esquinera Eternity",antes:"Sala apretada",despues:"Sala amplia: tarea, series, amigos",copyin:"La sala que aguanta a toda la bola.",likes:"3,120",cap:["Tarea, series y amigos que llegan sin avisar.","Una sala amplia que aguanta el ritmo de la casa."],cta:"¿Sala grande o sala tranquila?",tags:"#SalaEsquinera #SalaFamiliar #DecoracionDeHogar #EspacioAmplio #Interimobel"},
+ {d:11,fecha:"16 ago",wd:"Dom ⭐",g:"mill",hogar:"Pareja millennial · casa nueva",sala:"Sala Esquinera Columbus",antes:"Casa recién entregada, cajas",despues:"Su primera sala de adultos",copyin:"Casa nueva, primera sala de adultos.",likes:"3,300",cap:["De la casa recién entregada a su primera sala de verdad.","El espacio ya se siente de ustedes."],cta:"¿Por qué habitación empezarían?",tags:"#CasaNueva #SalaEsquinera #DecoracionDeSala #PrimerHogar #Interimobel"},
+ {d:12,fecha:"17 ago",wd:"Lun",g:"other",hogar:"Freelancer · home office",sala:"Sala Esquinera Loose",antes:"Rincón de trabajo improvisado",despues:"Sala que de día trabaja, de tarde descansa",copyin:"Tu sala de día. Tu descanso de noche.",likes:"1,410",cap:["En la mañana es tu oficina; en la tarde, tu sala.","Un espacio que trabaja tan flexible como tú."],cta:"Encuéntrala en interimobel.mx",tags:"#HomeOffice #SalaEnCasa #TrabajoRemoto #DecoracionDeSala #Interimobel"},
+ {d:13,fecha:"18 ago",wd:"Mar",g:"lgbt",hogar:"Pareja de mujeres (discreta)",sala:"Sala Lucerna",antes:"Estancia sin personalidad",despues:"Plantas, buena luz, sala elegida por las dos",copyin:"Su casa, a su ritmo.",likes:"2,610",cap:["Plantas, buena luz y una sala que las dos eligieron.","Los domingos saben distinto en casa propia."],cta:"¿Qué no puede faltar en tu sala?",tags:"#SalaEsquinera #DomingoEnCasa #DisenoDeInteriores #DecoracionDeSala #Interimobel"},
+ {d:14,fecha:"19 ago",wd:"Mié",g:"fam",hogar:"Familia con bebé",sala:"Sala Lugano",antes:"Sala en pausa",despues:"Sala cómoda y suave para los primeros recuerdos",copyin:"La sala donde empieza todo.",likes:"2,180",cap:["Llega un integrante nuevo y la casa se acomoda.","Una sala cómoda y suave para los primeros recuerdos."],cta:"Encuéntrala en interimobel.mx",tags:"#FamiliaNueva #SalaModerna #DecoracionDeHogar #VidaEnFamilia #Interimobel"},
+ {d:15,fecha:"20 ago",wd:"Jue",g:"fam",hogar:"Familia multigeneracional",sala:"Sala Modular Fancy",antes:"Sala que no daba abasto",despues:"Espacio amplio: abuelos, hijos y nietos",copyin:"La sala donde caben todas las edades.",likes:"2,540",cap:["Abuelos, hijos y nietos, en el mismo sillón.","Una sala amplia para la familia que no cabe en ningún lado… menos aquí."],cta:"¿Cuántos caben en la tuya?",tags:"#SalaModular #FamiliaGrande #DecoracionDeHogar #EspacioAmplio #Interimobel"},
+ {d:16,fecha:"21 ago",wd:"Vie",g:"elder",hogar:"Pareja boomer · nido vacío",sala:"Sala Lucca",antes:"Casa de siempre",despues:"Sala renovada para esta etapa de los dos",copyin:"Ahora la casa vuelve a ser de ustedes.",likes:"1,920",cap:["Los hijos volaron y quisimos una sala cálida para nosotros dos.","Elegante y cómoda, sin que sobre espacio."],cta:"Conócela en interimobel.mx",tags:"#NidoVacio #SalaModerna #DecoracionDeHogar #ParaLosDos #Interimobel"},
+ {d:17,fecha:"22 ago",wd:"Sáb ⭐",g:"genz",hogar:"Roomies",sala:"Sala Esquinera Zurich (sofá cama)",antes:"Depa compartido sin sala",despues:"Sofá cama: estar y dormir",copyin:"El depa compartido, por fin cómodo.",likes:"2,870",cap:["Renta dividida, sala compartida, buenos ratos incluidos.","Un sofá cama para el amigo que siempre se queda."],cta:"Guárdalo para el depa 🔖",tags:"#DepaCompartido #SofaCama #SalaEsquinera #VidaDeRoomies #Interimobel"},
+ {d:18,fecha:"23 ago",wd:"Dom ⭐",g:"genz",hogar:"Gen Z en pareja",sala:"Sala Esquinera Cocy",antes:"Primer depa a medio armar",despues:"Su primera sala en pareja",copyin:"Primer depa, primera sala juntos.",likes:"3,040",cap:["Poquito presupuesto, muchas ganas… y su primera sala en pareja.","El principio de su lugar en el mundo."],cta:"¿Cuál sería su rincón favorito?",tags:"#PrimerDepa #SalaEsquinera #ParejaJoven #DecoracionDeSala #Interimobel"},
+ {d:19,fecha:"24 ago",wd:"Lun",g:"pet",hogar:"Soltera con perro y gato",sala:"Sala Modular Nilda",antes:"Sala neutra",despues:"Cómoda para ti y tu pequeña manada",copyin:"Su pequeña manada, su sala nueva.",likes:"1,830",cap:["Una sala nueva para ti… y para tu pequeña manada.","Cómoda para todos, incluidos los de cuatro patas."],cta:"Encuéntrala en interimobel.mx",tags:"#PetFriendly #SalaEsquinera #PetLovers #DecoracionDeSala #Interimobel"},
+ {d:20,fecha:"25 ago",wd:"Mar",g:"lgbt",hogar:"Pareja de hombres (discreta)",sala:"Sala Lucca",antes:"Estancia apagada",despues:"Su lugar para bajar el ritmo, café",copyin:"Su lugar para bajar el ritmo.",likes:"2,480",cap:["Café, buena plática y una sala que ya es de los dos.","Los mejores planes a veces son quedarse en casa."],cta:"¿Plan en casa este finde?",tags:"#SalaModerna #FinDeSemanaEnCasa #DecoracionDeSala #DisenoDeInteriores #Interimobel"},
+ {d:21,fecha:"26 ago",wd:"Mié",g:"elder",hogar:"Hombre Gen X soltero",sala:"Diván Chester",antes:"Sala sin identidad",despues:"Armada exactamente como él quería",copyin:"Tu espacio, sin darle explicaciones a nadie.",likes:"1,560",cap:["Armé mi rincón exactamente como lo quería.","Mi música, mi sillón y mi mejor trago."],cta:"Conócela en interimobel.mx",tags:"#EspacioPropio #SillonChester #EstiloClasico #DecoracionParaEl #Interimobel"},
+ {d:22,fecha:"27 ago",wd:"Jue",g:"fam",hogar:"Familia numerosa",sala:"Sala Modular Excellence Premium",antes:"Sala que se quedaba corta",despues:"Espacio de sobra para todos y las visitas",copyin:"Aquí sí caben todos.",likes:"2,360",cap:["Familia grande, visitas seguido y una sala que nunca se queda corta.","Espacio de sobra para todos."],cta:"¿Sala grande en tu lista?",tags:"#SalaModular #FamiliaGrande #SalaFamiliar #DecoracionDeHogar #Interimobel"},
+ {d:23,fecha:"28 ago",wd:"Vie",g:"lgbt",hogar:"Pareja de mujeres (discreta)",sala:"Sala Esquinera Cosmos",antes:"Tarde cualquiera",despues:"Tarde tranquila, dos libros, su sala",copyin:"Café, libros y casa propia.",likes:"2,520",cap:["Una tarde tranquila, dos libros y su sala favorita.","El plan perfecto no siempre sale de casa."],cta:"¿Qué lees este finde?",tags:"#SalaEsquinera #TardeEnCasa #DecoracionDeSala #DisenoDeInteriores #Interimobel"},
+ {d:24,fecha:"29 ago",wd:"Sáb ⭐",g:"pet",hogar:"Soltero con perro",sala:"Sala Esquinera Novaopulence",antes:"Sala nueva",despues:"Él estrena su lugar en el sillón",copyin:"Su lugar en el sillón ya está listo.",likes:"2,910",cap:["Estrenas sala y él estrena su lugar favorito.","Cómoda para los dos, resistente para la vida real."],cta:"Encuéntrala en interimobel.mx",tags:"#PetLovers #SalaEsquinera #PetFriendly #DecoracionDeSala #Interimobel"},
+ {d:25,fecha:"30 ago",wd:"Dom ⭐",g:"mono",hogar:"Papá soltero",sala:"Sala Esquinera Gremory (sofá cama)",antes:"Sala básica",despues:"Noches de peli con los hijos, cama extra",copyin:"Noches de peli, cama extra incluida.",likes:"2,760",cap:["Los findes con mis hijos son de peli y palomitas 🍿","Y si se quedan dormidos, el sofá cama resuelve la noche."],cta:"Guárdalo para las noches de peli 🔖",tags:"#PapaSoltero #SofaCama #SalaEsquinera #NochesDePelicula #Interimobel"},
+ {d:26,fecha:"31 ago",wd:"Lun",g:"mill",hogar:"Pareja sin hijos (DINK)",sala:"Sala Esquinera Cocy",antes:"Sala común",despues:"Su cine privado, sin interrupciones",copyin:"Su cine privado, cada noche.",likes:"1,990",cap:["Sin prisas, sin apuros: su sala, su serie, su noche.","Espacio para estirarse y no moverse hasta el final."],cta:"¿Serie o película hoy?",tags:"#SalaEsquinera #HomeTheater #NocheDeSerie #DecoracionDeSala #Interimobel"},
+ {d:27,fecha:"1 sep",wd:"Mar",g:"other",hogar:"Anfitriona · reuniones en casa",sala:"Sala Esquinera Eternity",antes:"Sala apretada",despues:"La casa donde todos caben",copyin:"La sala donde siempre acaba la fiesta.",likes:"2,300",cap:["En mi casa siempre hay reunión, y me encanta 🥂","Una sala amplia y elegante para recibir como se debe."],cta:"¿Te toca ser la anfitriona?",tags:"#Anfitriona #ReunionesEnCasa #SalaEsquinera #DecoracionElegante #Interimobel"},
+ {d:28,fecha:"2 sep",wd:"Mié",g:"genz",hogar:"Roomies (amigas)",sala:"Sofá Cama Sleepy",antes:"Primer depa lejos de casa",despues:"Sala elegida entre amigas, cama extra",copyin:"El depa que armaron entre todas.",likes:"1,680",cap:["Primer depa lejos de casa, primera sala elegida entre amigas.","Cómoda para las tres… y para la que se queda a dormir."],cta:"Guárdalo para el depa 🔖",tags:"#DepaCompartido #SofaCama #VidaDeRoomies #PrimerDepa #Interimobel"},
+ {d:29,fecha:"3 sep",wd:"Jue",g:"fam",hogar:"Familia · hijos Gen Alfa",sala:"Sala Esquinera Columbus",antes:"Sala formal",despues:"Cuartel general de los peques",copyin:"El cuartel general de los peques.",likes:"2,440",cap:["Juegos en el piso, dibujos en el sillón, risas por todos lados.","Una sala pensada para la vida real en familia."],cta:"¿Sala a prueba de niños?",tags:"#SalaEsquinera #SalaFamiliar #VidaEnFamilia #DecoracionDeHogar #Interimobel"},
+ {d:30,fecha:"4 sep",wd:"Vie",g:"fam",hogar:"Le damos el cuarto a los abuelos",sala:"Sala Esquinera Zurich (sofá cama)",antes:"Sala normal",despues:"Cama lista cuando la familia visita",copyin:"Siempre hay lugar para quien llega.",likes:"1,870",cap:["Cuando los abuelos vienen, les damos nuestro cuarto ❤️","Y nosotros, un par de noches en la sala."],cta:"Encuéntrala en interimobel.mx",tags:"#SofaCama #SalaEsquinera #CasaQueRecibe #DecoracionDeHogar #Interimobel"},
+ {d:31,fecha:"5 sep",wd:"Sáb ⭐",g:"other",hogar:"Cierre · todos los hogares",sala:"Sala Modular Cloud",antes:"Montaje de los hogares del mes",despues:"Una misma marca, muchas casas",copyin:"Cada casa se acomoda distinto.",likes:"4,120",cap:["Solteros, familias, parejas, mascotas… cada quien su sala, cada casa su historia.","La tuya, la armamos contigo."],cta:"¿En qué etapa está tu casa? 👇",tags:"#LaCasaSeAcomoda #SalaInterimobel #DecoracionDeHogar #HechoEnMexico #Interimobel"}
+];
+
+// Guiones por día: narración 1ª persona en cada slide. Slides 1-4 con persona; slide 5 = mueble solo (único protagonista).
+// Estilo global de todas las escenas: Pinterest Gen Z/millennial, luz profesional tipo catálogo IKEA, cero apariencia de render.
+const P="portada",F="foto",C="cierre";
+const GUIONES = {
+ 1:[{rol:"1 · Portada",kind:P,copy:"Renté mi primer depa sola. Cero muebles, mil ideas 👇",escena:"Chica Gen Z parada en su depa vacío con cajas, sonriendo a cámara; luz de tarde."},
+    {rol:"2 · Proceso",kind:F,copy:"Empecé por lo barato que rinde: cortinas claras para que entrara toda la luz.",escena:"Cuelga cortinas claras y una planta; el cuarto se ve más grande. Centro vacío."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"La decisión que cambió todo: no gasté en sala Y en cama de visitas. Compré las dos en una.",escena:"Llega el Sofá Cama Sleepy; ella lo acomoda. Toma que lo realza y muestra cómo se abre a cama."},
+    {rol:"4 · Payoff",kind:F,copy:"Hoy es mi salita de día… y mi cine de noche 🍿",escena:"Ella y una amiga en el sofá, palomitas, a oscuras; la luz de la pantalla en sus caras, cara de suspenso."},
+    {rol:"5 · Cierre",kind:C,copy:"Sofá de día, cine de noche.",escena:"Sofá Cama Sleepy solo en el rincón ya terminado, sin personas. Hero del mueble, luz cálida."}],
+ 2:[{rol:"1 · Portada",kind:P,copy:"Mis papás nunca se compran nada para ellos. Esta vez me tocaba a mí 👇",escena:"Hija adulta llegando a casa de sus papás; la sala de ellos, querida y algo cansada. Ambiente cálido y familiar."},
+    {rol:"2 · Proceso",kind:F,copy:"Medí la sala sin que se dieran cuenta y busqué algo cómodo para ellos.",escena:"La hija toma medidas a escondidas y elige telas cómodas; complicidad."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Encontré una sala cómoda, bonita y fácil de mantener. Te dejo el link en la descripción 👇",escena:"Llega la Sala Kenia a casa de los papás; la hija la acomoda. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Su cara cuando la vieron valió todo ❤️",escena:"Los papás felices y sorprendidos estrenando la sala; la hija abrazándolos."},
+    {rol:"5 · Cierre",kind:C,copy:"Porque ellos también merecen estrenar.",escena:"Sala Kenia sola en la sala de los papás, cálida y hogareña, sin personas."}],
+ 3:[{rol:"1 · Portada",kind:P,copy:"Llevábamos meses guardando el mismo sofá en Pinterest. Ya era hora 👇",escena:"Pareja joven en su depa con estilo, viendo el sofá guardado en el celular; espacio luminoso y curado."},
+    {rol:"2 · Proceso",kind:F,copy:"Armamos todo alrededor de él: tonos neutros, mucha luz y texturas suaves.",escena:"Curan la decoración: paleta neutra, plantas y buena luz natural."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"El sofá nube: el que ves en todos lados… y se siente todavía mejor.",escena:"Llega la Sala Modular Cloud, mullida y tipo nube. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Domingo de café, mantita y cero planes de salir.",escena:"La pareja hundida en el sofá nube, café y manta, ambiente acogedor y estético."},
+    {rol:"5 · Cierre",kind:C,copy:"El sofá que ves en todos lados.",escena:"Sala Modular Cloud sola, styling Pinterest, sin personas. Luz suave."}],
+ 4:[{rol:"1 · Portada",kind:P,copy:"Nos mudamos juntos y queríamos una sala que fuera nuestra 👇",escena:"Dos hombres jóvenes en un depa a medio armar, cómplices."},
+    {rol:"2 · Proceso",kind:F,copy:"Elegimos tonos neutros y una esquinera para las noches de serie.",escena:"Eligen cojines y telas; ambiente cálido y en calma."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Elegimos una esquinera cómoda, con espacio para los dos… y el café. Link en la descripción 👇",escena:"Llega la Sala Cosmos; la acomodan. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Domingo perfecto: café, cobija compartida y sin prisa.",escena:"Los dos en el sofá, dos tazas y una manta compartida; tranquilos, discreto."},
+    {rol:"5 · Cierre",kind:C,copy:"El domingo perfecto tiene sala nueva.",escena:"Sala Cosmos sola, dos tazas sobre la mesa, sin personas. Luz suave."}],
+ 5:[{rol:"1 · Portada",kind:P,copy:"Primer depa y ganas de que se viera bien sin gastar de más 👇",escena:"Chico Gen Z en un cuarto vacío, mirando el espacio; un pequeño setup al fondo."},
+    {rol:"2 · Proceso",kind:F,copy:"Menos es más: una repisa, luz indirecta y a jugar con lo que ya tenía.",escena:"Decora minimal: repisa, tira de luz cálida y su monitor."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"El sofá cama fue clave: cómodo para las partidas largas y listo para descansar.",escena:"Llega el Sofá Cama Break, junto al setup gamer. Toma que lo realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Una más y ya… (mentira). Ranked con el squad hasta tarde.",escena:"Amigos en el sofá con controles, la luz del monitor en sus caras, concentrados y riendo."},
+    {rol:"5 · Cierre",kind:C,copy:"Tu primer depa, a tu modo.",escena:"Sofá Cama Break solo con un control sobre el cojín, setup gamer al fondo, sin personas."}],
+ 6:[{rol:"1 · Portada",kind:P,copy:"Somos mi gato y yo. Quería una sala cómoda para nuestras tardes lentas 👇",escena:"Mujer con su gato en brazos, sala neutra de fondo."},
+    {rol:"2 · Proceso",kind:F,copy:"Elegí texturas suaves y un rincón con luz donde sé que va a acabar echado.",escena:"Elige mantas y cojines suaves junto a la ventana; el gato curiosea."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Encontré una del tamaño justo para el depa y súper cómoda. Te dejo el link en la descripción 👇",escena:"Llega la Sala Nessy; la acomoda. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Tarde perfecta: té, un libro y el copiloto dormido a mi lado.",escena:"Ella leyendo en el sofá, el gato dormido junto a ella."},
+    {rol:"5 · Cierre",kind:C,copy:"El lugar favorito del copiloto ya está listo.",escena:"Sala Nessy sola con una manta y un cojín, sin personas ni gato. Luz suave."}],
+ 7:[{rol:"1 · Portada",kind:P,copy:"La sala llevaba años sin cambiar. Ya tocaba 👇",escena:"Hombre mayor de pie en su sala, mueble desgastado; actitud tranquila y práctica."},
+    {rol:"2 · Proceso",kind:F,copy:"Cambié lo justo: el sillón que ya estaba vencido y nada más.",escena:"Retira el sillón viejo; conserva lo demás. Práctico."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Elegí una cómoda, firme y bien hecha. El link va en la descripción.",escena:"Llega la Sala Nicollo; la acomoda. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Ahora sí se está a gusto para el café y el noticiero.",escena:"Señor mayor sentado con su café y el periódico, luz de mañana, tranquilo."},
+    {rol:"5 · Cierre",kind:C,copy:"Una sala cómoda, para disfrutarla a diario.",escena:"Sala Nicollo sola, luz de mañana, sin personas."}],
+ 8:[{rol:"1 · Portada",kind:P,copy:"Nos casamos y el depa estaba vacío. Primera compra juntos: la sala 👇",escena:"Pareja joven entre cajas, depa vacío, ilusionados."},
+    {rol:"2 · Proceso",kind:F,copy:"Discutimos el color una semana 😅 (ganó el neutro).",escena:"Eligen telas juntos, entre risas."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Nos gustó a los dos a la primera, raro en nosotros 😄. Link en la descripción 👇",escena:"Llega la Sala Vittale; la acomodan juntos. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Primera noche de peli en NUESTRA sala.",escena:"Pareja abrazada en el sofá, dos copas de vino, viendo una peli."},
+    {rol:"5 · Cierre",kind:C,copy:"El primer hogar de los dos.",escena:"Sala Vittale sola, dos copas sobre la mesa, sin personas."}],
+ 9:[{rol:"1 · Portada",kind:P,copy:"Me di el gusto que llevaba tiempo queriendo, sin pedir permiso 👇",escena:"Mujer millennial en su depa propio, segura y contenta."},
+    {rol:"2 · Proceso",kind:F,copy:"Sin pedir opinión a nadie: elegí color, textura y estilo a mi gusto.",escena:"Revisa muestrarios con decisión."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Encontré una que me representa: moderna, con actitud. Te dejo el link en la descripción 👇",escena:"Llega la Sala Fussion; la acomoda. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Copa de vino, mi playlist y mi sala. Me lo gané.",escena:"Ella sola, relajada en el sofá con una copa, feliz."},
+    {rol:"5 · Cierre",kind:C,copy:"Comprada por ti. Para ti.",escena:"Sala Fussion sola, sin personas."}],
+ 10:[{rol:"1 · Portada",kind:P,copy:"Dos adolescentes y sus amigos viven en mi sala. Necesitaba una que aguante 👇",escena:"Mamá/papá con la sala llena de chavos."},
+    {rol:"2 · Proceso",kind:F,copy:"Prioridad: espacio para todos y tela fácil de limpiar.",escena:"Miden y eligen tela resistente; adolescentes alrededor."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Encontré una enorme y cómoda; cabe hasta el que llega sin avisar. Link en la descripción 👇",escena:"Llega la Sala Eternity; la acomodan. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Viernes: pizza, series y toda la bola en un solo sillón.",escena:"Adolescentes amontonados riendo, pizza y refrescos."},
+    {rol:"5 · Cierre",kind:C,copy:"La sala que aguanta a toda la bola.",escena:"Sala Eternity sola, amplia y ordenada, sin personas."}],
+ 11:[{rol:"1 · Portada",kind:P,copy:"Estrenamos casa y todo estaba vacío. Empezamos por la sala 👇",escena:"Pareja con llaves y cajas en su casa nueva."},
+    {rol:"2 · Proceso",kind:F,copy:"Queríamos algo de adultos, pero cómodo para vivir de verdad.",escena:"Planean con el plano en mano, ilusionados."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Fue nuestra primera gran decisión juntos. Te dejo el link en la descripción 👇",escena:"Llega la Sala Columbus; la acomodan. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Ahora la casa por fin se siente nuestra.",escena:"Pareja en el sofá con café, mirando su casa nueva."},
+    {rol:"5 · Cierre",kind:C,copy:"Casa nueva, primera sala de adultos.",escena:"Sala Columbus sola, sin personas."}],
+ 12:[{rol:"1 · Portada",kind:P,copy:"Trabajo desde casa y mi oficina era la mesa del comedor. Ya no 👇",escena:"Freelancer con laptop en el comedor, cansado."},
+    {rol:"2 · Proceso",kind:F,copy:"Necesitaba un espacio que trabajara de día y descansara de noche.",escena:"Organiza un rincón con buena luz natural."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Elegí una cómoda para las juntas… y para el colapso post-deadline. Link en la descripción 👇",escena:"Llega la Sala Loose; la acomoda. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"9 am juntas, 7 pm mi lugar para desconectar.",escena:"Freelancer relajado en el sofá, café, laptop cerrada."},
+    {rol:"5 · Cierre",kind:C,copy:"Tu sala de día. Tu descanso de noche.",escena:"Sala Loose sola, laptop cerrada sobre la mesa, sin personas."}],
+ 13:[{rol:"1 · Portada",kind:P,copy:"Estrenamos casa y queríamos que se sintiera nuestra 👇",escena:"Dos mujeres jóvenes en su depa, entre plantas."},
+    {rol:"2 · Proceso",kind:F,copy:"Llenamos todo de plantas y buscamos buena luz.",escena:"Acomodan plantas; entra luz natural."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Encontré la que cerró el look: suave y cálida. Te dejo el link en la descripción 👇",escena:"Llega la Sala Lucerna; la acomodan. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Domingo de plantas, café y una buena serie.",escena:"Dos amigas compartiendo la casa, café en mano, ambiente tranquilo; muy discreto, sin gestos explícitos."},
+    {rol:"5 · Cierre",kind:C,copy:"Su casa, a su ritmo.",escena:"Sala Lucerna sola, rodeada de plantas, sin personas."}],
+ 14:[{rol:"1 · Portada",kind:P,copy:"Llegó el bebé y la casa se transformó. La sala tenía que ser suave y segura 👇",escena:"Pareja con su bebé; la sala actual tiene mesa y muebles con esquinas de madera duras, un riesgo para el bebé (sutil, sin exagerar)."},
+    {rol:"2 · Proceso",kind:F,copy:"Buscamos telas suaves, sin esquinas duras y fácil de limpiar.",escena:"Prueban telas suaves; bebé en brazos."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Encontré una perfecta para los primeros recuerdos. Link en la descripción 👇",escena:"Llega la Sala Lugano; la acomodan. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Ahora aquí pasan las siestas, los primeros gateos, todo.",escena:"Mamá/papá con el bebé en el sofá, ternura y luz suave."},
+    {rol:"5 · Cierre",kind:C,copy:"La sala donde empieza todo.",escena:"Sala Lugano sola, una mantita de bebé doblada, sin personas."}],
+ 15:[{rol:"1 · Portada",kind:P,copy:"En mi casa viven tres generaciones. La sala tenía que caberle a todos 👇",escena:"Abuelos, hijos y nietos apretados en una sala."},
+    {rol:"2 · Proceso",kind:F,copy:"El reto: que estén cómodos desde el abuelo hasta el más chico.",escena:"Miden el espacio; la familia opina alrededor."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Elegí una modular que se acomoda a cada quien. Te dejo el link en la descripción 👇",escena:"Llega la Modular Fancy; la arman. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Domingo de comida familiar y sobremesa larga, todos juntos.",escena:"Tres generaciones en el sofá, riendo."},
+    {rol:"5 · Cierre",kind:C,copy:"La sala donde caben todas las edades.",escena:"Modular Fancy sola, amplia, sin personas."}],
+ 16:[{rol:"1 · Portada",kind:P,copy:"Los hijos se fueron y quisimos consentirnos nosotros dos 👇",escena:"Pareja mayor en su sala, cómoda y algo apagada."},
+    {rol:"2 · Proceso",kind:F,copy:"Por fin decoramos para nosotros dos, sin prisas.",escena:"Eligen con calma, cómplices."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Elegimos una cálida y elegante, del tamaño justo para dos. Link en la descripción 👇",escena:"Llega la Sala Lucca; la acomodan. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Ahora las tardes son nuestras otra vez.",escena:"Pareja mayor en el sofá, té, tomados de la mano."},
+    {rol:"5 · Cierre",kind:C,copy:"Ahora la casa vuelve a ser de ustedes.",escena:"Sala Lucca sola, cálida y elegante, sin personas."}],
+ 17:[{rol:"1 · Portada",kind:P,copy:"Rentamos entre tres. La sala era tierra de nadie… hasta ahora 👇",escena:"Tres roomies en una sala vacía y desordenada."},
+    {rol:"2 · Proceso",kind:F,copy:"Nos pusimos a buscar en el cel hasta que coincidimos en una.",escena:"Los tres en el sofá buscando opciones en sus celulares, comparando y riendo."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Elegimos una con sofá cama, perfecta para el que se queda. Link en la descripción 👇",escena:"Llega la Sala Zurich; la acomodan y muestran la cama."},
+    {rol:"4 · Payoff",kind:F,copy:"Noche de tacos, juegos y el cuarto invitado ya resuelto.",escena:"Roomies en el sofá con tacos y un juego de mesa."},
+    {rol:"5 · Cierre",kind:C,copy:"El depa compartido, por fin cómodo.",escena:"Sala Zurich sola en modo sofá, sin personas."}],
+ 18:[{rol:"1 · Portada",kind:P,copy:"Nuestro primer depa juntos. Poco dinero, muchas ganas 👇",escena:"Pareja joven en un depa a medio armar."},
+    {rol:"2 · Proceso",kind:F,copy:"Priorizamos lo que más usamos: una buena sala para pasar el rato.",escena:"Deciden juntos con el presupuesto en mente."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Entró justa y se ve increíble. Te dejo el link en la descripción 👇",escena:"Llega la Sala Cocy; la acomodan. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Ahora los planes en casa son los mejores.",escena:"Pareja joven acurrucada viendo una serie, cómplices."},
+    {rol:"5 · Cierre",kind:C,copy:"Primer depa, primera sala juntos.",escena:"Sala Cocy sola, sin personas."}],
+ 19:[{rol:"1 · Portada",kind:P,copy:"Vivo con un perro y un gato. Mi sala tenía que sobrevivirlos 👇",escena:"Mujer con su perro y su gato, sala neutra."},
+    {rol:"2 · Proceso",kind:F,copy:"Busqué tela resistente y un diseño que no se manche fácil.",escena:"Prueba telas resistentes; las mascotas curiosean."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Encontré una cómoda para mí y a prueba de mi manada. Link en la descripción 👇",escena:"Llega la Sala Nilda; la acomoda. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Tarde de domingo: yo, el perro y el gato peleando el mejor lugar.",escena:"Ella con el perro y el gato en el sofá, escena tierna."},
+    {rol:"5 · Cierre",kind:C,copy:"Una sala para tu manada.",escena:"Sala Nilda sola, un juguete de perro en el piso, sin personas ni mascotas."}],
+ 20:[{rol:"1 · Portada",kind:P,copy:"Después de años juntos, renovamos la sala. Nuestro refugio 👇",escena:"Dos hombres maduros en una sala apagada."},
+    {rol:"2 · Proceso",kind:F,copy:"Queríamos algo cálido para nuestras noches tranquilas.",escena:"Eligen tonos cálidos; ambiente acogedor."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Nos encantó: acogedora y con estilo. Te dejo el link en la descripción 👇",escena:"Llega la Sala Lucca; la acomodan. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"El mejor plan sigue siendo quedarnos en casa.",escena:"Los dos en el sofá con café, plática tranquila, discreto."},
+    {rol:"5 · Cierre",kind:C,copy:"Su lugar para bajar el ritmo.",escena:"Sala Lucca sola, sin personas."}],
+ 21:[{rol:"1 · Portada",kind:P,copy:"Vivo solo y por fin armé mi rincón EXACTO como lo quería 👇",escena:"Hombre Gen X en una sala sin identidad."},
+    {rol:"2 · Proceso",kind:F,copy:"Mi música, mi orden, mis reglas. Empecé por el ambiente.",escena:"Acomoda bocina y vinilos; ambiente personal."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Le dio el carácter que buscaba. El link va en la descripción.",escena:"Llega el Diván Chester (terciopelo, capitoné); lo acomoda como pieza statement. Toma que lo realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Viernes de vinilos y un buen trago, en mi lugar.",escena:"Hombre relajado en el sofá con un vinilo sonando y un trago."},
+    {rol:"5 · Cierre",kind:C,copy:"Tu espacio, tus reglas.",escena:"Diván Chester solo, en un rincón tipo estudio, sin personas."}],
+ 22:[{rol:"1 · Portada",kind:P,copy:"Somos familia grande y siempre hay visitas. La sala nunca alcanzaba 👇",escena:"Familia numerosa apretada en la sala."},
+    {rol:"2 · Proceso",kind:F,copy:"Necesitábamos espacio de sobra, en serio.",escena:"Miden el espacio; muchos alrededor."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Encontré una enorme; por fin caben todos. Te dejo el link en la descripción 👇",escena:"Llega la Sala Excellence Premium; la acomodan. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Reunión familiar sin sillas prestadas ni apretones.",escena:"Familia grande cómoda en el sofá, sobremesa."},
+    {rol:"5 · Cierre",kind:C,copy:"Aquí sí caben todos.",escena:"Sala Excellence Premium sola, amplia, sin personas."}],
+ 23:[{rol:"1 · Portada",kind:P,copy:"Nuestro plan favorito no sale de casa. Le armamos el rincón perfecto 👇",escena:"Dos mujeres en una tarde tranquila en casa."},
+    {rol:"2 · Proceso",kind:F,copy:"Buscamos algo cómodo para leer horas sin movernos.",escena:"Eligen entre libros y muestras de tela."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Encontramos el rincón lector soñado. Link en la descripción 👇",escena:"Llega la Sala Cosmos; la acomodan. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Tarde de café, dos libros y nuestra sala.",escena:"Las dos leyendo en el sofá, cómplices, discreto."},
+    {rol:"5 · Cierre",kind:C,copy:"Café, libros y casa propia.",escena:"Sala Cosmos sola, dos libros y una taza, sin personas."}],
+ 24:[{rol:"1 · Portada",kind:P,copy:"Somos mi perro y yo. Estrenamos sala y él estrenó lugar 👇",escena:"Hombre con su perro, sala nueva."},
+    {rol:"2 · Proceso",kind:F,copy:"Elegí tela resistente (porque él se sube, obvio).",escena:"Prueba telas; el perro cerca."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Encontré una cómoda para los dos. Te dejo el link en la descripción 👇",escena:"Llega la Sala Novaopulence; la acomoda. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Su lugar ya es el mejor del sillón. Ni cómo pelearlo.",escena:"Hombre y perro juntos en el sofá, escena tierna."},
+    {rol:"5 · Cierre",kind:C,copy:"Su lugar en el sillón ya está listo.",escena:"Sala Novaopulence sola, una pelota de perro en el piso, sin personas ni mascotas."}],
+ 25:[{rol:"1 · Portada",kind:P,copy:"Los findes son de mis hijos. Quería una sala para nuestras noches de peli 👇",escena:"Papá con sus dos hijos, sala básica."},
+    {rol:"2 · Proceso",kind:F,copy:"Y por si se quedan dormidos a mitad de la peli… que haya dónde.",escena:"Muestra cómo se convierte; los hijos curiosos."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Encontré una con sofá cama, ideal para esas noches. Link en la descripción 👇",escena:"Llega la Sala Gremory; la acomoda. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Palomitas, peli y dos peques que caen dormidos antes del final.",escena:"Papá e hijos en el sofá con cobija y peli."},
+    {rol:"5 · Cierre",kind:C,copy:"Para las noches de peli (y los que se quedan dormidos).",escena:"Sala Gremory en modo cama por esa noche, con cobija; sin personas."}],
+ 26:[{rol:"1 · Portada",kind:P,copy:"Sin hijos, con tiempo: convertimos la sala en nuestro cine privado 👇",escena:"Pareja DINK en una sala común."},
+    {rol:"2 · Proceso",kind:F,copy:"Invertimos en comodidad total para maratones eternos.",escena:"Eligen cojines extra y buena disposición."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Es perfecta para estirarse y no moverse. Te dejo el link en la descripción 👇",escena:"Llega la Sala Cocy; la acomodan. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Sin prisas, sin interrupciones: nuestra serie, nuestra noche.",escena:"Pareja acurrucada con palomitas viendo una serie."},
+    {rol:"5 · Cierre",kind:C,copy:"Su cine privado, cada noche.",escena:"Sala Cocy sola, sin personas."}],
+ 27:[{rol:"1 · Portada",kind:P,copy:"En mi casa siempre hay reunión. Necesitaba una sala a la altura 👇",escena:"Señora anfitriona elegante recibiendo a su familia e invitados en casa."},
+    {rol:"2 · Proceso",kind:F,copy:"Quería espacio para sentar a todos con estilo, sin apretones.",escena:"Acomoda el espacio; amigos alrededor."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Encontré una amplia y elegante; ahora sí caben todos. Te dejo el link en la descripción 👇",escena:"Llega la Sala Eternity; la acomodan. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Café, sobremesa y la casa llena, justo como me gusta.",escena:"La anfitriona rodeada de familia e invitados en la sala, sobremesa elegante."},
+    {rol:"5 · Cierre",kind:C,copy:"La sala donde se junta la familia.",escena:"Sala Eternity sola, amplia, sin personas."}],
+ 28:[{rol:"1 · Portada",kind:P,copy:"Nos fuimos a vivir tres amigas. Armamos la sala entre todas 👇",escena:"Tres amigas en su primer depa."},
+    {rol:"2 · Proceso",kind:F,copy:"Cada una puso algo. Y elegimos un sofá cama para las visitas.",escena:"Decoran juntas, entre risas."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Elegimos una con cama extra para la que se queda. Te dejo el link en la descripción 👇",escena:"Llega el Sofá Cama Sleepy; lo acomodan. Toma que lo realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Noche de chismes, vino y peli entre amigas.",escena:"Las tres en el sofá con vino, riendo."},
+    {rol:"5 · Cierre",kind:C,copy:"El depa que armaron entre todas.",escena:"Sofá Cama Sleepy solo, sin personas."}],
+ 29:[{rol:"1 · Portada",kind:P,copy:"Con niños chiquitos, lo que más quería era una sala para estar juntos 👇",escena:"Mamá/papá con peques, sala formal."},
+    {rol:"2 · Proceso",kind:F,copy:"Busqué algo cómodo donde de verdad pasáramos el rato en familia.",escena:"La familia probando el sofá juntos, niños alrededor."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Encontré una cómoda y del tamaño ideal para todos. Te dejo el link en la descripción 👇",escena:"Llega la Sala Columbus; la acomodan. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Juegos en el piso, risas y toda la familia junta en la sala.",escena:"Familia jugando en la sala, vida real."},
+    {rol:"5 · Cierre",kind:C,copy:"La sala donde pasamos tiempo juntos.",escena:"Sala Columbus sola, un juguete olvidado, sin personas."}],
+ 30:[{rol:"1 · Portada",kind:P,copy:"Cuando los abuelos nos visitan, les damos nuestro cuarto 👇",escena:"Anfitriona recibiendo a la familia."},
+    {rol:"2 · Proceso",kind:F,copy:"Y nosotros pasamos un par de noches en la sala, felices.",escena:"La pareja preparando la sala con el sofá cama abierto para ellos, un par de noches."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Encontré una con sofá cama, cómoda para esas noches. Te dejo el link en la descripción 👇",escena:"Llega la Sala Zurich; la acomoda. Toma que la realza."},
+    {rol:"4 · Payoff",kind:F,copy:"Valen la pena esas noches con tal de tenerlos en casa.",escena:"Los abuelos instalados y felices; la pareja acomodada en la sala, ambiente cálido."},
+    {rol:"5 · Cierre",kind:C,copy:"Para cuando la familia se queda unos días.",escena:"Sala Zurich en modo cama por un par de noches, con cobija; sin personas."}],
+ 31:[{rol:"1 · Portada",kind:P,copy:"Un mes contándote cómo cada quien hizo suyo su espacio 👇",escena:"Collage de varios protagonistas del mes en sus salas."},
+    {rol:"2 · Proceso",kind:F,copy:"Solteros, familias, parejas, primeras casas y nuevas etapas.",escena:"Mini-mosaico de escenas del mes, gente diversa."},
+    {rol:"3 · La sala",kind:F,focal:true,copy:"Cada historia, una sala distinta. Y todas de la misma casa.",escena:"Mosaico de varias salas Interimobel del mes."},
+    {rol:"4 · Payoff",kind:F,copy:"Porque una casa no se llena de muebles. Se llena de momentos.",escena:"Escena cálida representativa, personas disfrutando su sala."},
+    {rol:"5 · Cierre",kind:C,copy:"Cada casa se acomoda distinto.",escena:"Sala Modular Cloud sola en un espacio luminoso, sin personas. Cierre de marca."}]
+};
+// Gancho impreso en la portada (slide 1) — scroll-stopper por día
+const HOOKS = {
+ 1:"Adiós al depa vacío", 2:"Una sala 100% suya", 3:"La sala que aguanta a los niños",
+ 4:"El domingo perfecto existe", 5:"Tu primer depa, a tu modo", 6:"Una sala para dos (y el gato)",
+ 7:"Nunca es tarde para renovar", 8:"Su primer hogar juntos", 9:"Se la compró ella sola",
+ 10:"La sala que aguanta todo", 11:"Casa nueva, primera gran sala", 12:"Tu oficina también es tu sala",
+ 13:"Su casa, a su ritmo", 14:"La sala donde empieza todo", 15:"Aquí caben tres generaciones",
+ 16:"La casa vuelve a ser suya", 17:"El depa compartido, por fin cómodo", 18:"Su primer depa en pareja",
+ 19:"Una sala para tu manada", 20:"El mejor plan: quedarse en casa", 21:"Tu espacio, tus reglas",
+ 22:"Aquí sí caben todos", 23:"Café, libros y casa propia", 24:"Su lugar en el sillón, listo",
+ 25:"Noches de peli con cama extra", 26:"Su cine privado cada noche", 27:"La casa donde cae la reunión",
+ 28:"El depa que armaron entre todas", 29:"A prueba de niños", 30:"Siempre hay lugar para quien llega",
+ 31:"¿En qué etapa está tu casa?"
+};
+// Precio + link por día (verificado en Shopify 3-ago-2026). Meta exige que el precio coincida con la página → re-verificar al publicar.
+const PRECIOS = {
+ 1:{n:"Sofá Cama Sleepy",p:"$10,990",u:"interimobel.mx/products/sofa-cama-sleepy"},
+ 2:{n:"Sala Kenia",p:"$9,350",u:"interimobel.mx/products/sala-kenia-sofa-y-love-seat"},
+ 3:{n:"Sala Modular Cloud",p:"$22,950",u:"interimobel.mx/products/sala-modular-cloud"},
+ 4:{n:"Sala Cosmos",p:"$14,590",u:"interimobel.mx/products/sala-esquinera-cosmos-gris-copia"},
+ 5:{n:"Sofá Cama Break",p:"$10,990",u:"interimobel.mx/products/sofa-cama-break"},
+ 6:{n:"Sala Nessy",p:"$10,990",u:"interimobel.mx/products/sala-esquinera-nessy"},
+ 7:{n:"Sala Nicollo",p:"$12,550",u:"interimobel.mx/products/sala-esquinera-nicollo"},
+ 8:{n:"Sala Vittale",p:"$15,090",u:"interimobel.mx/products/sala-vitale-sofa-y-love-seat"},
+ 9:{n:"Sala Fussion",p:"$12,190",u:"interimobel.mx/products/sala-esquinera-fussion"},
+ 10:{n:"Sala Eternity",p:"$15,750",u:"interimobel.mx/products/sala-esquinera-eternity-gris"},
+ 11:{n:"Sala Columbus",p:"$16,290",u:"interimobel.mx/products/sala-esquinera-columbus-color-beige"},
+ 12:{n:"Sala Loose",p:"$15,390",u:"interimobel.mx/products/sala-esquinera-loose"},
+ 13:{n:"Sala Lucerna",p:"$13,290",u:"interimobel.mx/products/sala-lucerna-esquinera-color-amber"},
+ 14:{n:"Sala Lugano",p:"$10,590",u:"interimobel.mx/products/sala-lugano-sofa-y-love-seat-gris"},
+ 15:{n:"Sala Modular Fancy",p:"$20,950",u:"interimobel.mx/products/sala-modular-cloud-copia"},
+ 16:{n:"Sala Lucca",p:"$10,950",u:"interimobel.mx/products/sala-lucca-sofa-y-love-seat"},
+ 17:{n:"Sala Zurich",p:"$16,590",u:"interimobel.mx/products/sala-esquinera-zurich-gris"},
+ 18:{n:"Sala Cocy",p:"$12,790",u:"interimobel.mx/products/sala-esquinera-cocy-gris"},
+ 19:{n:"Sala Nilda",p:"$11,990",u:"interimobel.mx/products/sala-esquinera-nilda"},
+ 20:{n:"Sala Lucca",p:"$10,950",u:"interimobel.mx/products/sala-lucca-sofa-y-love-seat"},
+ 21:{n:"Diván Chester",p:"$10,790",u:"interimobel.mx/products/divan-chester"},
+ 22:{n:"Sala Excellence Premium",p:"$23,950",u:"interimobel.mx/products/sala-modular-excellence-premium-especial"},
+ 23:{n:"Sala Cosmos",p:"$14,590",u:"interimobel.mx/products/sala-esquinera-cosmos-gris-copia"},
+ 24:{n:"Sala Novaopulence",p:"$13,590",u:"interimobel.mx/products/sala-esquinera-novaopulence-smoke"},
+ 25:{n:"Sala Gremory",p:"$13,990",u:"interimobel.mx/products/sala-esquinera-gremory"},
+ 26:{n:"Sala Cocy",p:"$12,790",u:"interimobel.mx/products/sala-esquinera-cocy-gris"},
+ 27:{n:"Sala Eternity",p:"$15,750",u:"interimobel.mx/products/sala-esquinera-eternity-gris"},
+ 28:{n:"Sofá Cama Sleepy",p:"$10,990",u:"interimobel.mx/products/sofa-cama-sleepy"},
+ 29:{n:"Sala Columbus",p:"$16,290",u:"interimobel.mx/products/sala-esquinera-columbus-color-beige"},
+ 30:{n:"Sala Zurich",p:"$16,590",u:"interimobel.mx/products/sala-esquinera-zurich-gris"},
+ 31:{n:"Sala Modular Cloud",p:"$22,950",u:"interimobel.mx/products/sala-modular-cloud"}
+};
+// Fotos reales generadas en Higgsfield. Clave: día → {slide (1-based) → URL}
+const FOTOS = {
+ 1:{1:"https://d8j0ntlcm91z4.cloudfront.net/user_31CPJeCqy6X4UQmpzZtb4mkZR6c/hf_20260804_030256_903511d4-144f-4bd4-ab12-a92bb5118635.png"}
+};
+function grad(hex, kind){
+  if(kind==="antes"){
+    return `linear-gradient(135deg, color-mix(in srgb, ${hex} 10%, var(--ground)) 0%, color-mix(in srgb, ${hex} 4%, var(--ground)) 100%)`;
+  }
+  return `linear-gradient(135deg, color-mix(in srgb, ${hex} 48%, var(--ground)) 0%, color-mix(in srgb, ${hex} 22%, var(--ground)) 55%, color-mix(in srgb, ${hex} 60%, #000 8%) 100%)`;
+}
+const ic = {
+  heart:'<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.3C.4 8.4 2 5 5.2 5c2 0 3.3 1.1 4.1 2.3l.7 1 .7-1C11.5 6.1 12.8 5 14.8 5 18 5 19.6 8.4 22 11.7 19.5 16.4 12 21 12 21z"/></svg>',
+  comment:'<svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5z"/></svg>',
+  share:'<svg viewBox="0 0 24 24"><path d="M22 3 11 14M22 3l-7 19-4-8-8-4 19-7z"/></svg>',
+  save:'<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4V3z"/></svg>'
+};
+
+function render(){
+  const feed = document.getElementById('feed');
+  feed.innerHTML = POSTS.map(p=>{
+    const hex = G[p.g];
+    const hook = HOOKS[p.d] || p.copyin;
+    const guion = GUIONES[p.d] || [
+      {rol:"1 · Portada",kind:"portada",copy:hook,escena:`${p.sala} ya resuelta y bien iluminada — ${p.despues.toLowerCase()}`},
+      {rol:"2 · Antes",kind:"foto",copy:"",escena:p.antes},
+      {rol:"3 · Después",kind:"foto",copy:"",escena:`Con la ${p.sala}: ${p.despues}`},
+      {rol:"4 · Cierre",kind:"cierre",copy:p.copyin,escena:`la misma ${p.sala} ya resuelta`}
+    ];
+    const slides = guion.map((s,i)=>{
+      const foto = (FOTOS[p.d]||{})[i+1];
+      const ph = foto ? `<img class="ph" src="${foto}" alt="" loading="lazy" onerror="this.closest('.slide').classList.add('img-blocked')">` : '';
+      const ver = foto ? `<a class="ver" href="${foto}" target="_blank" rel="noopener">📸 foto real ↗</a>` : '';
+      const cls = foto ? 'slide has-photo' : 'slide';
+      if(s.kind==="portada"){
+        return `<div class="${cls}" style="background:${grad(hex,'despues')}">${ph}<span class="badge">${s.rol}</span><div class="cover"><div class="ci">${s.copy}</div><div class="swipe">desliza →</div></div><div class="bg">📷 ${s.escena}</div>${ver}</div>`;
+      }
+      if(s.kind==="cierre"){
+        return `<div class="${cls}" style="background:${grad(hex,'despues')}">${ph}<span class="badge">${s.rol}</span><div class="cierre"><div class="ci">${s.copy}</div></div><div class="bg">📷 ${s.escena}</div>${ver}</div>`;
+      }
+      const bg = s.rol.includes("Antes") ? grad(hex,'antes') : grad(hex,'despues');
+      const narr = s.copy ? `<div class="narr">${s.copy}</div>` : '';
+      return `<div class="${cls}" style="background:${bg}">${ph}<span class="badge">${s.rol}${s.focal?' ⭐ realce':''}</span><div class="note">${narr}<div class="what">📷 ${s.escena}</div></div>${ver}</div>`;
+    }).join('');
+    const dots = guion.map((_,i)=>`<div class="dot" style="${i===0?`background:${hex}`:''}"></div>`).join('');
+    const pr = PRECIOS[p.d];
+    const precioLinea = pr ? `<div class="cta">🛋️ ${pr.n} · ${pr.p} MXN → ${pr.u}</div>` : '';
+    const caption = p.cap.map(l=>`<div>${l}</div>`).join('') + `<div class="cta">${p.cta}</div>` + precioLinea;
+    return `<article class="post">
+      <div class="phead">
+        <div class="avatar" style="background:${hex}">i</div>
+        <div class="pmeta"><div class="pname">interimobel</div><div class="ptag">${p.hogar} · ${p.sala}</div></div>
+        <div class="pday">DÍA <b>${p.d}</b><br>${p.fecha} ${p.wd}</div>
+      </div>
+      <div class="rail">${slides}</div>
+      <div class="dots">${dots}</div>
+      <div class="actions">${ic.heart}${ic.comment}${ic.share}<span class="save">${ic.save}</span></div>
+      <div class="likes">${p.likes} Me gusta</div>
+      <div class="caption"><span class="u">interimobel</span>${caption}</div>
+      <div class="tags">${p.tags}</div>
+      <div class="meta">Carrusel antes/después · producción Higgsfield pendiente</div>
+    </article>`;
+  }).join('');
+}
+render();
+
+document.getElementById('toggleNotes').addEventListener('click',e=>{
+  const hidden = document.body.classList.toggle('hide-notes');
+  e.currentTarget.setAttribute('aria-pressed', !hidden);
+  e.currentTarget.textContent = hidden ? 'Mostrar descripciones de escena' : 'Ver como se publicará (ocultar descripciones)';
+});
+document.getElementById('toggleTheme').addEventListener('click',e=>{
+  const root = document.documentElement;
+  const cur = root.getAttribute('data-theme');
+  const next = cur==='dark' ? 'light' : (cur==='light' ? 'dark' : (matchMedia('(prefers-color-scheme: dark)').matches?'light':'dark'));
+  root.setAttribute('data-theme', next);
+  e.currentTarget.setAttribute('aria-pressed', next==='dark');
+});
+</script>
