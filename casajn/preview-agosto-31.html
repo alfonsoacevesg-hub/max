@@ -80,6 +80,15 @@
   .bg{position:absolute;bottom:12px;left:15px;right:15px;font-family:var(--font-mono);font-style:italic;
     font-size:10.5px;line-height:1.45;color:rgba(255,255,255,.82);text-shadow:0 1px 6px rgba(0,0,0,.7)}
   body.hide-notes .note .what,body.hide-notes .bg{display:none}
+  /* Foto real generada, conectada a la slide */
+  .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .badge,.note,.cover,.cierre,.bg{z-index:2}
+  .slide.has-photo:not(.img-blocked) .note,.slide.has-photo:not(.img-blocked) .bg{display:none}
+  .slide.has-photo:not(.img-blocked) .cover .ci,.slide.has-photo:not(.img-blocked) .cierre .ci{
+    text-shadow:0 2px 18px rgba(0,0,0,.78)}
+  .ver{position:absolute;top:11px;right:11px;z-index:3;font-family:var(--font-ui);font-size:11px;
+    font-weight:700;background:#fff;color:#111;padding:5px 10px;border-radius:14px;text-decoration:none;
+    box-shadow:0 1px 6px rgba(0,0,0,.25)}
   .legend{max-width:470px;margin:10px auto 0;display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:center;
     font-size:11.5px;color:var(--muted);line-height:1.5;padding:0 16px}
   .legend b{color:var(--ink)}
@@ -107,7 +116,7 @@
 <div class="page-head">
   <div class="kicker">Interimobel · Agosto 2026</div>
   <h1>31 días de salas — antes/después</h1>
-  <p>1 sala por día (6 ago – 5 sep), un <b>hogar</b> distinto cada día. Formato <b>micro-influencer</b>: cada slide lo narra la persona en <b>primera persona</b> (proceso, decisiones y por qué). Arco de 5 slides: <b>gancho → decisión → la sala llega → payoff con gente → cierre solo el mueble</b> (la slide 5 va <b>sin personas</b>, el mueble como único protagonista). <b>Los 31 ya con este molde.</b> Sin imágenes aún; el gris es placeholder. <b>Precio + link real en cada caption</b> (verificado en Shopify); la imagen queda sin precio.</p>
+  <p>1 sala por día (6 ago – 5 sep), un <b>hogar</b> distinto cada día. Formato <b>micro-influencer</b>: cada slide lo narra la persona en <b>primera persona</b> (proceso, decisiones y por qué). Arco de 5 slides: <b>gancho → decisión → la sala llega → payoff con gente → cierre solo el mueble</b> (la slide 5 va <b>sin personas</b>, el mueble como único protagonista). <b>Los 31 ya con este molde.</b> Las slides con botón <b>📸 foto real</b> ya tienen imagen generada y aprobada (si este visor bloquea la imagen por seguridad, el botón la abre en una pestaña); el gris es placeholder de lo pendiente. <b>Precio + link real en cada caption</b> (verificado en Shopify); la imagen queda sin precio.</p>
   <div class="legend">
     <span><span class="chip-ci">Texto grande</span> (serif) = <b>Copy IN</b>: lo que la persona narra y <b>SÍ se imprime</b> en cada slide.</span>
     <span><span class="chip-note">📷 texto en cursiva</span> = <b>descripción de la foto/escena</b>. Solo referencia — no se imprime.</span>
@@ -373,6 +382,10 @@ const PRECIOS = {
  30:{n:"Sala Zurich",p:"$16,590",u:"interimobel.mx/products/sala-esquinera-zurich-gris"},
  31:{n:"Sala Modular Cloud",p:"$22,950",u:"interimobel.mx/products/sala-modular-cloud"}
 };
+// Fotos reales generadas en Higgsfield. Clave: día → {slide (1-based) → URL}
+const FOTOS = {
+ 1:{1:"https://d8j0ntlcm91z4.cloudfront.net/user_31CPJeCqy6X4UQmpzZtb4mkZR6c/hf_20260804_030256_903511d4-144f-4bd4-ab12-a92bb5118635.png"}
+};
 function grad(hex, kind){
   if(kind==="antes"){
     return `linear-gradient(135deg, color-mix(in srgb, ${hex} 10%, var(--ground)) 0%, color-mix(in srgb, ${hex} 4%, var(--ground)) 100%)`;
@@ -397,16 +410,20 @@ function render(){
       {rol:"3 · Después",kind:"foto",copy:"",escena:`Con la ${p.sala}: ${p.despues}`},
       {rol:"4 · Cierre",kind:"cierre",copy:p.copyin,escena:`la misma ${p.sala} ya resuelta`}
     ];
-    const slides = guion.map(s=>{
+    const slides = guion.map((s,i)=>{
+      const foto = (FOTOS[p.d]||{})[i+1];
+      const ph = foto ? `<img class="ph" src="${foto}" alt="" loading="lazy" onerror="this.closest('.slide').classList.add('img-blocked')">` : '';
+      const ver = foto ? `<a class="ver" href="${foto}" target="_blank" rel="noopener">📸 foto real ↗</a>` : '';
+      const cls = foto ? 'slide has-photo' : 'slide';
       if(s.kind==="portada"){
-        return `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">${s.rol}</span><div class="cover"><div class="ci">${s.copy}</div><div class="swipe">desliza →</div></div><div class="bg">📷 ${s.escena}</div></div>`;
+        return `<div class="${cls}" style="background:${grad(hex,'despues')}">${ph}<span class="badge">${s.rol}</span><div class="cover"><div class="ci">${s.copy}</div><div class="swipe">desliza →</div></div><div class="bg">📷 ${s.escena}</div>${ver}</div>`;
       }
       if(s.kind==="cierre"){
-        return `<div class="slide" style="background:${grad(hex,'despues')}"><span class="badge">${s.rol}</span><div class="cierre"><div class="ci">${s.copy}</div></div><div class="bg">📷 ${s.escena}</div></div>`;
+        return `<div class="${cls}" style="background:${grad(hex,'despues')}">${ph}<span class="badge">${s.rol}</span><div class="cierre"><div class="ci">${s.copy}</div></div><div class="bg">📷 ${s.escena}</div>${ver}</div>`;
       }
       const bg = s.rol.includes("Antes") ? grad(hex,'antes') : grad(hex,'despues');
       const narr = s.copy ? `<div class="narr">${s.copy}</div>` : '';
-      return `<div class="slide" style="background:${bg}"><span class="badge">${s.rol}${s.focal?' ⭐ realce':''}</span><div class="note">${narr}<div class="what">📷 ${s.escena}</div></div></div>`;
+      return `<div class="${cls}" style="background:${bg}">${ph}<span class="badge">${s.rol}${s.focal?' ⭐ realce':''}</span><div class="note">${narr}<div class="what">📷 ${s.escena}</div></div>${ver}</div>`;
     }).join('');
     const dots = guion.map((_,i)=>`<div class="dot" style="${i===0?`background:${hex}`:''}"></div>`).join('');
     const pr = PRECIOS[p.d];
